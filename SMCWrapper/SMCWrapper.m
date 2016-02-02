@@ -2,7 +2,7 @@
 //  SMCWrapper.m
 //
 //  Created by Fergus Morrow on 27/09/2014
-//  Licensed under the GNU General Public License.
+//  Licensed under the GNU General Public License. 
 
 #import "SMCWrapper.h"
 

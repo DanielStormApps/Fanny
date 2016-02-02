@@ -7,7 +7,7 @@
 //  https://itunes.apple.com/us/developer/daniel-storm/id432169230?
 //
 //  Licensed under the GNU General Public License.
-// 
+//
 
 #import <Cocoa/Cocoa.h>
 
