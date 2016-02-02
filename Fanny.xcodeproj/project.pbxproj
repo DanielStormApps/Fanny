@@ -93,6 +93,7 @@
 		843293071C581DF7003F08E8 /* Fanny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fanny.entitlements; sourceTree = "<group>"; };
 		843293101C595617003F08E8 /* fanIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanIcon.png; sourceTree = "<group>"; };
 		8466115C1C5B0B09002B54EA /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+		849479001C612FAD00CCCF83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 		843292A71C580D5B003F08E8 = {
 			isa = PBXGroup;
 			children = (
+				849479001C612FAD00CCCF83 /* README.md */,
 				843292FF1C580DE0003F08E8 /* SMCWrapper */,
 				843292EB1C580D78003F08E8 /* FannyWidget */,
 				843292B21C580D5B003F08E8 /* Fanny */,
