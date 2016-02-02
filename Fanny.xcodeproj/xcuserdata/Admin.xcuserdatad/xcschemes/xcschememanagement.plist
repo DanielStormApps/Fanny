@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Fanny.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>FannyWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>843292AF1C580D5B003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>843292C51C580D5B003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>843292D01C580D5B003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>843292E61C580D78003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>843293151C5AAA77003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8432932A1C5AAA77003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>843293351C5AAA77003F08E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
