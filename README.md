@@ -1,5 +1,7 @@
-# Fanny (http://FannyWidget.com/)
-### Monitor your Mac's fan speed and CPU temperature from your Notification Center. (a beautification of SMCWrapper - https://github.com/FergusInLondon/SMCWrapper)
+# Fanny
+### Monitor your Mac's fan speed and CPU temperature from your Notification Center.
+###(a beautification of SMCWrapper - https://github.com/FergusInLondon/SMCWrapper)
+## If you're looking to download this application, please visit http://FannyWidget.com/
 
 
 #### License
