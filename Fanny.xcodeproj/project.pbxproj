@@ -22,7 +22,7 @@
 		843293031C580DE0003F08E8 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 843293021C580DE0003F08E8 /* SMCWrapper.m */; };
 		843293041C580DE0003F08E8 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 843293021C580DE0003F08E8 /* SMCWrapper.m */; };
 		8466115D1C5B0B09002B54EA /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 8466115C1C5B0B09002B54EA /* icon1024.png */; };
-		84A5CC8A1C7BF9CD003ED24A /* fanIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84A5CC891C7BF9CD003ED24A /* fanIcon.png */; };
+		846648E51C7CF45E00BBFE61 /* fanIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 846648E41C7CF45E00BBFE61 /* fanIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,8 +92,8 @@
 		843293021C580DE0003F08E8 /* SMCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCWrapper.m; sourceTree = "<group>"; };
 		843293071C581DF7003F08E8 /* Fanny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fanny.entitlements; sourceTree = "<group>"; };
 		8466115C1C5B0B09002B54EA /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
+		846648E41C7CF45E00BBFE61 /* fanIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanIcon.png; sourceTree = "<group>"; };
 		849479001C612FAD00CCCF83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		84A5CC891C7BF9CD003ED24A /* fanIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +174,7 @@
 			children = (
 				843293071C581DF7003F08E8 /* Fanny.entitlements */,
 				8466115C1C5B0B09002B54EA /* icon1024.png */,
-				84A5CC891C7BF9CD003ED24A /* fanIcon.png */,
+				846648E41C7CF45E00BBFE61 /* fanIcon.png */,
 				843292B71C580D5B003F08E8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -381,7 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A5CC8A1C7BF9CD003ED24A /* fanIcon.png in Resources */,
+				846648E51C7CF45E00BBFE61 /* fanIcon.png in Resources */,
 				843292BD1C580D5B003F08E8 /* Assets.xcassets in Resources */,
 				8466115D1C5B0B09002B54EA /* icon1024.png in Resources */,
 				843292C01C580D5B003F08E8 /* Main.storyboard in Resources */,
