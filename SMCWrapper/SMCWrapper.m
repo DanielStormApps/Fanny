@@ -196,18 +196,21 @@ static SMCWrapper *sharedInstance = nil;
  */
 -(BOOL) readKey:(char *)key intoNumber:(NSNumber **)value{
     NSString *stringVal;
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    //NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
     NSNumber *num;
     num = [NSNumber numberWithInt:0];
- 
+    
     if (! [self readKey:key asString:&stringVal] ){
         num = [NSNumber numberWithInt:0];
         *value = num;
         return NO;
     }
-    
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    num = [f numberFromString:stringVal];
+    stringVal = [stringVal stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    NSDecimalNumber *amountNumber = [NSDecimalNumber decimalNumberWithString:stringVal];
+    //f.numberStyle = NSNumberFormatterDecimalStyle;
+    //f.maximumFractionDigits = 2;
+    //num = [f numberFromString:stringVal];
+    num = amountNumber;
     *value = num;
     return YES;
 }
