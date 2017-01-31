@@ -12,6 +12,9 @@
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
 
+// Disable NSLog
+#define NSLog(...)
+
 @interface TodayViewController () <NCWidgetProviding> {
     // NSTextField
     __weak IBOutlet NSTextField *temperatureTextField;
@@ -111,11 +114,11 @@
     
     // Create radio buttons
     // Need to fix this logic
-    for (int i = numberOfFans - 1; i >= 0; i--) { // (int i = 0; i < numberOfFans; i++)
+    for (int i = numberOfFans - 1; i >= 0; i--) {
         radioButton = [NSButton new];
         [radioButton setButtonType: NSRadioButton]; // Set button type
         [radioButton setTag: (i - numberOfFans + 1) * -1]; // Set tag to fan number // Starts at 0
-        [radioButton setControlSize:NSMiniControlSize]; // Make mini
+        [radioButton setControlSize:NSControlSizeMini]; // Make mini
         [radioButton setFrame:CGRectMake(self.view.frame.size.width - (i * staticPadding + 36), self.view.frame.size.height - 23, 22, 26)]; // Set frame
         [radioButton setTarget:self];
         [radioButton setAction:@selector(radioButtonClicked:)]; // Add action
@@ -134,7 +137,7 @@
     
     // Update temperature
     float temperatureFloat = [defaults floatForKey:@"temperature"];
-    [temperatureTextField setStringValue:[NSString stringWithFormat:@"%.02f °",temperatureFloat]];
+    [temperatureTextField setStringValue:[NSString stringWithFormat:@"%.02f °C",temperatureFloat]];
     
     // Update fan actual
     int fanRPMInt = (int)[defaults integerForKey:[NSString stringWithFormat:@"fan%dActual", fanToDisplay]];
@@ -155,14 +158,11 @@
 
 -(void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult result))completionHandler {
     // Update your data and prepare for a snapshot. Call completion handler when you are done
-    
     [self updateWidget];
     
     NSLog(@"NCUpdateResultNewData");
     completionHandler(NCUpdateResultNewData);
 }
 
-- (IBAction)clicked:(id)sender {
-}
 @end
 

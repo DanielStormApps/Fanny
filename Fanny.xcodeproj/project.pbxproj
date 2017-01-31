@@ -22,7 +22,7 @@
 		843293031C580DE0003F08E8 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 843293021C580DE0003F08E8 /* SMCWrapper.m */; };
 		843293041C580DE0003F08E8 /* SMCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 843293021C580DE0003F08E8 /* SMCWrapper.m */; };
 		8466115D1C5B0B09002B54EA /* icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 8466115C1C5B0B09002B54EA /* icon1024.png */; };
-		846648E51C7CF45E00BBFE61 /* fanIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 846648E41C7CF45E00BBFE61 /* fanIcon.png */; };
+		8468DA7D1E410BEE006D57B9 /* fanIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8468DA7C1E410BEE006D57B9 /* fanIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +92,7 @@
 		843293021C580DE0003F08E8 /* SMCWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMCWrapper.m; sourceTree = "<group>"; };
 		843293071C581DF7003F08E8 /* Fanny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Fanny.entitlements; sourceTree = "<group>"; };
 		8466115C1C5B0B09002B54EA /* icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1024.png; sourceTree = "<group>"; };
-		846648E41C7CF45E00BBFE61 /* fanIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanIcon.png; sourceTree = "<group>"; };
+		8468DA7C1E410BEE006D57B9 /* fanIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fanIcon.png; sourceTree = "<group>"; };
 		849479001C612FAD00CCCF83 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,7 +174,7 @@
 			children = (
 				843293071C581DF7003F08E8 /* Fanny.entitlements */,
 				8466115C1C5B0B09002B54EA /* icon1024.png */,
-				846648E41C7CF45E00BBFE61 /* fanIcon.png */,
+				8468DA7C1E410BEE006D57B9 /* fanIcon.png */,
 				843292B71C580D5B003F08E8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -318,12 +318,13 @@
 		843292A81C580D5B003F08E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Daniel Storm";
 				TargetAttributes = {
 					843292AF1C580D5B003F08E8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = E5BK5K7RRN;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -335,15 +336,20 @@
 					};
 					843292C51C580D5B003F08E8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E5BK5K7RRN;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 843292AF1C580D5B003F08E8;
 					};
 					843292D01C580D5B003F08E8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = E5BK5K7RRN;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 843292AF1C580D5B003F08E8;
 					};
 					843292E61C580D78003F08E8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = E5BK5K7RRN;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.Mac = {
 								enabled = 1;
@@ -381,7 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846648E51C7CF45E00BBFE61 /* fanIcon.png in Resources */,
+				8468DA7D1E410BEE006D57B9 /* fanIcon.png in Resources */,
 				843292BD1C580D5B003F08E8 /* Assets.xcassets in Resources */,
 				8466115D1C5B0B09002B54EA /* icon1024.png in Resources */,
 				843292C01C580D5B003F08E8 /* Main.storyboard in Resources */,
@@ -511,13 +517,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Daniel Storm (E5BK5K7RRN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -534,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -554,13 +563,16 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "3rd Party Mac Developer Application: Daniel Storm (E5BK5K7RRN)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -571,7 +583,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -582,11 +594,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Fanny/Fanny.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = Fanny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.Fanny;
 				PRODUCT_NAME = Fanny;
 				PROVISIONING_PROFILE = "";
@@ -598,11 +611,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Fanny/Fanny.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = Fanny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.Fanny;
 				PRODUCT_NAME = Fanny;
 				PROVISIONING_PROFILE = "";
@@ -613,7 +627,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = TempAndFanMonitorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorTests;
@@ -626,7 +642,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = TempAndFanMonitorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorTests;
@@ -638,7 +656,9 @@
 		843292E11C580D5C003F08E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = TempAndFanMonitorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorUITests;
@@ -651,7 +671,9 @@
 		843292E21C580D5C003F08E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = TempAndFanMonitorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorUITests;
@@ -665,14 +687,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FannyWidget/FannyWidget.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = FannyWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.Fanny.FannyWidget;
 				PRODUCT_NAME = Fanny;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -681,14 +705,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = FannyWidget/FannyWidget.entitlements;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
 				INFOPLIST_FILE = FannyWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.Fanny.FannyWidget;
 				PRODUCT_NAME = Fanny;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

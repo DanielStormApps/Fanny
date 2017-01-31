@@ -11,6 +11,9 @@
 
 #import "ViewController.h"
 
+// Disable NSLog
+#define NSLog(...)
+
 @implementation ViewController {
     // NSTextField
     __weak IBOutlet NSTextField *instructionTextField;

@@ -13,6 +13,9 @@
 #import "ViewController.h"
 #import "SMCWrapper.h"
 
+// Disable NSLog
+#define NSLog(...)
+
 @interface AppDelegate () <NSMenuDelegate> {
     // SMC
     SMCWrapper *smc;
@@ -87,7 +90,7 @@
     [fanMinMenuItemDefault setTitleWithMnemonic:@"Min: 0000 RPM"];
     [fanMaxMenuItemDefault setTitleWithMnemonic:@"Max: 0000 RPM"];
     [fanTarMenuItemDefault setTitleWithMnemonic:@"Target: 0000 RPM"];
-    [cpuTempMenuItem setTitleWithMnemonic:@"CPU: 0.0°"];
+    [cpuTempMenuItem setTitleWithMnemonic:@"CPU: 0.0°C"];
     
     // Menu buttons
     NSMenuItem *info = [[NSMenuItem alloc]initWithTitle:@"Info" action:@selector(infoClicked:) keyEquivalent:@"i"];
@@ -293,7 +296,7 @@
         [sharedDefaults setFloat:temperatureFloat forKey:@"temperature"];
         
         // Set title of CPU temp menu label
-        [cpuTempMenuItem setTitleWithMnemonic:[NSString stringWithFormat:@"CPU: %.02f °",[temp floatValue]]];
+        [cpuTempMenuItem setTitleWithMnemonic:[NSString stringWithFormat:@"CPU: %.02f °C",[temp floatValue]]];
         // Set title color
         NSDictionary *attributes = @{ NSFontAttributeName: [NSFont menuBarFontOfSize:14], NSForegroundColorAttributeName: titleColor };
         NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:[cpuTempMenuItem title] attributes:attributes];

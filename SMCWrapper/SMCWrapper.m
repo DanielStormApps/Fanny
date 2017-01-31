@@ -196,7 +196,7 @@ static SMCWrapper *sharedInstance = nil;
  */
 -(BOOL) readKey:(char *)key intoNumber:(NSNumber **)value{
     NSString *stringVal;
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
+    // NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
     NSNumber *num;
     num = [NSNumber numberWithInt:0];
  
@@ -206,8 +206,12 @@ static SMCWrapper *sharedInstance = nil;
         return NO;
     }
     
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    num = [f numberFromString:stringVal];
+    // [f setNumberStyle:NSNumberFormatterDecimalStyle];
+    // num = [f numberFromString:stringVal];
+    stringVal = [stringVal stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    if (stringVal != nil) {
+        num = [NSDecimalNumber decimalNumberWithString:stringVal];
+    }
     *value = num;
     return YES;
 }
