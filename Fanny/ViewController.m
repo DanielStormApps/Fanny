@@ -41,11 +41,25 @@
 -(void)updateStyle {
     if ([[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"] == nil) {
         // Aqua
+        [self.view.window setTitlebarAppearsTransparent:true];
         self.view.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+        
+        NSVisualEffectView *visualEffectView = [[NSVisualEffectView alloc]initWithFrame: self.view.frame];
+        visualEffectView.material = NSVisualEffectMaterialAppearanceBased;
+        visualEffectView.blendingMode = NSVisualEffectBlendingModeBehindWindow;
+        visualEffectView.state = NSVisualEffectStateActive;
+        [self.view addSubview:visualEffectView positioned:NSWindowBelow relativeTo:nil];
     }
     else {
         // Dark
+        [self.view.window setTitlebarAppearsTransparent:true];
         self.view.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
+        
+        NSVisualEffectView *visualEffectView = [[NSVisualEffectView alloc]initWithFrame: self.view.frame];
+        visualEffectView.material = NSVisualEffectMaterialAppearanceBased;
+        visualEffectView.blendingMode = NSVisualEffectBlendingModeBehindWindow;
+        visualEffectView.state = NSVisualEffectStateActive;
+        [self.view addSubview:visualEffectView positioned:NSWindowBelow relativeTo:nil];
     }
 }
 
