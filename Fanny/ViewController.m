@@ -33,6 +33,22 @@
     [instructionTextField setStringValue:@"To enable the Fanny Widget,\nplease open Notification Center,\nclick Edit (at the bottom), then click the\ngreen + icon to the right of Fanny."];
 }
 
+-(void)viewDidAppear {
+    // Update style based on if user is using aqua or dark appearance
+    [self updateStyle];
+}
+
+-(void)updateStyle {
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"] == nil) {
+        // Aqua
+        self.view.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameAqua];
+    }
+    else {
+        // Dark
+        self.view.window.appearance = [NSAppearance appearanceNamed:NSAppearanceNameVibrantDark];
+    }
+}
+
 -(IBAction)moreAppsButton:(id)sender {
     NSLog(@"more apps button pressed");
     [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/developer/daniel-storm/id432169230?iPhoneSoftwarePage=1#iPhoneSoftwarePage"]];
