@@ -53,13 +53,13 @@
     fanToDisplay = (int)[tempButton tag];
     NSLog(@"radio button clicked with tag: %d", (int)[tempButton tag]);
     
-    // Update stats with fan selected
+    // Update stats
     [self updateWidget];
 }
 
 -(void)viewDidLoad {
     NSLog(@"viewDidLoad");
-    // Get stats
+    // Initially update stats
     [self updateWidget];
     
     // Get number of fans
@@ -76,7 +76,7 @@
 
 -(void)viewDidAppear {
     NSLog(@"viewDidAppear");
-    // Get stats timer
+    // Create timer to update stats
     [updateWidgetTimer invalidate];
     updateWidgetTimer = nil;
     updateWidgetTimer = [NSTimer scheduledTimerWithTimeInterval:2.5
@@ -113,7 +113,7 @@
     }
     
     // Create radio buttons
-    // Need to fix this logic
+    // TODO: Need to fix this logic
     for (int i = numberOfFans - 1; i >= 0; i--) {
         radioButton = [NSButton new];
         [radioButton setButtonType: NSRadioButton]; // Set button type
