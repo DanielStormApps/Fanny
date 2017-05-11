@@ -12,8 +12,6 @@
 		843292BB1C580D5B003F08E8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292BA1C580D5B003F08E8 /* ViewController.m */; };
 		843292BD1C580D5B003F08E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843292BC1C580D5B003F08E8 /* Assets.xcassets */; };
 		843292C01C580D5B003F08E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843292BE1C580D5B003F08E8 /* Main.storyboard */; };
-		843292CB1C580D5B003F08E8 /* TempAndFanMonitorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292CA1C580D5B003F08E8 /* TempAndFanMonitorTests.m */; };
-		843292D61C580D5B003F08E8 /* TempAndFanMonitorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292D51C580D5B003F08E8 /* TempAndFanMonitorUITests.m */; };
 		843292EA1C580D78003F08E8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843292E91C580D78003F08E8 /* NotificationCenter.framework */; };
 		843292F01C580D78003F08E8 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843292EF1C580D78003F08E8 /* TodayViewController.m */; };
 		843292F31C580D78003F08E8 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 843292F11C580D78003F08E8 /* TodayViewController.xib */; };
@@ -25,20 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		843292C71C580D5B003F08E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 843292A81C580D5B003F08E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 843292AF1C580D5B003F08E8;
-			remoteInfo = TempAndFanMonitor;
-		};
-		843292D21C580D5B003F08E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 843292A81C580D5B003F08E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 843292AF1C580D5B003F08E8;
-			remoteInfo = TempAndFanMonitor;
-		};
 		843292F81C580D78003F08E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 843292A81C580D5B003F08E8 /* Project object */;
@@ -72,12 +56,6 @@
 		843292BC1C580D5B003F08E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843292BF1C580D5B003F08E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		843292C11C580D5B003F08E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843292C61C580D5B003F08E8 /* Fanny.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fanny.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		843292CA1C580D5B003F08E8 /* TempAndFanMonitorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempAndFanMonitorTests.m; sourceTree = "<group>"; };
-		843292CC1C580D5B003F08E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843292D11C580D5B003F08E8 /* Fanny.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fanny.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		843292D51C580D5B003F08E8 /* TempAndFanMonitorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TempAndFanMonitorUITests.m; sourceTree = "<group>"; };
-		843292D71C580D5C003F08E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843292E71C580D78003F08E8 /* Fanny.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Fanny.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		843292E91C580D78003F08E8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		843292ED1C580D78003F08E8 /* FannyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FannyWidget.entitlements; sourceTree = "<group>"; };
@@ -102,20 +80,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		843292C31C580D5B003F08E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		843292CE1C580D5B003F08E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		843292E41C580D78003F08E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -130,14 +94,11 @@
 		843292A71C580D5B003F08E8 = {
 			isa = PBXGroup;
 			children = (
-				849479001C612FAD00CCCF83 /* README.md */,
-				843292FF1C580DE0003F08E8 /* SMCWrapper */,
-				843292EB1C580D78003F08E8 /* FannyWidget */,
 				843292B21C580D5B003F08E8 /* Fanny */,
+				843292EB1C580D78003F08E8 /* FannyWidget */,
 				843292E81C580D78003F08E8 /* Frameworks */,
-				843292D41C580D5B003F08E8 /* FannyUITests */,
-				843292C91C580D5B003F08E8 /* FannyTests */,
 				843292B11C580D5B003F08E8 /* Products */,
+				849479001C612FAD00CCCF83 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,8 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				843292B01C580D5B003F08E8 /* Fanny.app */,
-				843292C61C580D5B003F08E8 /* Fanny.xctest */,
-				843292D11C580D5B003F08E8 /* Fanny.xctest */,
 				843292E71C580D78003F08E8 /* Fanny.appex */,
 			);
 			name = Products;
@@ -157,11 +116,11 @@
 			children = (
 				843292B31C580D5B003F08E8 /* AppDelegate.h */,
 				843292B41C580D5B003F08E8 /* AppDelegate.m */,
+				843292BC1C580D5B003F08E8 /* Assets.xcassets */,
+				843292C11C580D5B003F08E8 /* Info.plist */,
+				843292BE1C580D5B003F08E8 /* Main.storyboard */,
 				843292B91C580D5B003F08E8 /* ViewController.h */,
 				843292BA1C580D5B003F08E8 /* ViewController.m */,
-				843292BC1C580D5B003F08E8 /* Assets.xcassets */,
-				843292BE1C580D5B003F08E8 /* Main.storyboard */,
-				843292C11C580D5B003F08E8 /* Info.plist */,
 				843292B61C580D5B003F08E8 /* Supporting Files */,
 			);
 			path = Fanny;
@@ -174,30 +133,13 @@
 				8468DA7C1E410BEE006D57B9 /* fanIcon.png */,
 				843292B71C580D5B003F08E8 /* main.m */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		843292C91C580D5B003F08E8 /* FannyTests */ = {
-			isa = PBXGroup;
-			children = (
-				843292CA1C580D5B003F08E8 /* TempAndFanMonitorTests.m */,
-				843292CC1C580D5B003F08E8 /* Info.plist */,
-			);
-			path = FannyTests;
-			sourceTree = "<group>";
-		};
-		843292D41C580D5B003F08E8 /* FannyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				843292D51C580D5B003F08E8 /* TempAndFanMonitorUITests.m */,
-				843292D71C580D5C003F08E8 /* Info.plist */,
-			);
-			path = FannyUITests;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		843292E81C580D78003F08E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				843292FF1C580DE0003F08E8 /* SMCWrapper */,
 				843292E91C580D78003F08E8 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -206,11 +148,11 @@
 		843292EB1C580D78003F08E8 /* FannyWidget */ = {
 			isa = PBXGroup;
 			children = (
+				843292F41C580D78003F08E8 /* Info.plist */,
+				843292F51C580D78003F08E8 /* InfoPlist.strings */,
 				843292EE1C580D78003F08E8 /* TodayViewController.h */,
 				843292EF1C580D78003F08E8 /* TodayViewController.m */,
 				843292F11C580D78003F08E8 /* TodayViewController.xib */,
-				843292F41C580D78003F08E8 /* Info.plist */,
-				843292F51C580D78003F08E8 /* InfoPlist.strings */,
 				843292EC1C580D78003F08E8 /* Supporting Files */,
 			);
 			path = FannyWidget;
@@ -221,15 +163,15 @@
 			children = (
 				843292ED1C580D78003F08E8 /* FannyWidget.entitlements */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		843292FF1C580DE0003F08E8 /* SMCWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				843293001C580DE0003F08E8 /* smc.h */,
 				843293011C580DE0003F08E8 /* SMCWrapper.h */,
 				843293021C580DE0003F08E8 /* SMCWrapper.m */,
+				843293001C580DE0003F08E8 /* smc.h */,
 			);
 			path = SMCWrapper;
 			sourceTree = "<group>";
@@ -255,42 +197,6 @@
 			productName = TempAndFanMonitor;
 			productReference = 843292B01C580D5B003F08E8 /* Fanny.app */;
 			productType = "com.apple.product-type.application";
-		};
-		843292C51C580D5B003F08E8 /* FannyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 843292DD1C580D5C003F08E8 /* Build configuration list for PBXNativeTarget "FannyTests" */;
-			buildPhases = (
-				843292C21C580D5B003F08E8 /* Sources */,
-				843292C31C580D5B003F08E8 /* Frameworks */,
-				843292C41C580D5B003F08E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				843292C81C580D5B003F08E8 /* PBXTargetDependency */,
-			);
-			name = FannyTests;
-			productName = TempAndFanMonitorTests;
-			productReference = 843292C61C580D5B003F08E8 /* Fanny.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		843292D01C580D5B003F08E8 /* FannyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 843292E01C580D5C003F08E8 /* Build configuration list for PBXNativeTarget "FannyUITests" */;
-			buildPhases = (
-				843292CD1C580D5B003F08E8 /* Sources */,
-				843292CE1C580D5B003F08E8 /* Frameworks */,
-				843292CF1C580D5B003F08E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				843292D31C580D5B003F08E8 /* PBXTargetDependency */,
-			);
-			name = FannyUITests;
-			productName = TempAndFanMonitorUITests;
-			productReference = 843292D11C580D5B003F08E8 /* Fanny.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		843292E61C580D78003F08E8 /* FannyWidget */ = {
 			isa = PBXNativeTarget;
@@ -331,18 +237,6 @@
 							};
 						};
 					};
-					843292C51C580D5B003F08E8 = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = E5BK5K7RRN;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 843292AF1C580D5B003F08E8;
-					};
-					843292D01C580D5B003F08E8 = {
-						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = E5BK5K7RRN;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 843292AF1C580D5B003F08E8;
-					};
 					843292E61C580D78003F08E8 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = E5BK5K7RRN;
@@ -372,8 +266,6 @@
 			projectRoot = "";
 			targets = (
 				843292AF1C580D5B003F08E8 /* Fanny */,
-				843292C51C580D5B003F08E8 /* FannyTests */,
-				843292D01C580D5B003F08E8 /* FannyUITests */,
 				843292E61C580D78003F08E8 /* FannyWidget */,
 			);
 		};
@@ -387,20 +279,6 @@
 				8468DA7D1E410BEE006D57B9 /* fanIcon.png in Resources */,
 				843292BD1C580D5B003F08E8 /* Assets.xcassets in Resources */,
 				843292C01C580D5B003F08E8 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		843292C41C580D5B003F08E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		843292CF1C580D5B003F08E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,22 +305,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		843292C21C580D5B003F08E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				843292CB1C580D5B003F08E8 /* TempAndFanMonitorTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		843292CD1C580D5B003F08E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				843292D61C580D5B003F08E8 /* TempAndFanMonitorUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		843292E31C580D78003F08E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -455,16 +317,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		843292C81C580D5B003F08E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 843292AF1C580D5B003F08E8 /* Fanny */;
-			targetProxy = 843292C71C580D5B003F08E8 /* PBXContainerItemProxy */;
-		};
-		843292D31C580D5B003F08E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 843292AF1C580D5B003F08E8 /* Fanny */;
-			targetProxy = 843292D21C580D5B003F08E8 /* PBXContainerItemProxy */;
-		};
 		843292F91C580D78003F08E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 843292E61C580D78003F08E8 /* FannyWidget */;
@@ -479,6 +331,7 @@
 				843292BF1C580D5B003F08E8 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		843292F11C580D78003F08E8 /* TodayViewController.xib */ = {
@@ -487,6 +340,7 @@
 				843292F21C580D78003F08E8 /* Base */,
 			);
 			name = TodayViewController.xib;
+			path = .;
 			sourceTree = "<group>";
 		};
 		843292F51C580D78003F08E8 /* InfoPlist.strings */ = {
@@ -495,6 +349,7 @@
 				843292F61C580D78003F08E8 /* en */,
 			);
 			name = InfoPlist.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -619,66 +474,6 @@
 			};
 			name = Release;
 		};
-		843292DE1C580D5C003F08E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = TempAndFanMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorTests;
-				PRODUCT_NAME = Fanny;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fanny.app/Contents/MacOS/Fanny";
-			};
-			name = Debug;
-		};
-		843292DF1C580D5C003F08E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = TempAndFanMonitorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorTests;
-				PRODUCT_NAME = Fanny;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fanny.app/Contents/MacOS/Fanny";
-			};
-			name = Release;
-		};
-		843292E11C580D5C003F08E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = TempAndFanMonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorUITests;
-				PRODUCT_NAME = Fanny;
-				TEST_TARGET_NAME = TempAndFanMonitor;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		843292E21C580D5C003F08E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = TempAndFanMonitorUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DanielStorm.TempAndFanMonitorUITests;
-				PRODUCT_NAME = Fanny;
-				TEST_TARGET_NAME = TempAndFanMonitor;
-				USES_XCTRUNNER = YES;
-			};
-			name = Release;
-		};
 		843292FC1C580D78003F08E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -732,24 +527,6 @@
 			buildConfigurations = (
 				843292DB1C580D5C003F08E8 /* Debug */,
 				843292DC1C580D5C003F08E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		843292DD1C580D5C003F08E8 /* Build configuration list for PBXNativeTarget "FannyTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				843292DE1C580D5C003F08E8 /* Debug */,
-				843292DF1C580D5C003F08E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		843292E01C580D5C003F08E8 /* Build configuration list for PBXNativeTarget "FannyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				843292E11C580D5C003F08E8 /* Debug */,
-				843292E21C580D5C003F08E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
