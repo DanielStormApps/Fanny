@@ -678,7 +678,7 @@
                                     <constraint firstAttribute="width" constant="96" id="FDQ-ng-a4E"/>
                                     <constraint firstAttribute="height" constant="22" id="k0m-Vd-8yO"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" alignment="center" title="Version 1.0.2" id="gtz-nY-qmj">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" state="on" alignment="center" title="Version 1.0.3" id="gtz-nY-qmj">
                                     <font key="font" size="13" name="Avenir-Light"/>
                                     <color key="textColor" name="windowFrameColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="windowBackgroundColor" catalog="System" colorSpace="catalog"/>
