@@ -35,6 +35,9 @@
     
     // Float
     float staticPadding;
+    
+    // NSUserDefaults
+    NSUserDefaults *defaults;
 }
 
 @end
@@ -59,11 +62,14 @@
 
 -(void)viewDidLoad {
     NSLog(@"viewDidLoad");
+    // Setup NSUserDefaults
+    defaults = [[NSUserDefaults alloc] initWithSuiteName:@"TodayExtensionSharingDefaults"];
+    
     // Initially update stats
     [self updateWidget];
     
     // Get number of fans
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"TodayExtensionSharingDefaults"];
+//    defaults = [[NSUserDefaults alloc] initWithSuiteName:@"TodayExtensionSharingDefaults"];
     numberOfFans = (int)[defaults integerForKey:@"numberOfFans"];
     NSLog(@"Number of fans: %d", numberOfFans);
     
@@ -132,8 +138,8 @@
 }
 
 -(void)updateWidget {
-    // Setup NSUserDefaults
-    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"TodayExtensionSharingDefaults"];
+//    // Setup NSUserDefaults
+//    NSUserDefaults *defaults = [[NSUserDefaults alloc] initWithSuiteName:@"TodayExtensionSharingDefaults"];
     
     // Update temperature
     float temperatureFloat = [defaults floatForKey:@"temperature"];

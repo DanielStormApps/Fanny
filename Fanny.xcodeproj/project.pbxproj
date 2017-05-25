@@ -444,7 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fanny/Fanny.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Fanny/Supporting Files/Fanny.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -461,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fanny/Fanny.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Fanny/Supporting Files/Fanny.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -477,7 +477,7 @@
 		843292FC1C580D78003F08E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = FannyWidget/FannyWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "FannyWidget/Supporting Files/FannyWidget.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -495,7 +495,7 @@
 		843292FD1C580D78003F08E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = FannyWidget/FannyWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "FannyWidget/Supporting Files/FannyWidget.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
