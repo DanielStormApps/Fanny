@@ -94,11 +94,11 @@
 		843292A71C580D5B003F08E8 = {
 			isa = PBXGroup;
 			children = (
+				849479001C612FAD00CCCF83 /* README.md */,
 				843292B21C580D5B003F08E8 /* Fanny */,
 				843292EB1C580D78003F08E8 /* FannyWidget */,
 				843292E81C580D78003F08E8 /* Frameworks */,
 				843292B11C580D5B003F08E8 /* Products */,
-				849479001C612FAD00CCCF83 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
