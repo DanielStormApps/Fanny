@@ -93,7 +93,8 @@
     [cpuTempMenuItem setTitleWithMnemonic:@"CPU: 0.0°C"];
     
     // Menu buttons
-    NSMenuItem *info = [[NSMenuItem alloc]initWithTitle:@"Info" action:@selector(infoClicked:) keyEquivalent:@"i"];
+    NSMenuItem *moreApps = [[NSMenuItem alloc]initWithTitle:@"More Apps" action:@selector(moreAppsClicked:) keyEquivalent:@""];
+    NSMenuItem *info = [[NSMenuItem alloc]initWithTitle:@"Info" action:@selector(infoClicked:) keyEquivalent:@""];
     NSMenuItem *quit = [[NSMenuItem alloc]initWithTitle:@"Quit" action:@selector(quitClicked:) keyEquivalent:@"q"];
 
     // Add items to menu
@@ -105,6 +106,7 @@
     [menu addItem:[NSMenuItem separatorItem]];
     [menu addItem:cpuTempMenuItem]; // CPU Temp
     [menu addItem:[NSMenuItem separatorItem]];
+    [menu addItem:moreApps];
     [menu addItem:info];
     [menu addItem:quit];
     
@@ -124,8 +126,8 @@
                                                        repeats:YES];
     
     // Create info window
-    NSStoryboard *storyBoard = [NSStoryboard storyboardWithName:@"Main" bundle:nil]; // get a reference to the storyboard
-    self.infoWindowController = [storyBoard instantiateControllerWithIdentifier:@"infoWindow"]; // instantiate window controller
+    NSStoryboard *storyBoard = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.infoWindowController = [storyBoard instantiateControllerWithIdentifier:@"infoWindow"];
     
     // Check if first run
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
@@ -140,14 +142,16 @@
 }
 
 -(void)infoClicked:(id)sender {
-    NSLog(@"\n\n\ninfo clicked\n\n\n");
-    // Show info window
     [self.infoWindowController showWindow:self];
     [NSApp activateIgnoringOtherApps:YES];
 }
 
+-(void)moreAppsClicked:(id)sender {
+    // Open Mac App Store
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:@"macappstore://itunes.apple.com/developer/daniel-storm/id432169230?mt=12&at=1l3vm3h&ct=FANNY"]];
+}
+
 -(void)quitClicked:(id)sender {
-    NSLog(@"\n\n\nquit clicked\n\n\n");
     [NSApp terminate:self];
 }
 
@@ -307,10 +311,12 @@
     }
     
     // Create menu items
-    NSMenuItem *info = [[NSMenuItem alloc]initWithTitle:@"Info" action:@selector(infoClicked:) keyEquivalent:@"i"];
+    NSMenuItem *moreApps = [[NSMenuItem alloc]initWithTitle:@"More Apps" action:@selector(moreAppsClicked:) keyEquivalent:@""];
+    NSMenuItem *info = [[NSMenuItem alloc]initWithTitle:@"Info" action:@selector(infoClicked:) keyEquivalent:@""];
     NSMenuItem *quit = [[NSMenuItem alloc]initWithTitle:@"Quit" action:@selector(quitClicked:) keyEquivalent:@"q"];
     
     // Add menu items
+    [menu addItem:moreApps];
     [menu addItem:info];
     [menu addItem:quit];
     
