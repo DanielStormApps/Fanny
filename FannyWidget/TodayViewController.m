@@ -85,7 +85,7 @@
     // Create timer to update stats
     [updateWidgetTimer invalidate];
     updateWidgetTimer = nil;
-    updateWidgetTimer = [NSTimer scheduledTimerWithTimeInterval:2.5
+    updateWidgetTimer = [NSTimer scheduledTimerWithTimeInterval:3.0
                                                          target:self
                                                        selector:@selector(updateWidget)
                                                        userInfo:nil

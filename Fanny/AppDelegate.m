@@ -119,7 +119,7 @@
     // Get stats timer
     [updateStatsTimer invalidate];
     updateStatsTimer = nil;
-    updateStatsTimer = [NSTimer scheduledTimerWithTimeInterval:2.5
+    updateStatsTimer = [NSTimer scheduledTimerWithTimeInterval:3.0
                                                         target:self
                                                       selector:@selector(getStats)
                                                       userInfo:nil
