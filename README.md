@@ -6,4 +6,4 @@
 ###### If you're looking to download this application, please visit http://FannyWidget.com/
 
 #### License
-SMCWrapper is released under the GNU General Public License so Fanny is also released under the GNU General Public License.
+[SMCWrapper](https://github.com/FergusInLondon/SMCWrapper) is released under the GNU General Public License so Fanny is also released under the GNU General Public License.
