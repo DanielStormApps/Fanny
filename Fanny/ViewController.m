@@ -30,7 +30,7 @@
     NSLog(@"viewDidLoad");
     
     // Set instructions
-    [instructionTextField setStringValue:@"To enable the Fanny Widget,\nplease open Notification Center,\nclick Edit (at the bottom), then click the\ngreen + icon to the right of Fanny."];
+    [instructionTextField setStringValue:@"To enable the Fanny Widget,\nplease open Notification Center,\nclick New/Edit (at the bottom), then click the\ngreen + icon to the right of Fanny."];
 }
 
 -(void)viewDidAppear {
