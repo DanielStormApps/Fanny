@@ -220,7 +220,7 @@
             [sharedDefaults setInteger:[fanRPM intValue] forKey:fanNumberDefault];
             
             // Set title of fan RPM menu label
-            [fanRPMMenuItem setTitleWithMnemonic:[NSString stringWithFormat:@"Current: %d RPM", [fanRPM intValue]]];
+            [fanRPMMenuItem setTitleWithMnemonic:[[NSString alloc] initWithFormat:@"Current: %d RPM", fanRPM]];
             // Set title color
             NSDictionary *attributes = @{ NSFontAttributeName: [NSFont menuBarFontOfSize:14], NSForegroundColorAttributeName: bodyColor };
             NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:[fanRPMMenuItem title] attributes:attributes];
@@ -237,7 +237,8 @@
             [sharedDefaults setInteger:[tarRPM intValue] forKey:fanNumberDefault];
             
             // Set title of fan target menu label
-            [fanTarMenuItem setTitleWithMnemonic:[NSString stringWithFormat:@"Target: %d RPM", [tarRPM intValue]]];
+            [fanTarMenuItem setTitleWithMnemonic:[[NSString alloc] initWithFormat:@"Target: %d RPM", tarRPM]];
+            
             // Set title color
             NSDictionary *attributes = @{ NSFontAttributeName: [NSFont menuBarFontOfSize:12], NSForegroundColorAttributeName: bodyColor };
             NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:[fanTarMenuItem title] attributes:attributes];
@@ -254,7 +255,7 @@
             [sharedDefaults setInteger:[minRPM intValue] forKey:fanNumberDefault];
             
             // Set title of fan min menu label
-            [fanMinMenuItem setTitleWithMnemonic:[NSString stringWithFormat:@"Min: %d RPM", [minRPM intValue]]];
+            [fanMinMenuItem setTitleWithMnemonic:[[NSString alloc] initWithFormat:@"Min: %d RPM", minRPM]];
             // Set title color
             NSDictionary *attributes = @{ NSFontAttributeName: [NSFont menuBarFontOfSize:12], NSForegroundColorAttributeName: bodyColor };
             NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:[fanMinMenuItem title] attributes:attributes];
@@ -271,7 +272,7 @@
             [sharedDefaults setInteger:[maxRPM intValue] forKey:fanNumberDefault];
             
             // Set title of fan max menu label
-            [fanMaxMenuItem setTitleWithMnemonic:[NSString stringWithFormat:@"Max: %d RPM", [maxRPM intValue]]];
+            [fanMaxMenuItem setTitleWithMnemonic:[[NSString alloc] initWithFormat:@"Max: %d RPM", maxRPM]];
             // Set title color
             NSDictionary *attributes = @{ NSFontAttributeName: [NSFont menuBarFontOfSize:12], NSForegroundColorAttributeName: bodyColor };
             NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:[fanMaxMenuItem title] attributes:attributes];
