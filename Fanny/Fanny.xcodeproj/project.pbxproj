@@ -20,10 +20,14 @@
 		84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D43231D7C9A00B8A9D5 /* Device.swift */; };
 		84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */; };
 		84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */; };
-		84C31D50231D7C9A00B8A9D5 /* SMC+Fans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */; };
 		84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */; };
 		84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D49231D7C9A00B8A9D5 /* SMC.swift */; };
 		84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */; };
+		84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */; };
+		84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5C231D875300B8A9D5 /* FNYMenu.swift */; };
+		84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */; };
+		84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */; };
+		84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D63231D913E00B8A9D5 /* status-item-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,10 @@
 		84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+GPU.swift"; sourceTree = "<group>"; };
 		84C31D49231D7C9A00B8A9D5 /* SMC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMC.swift; path = smc/SMC/SMC.swift; sourceTree = "<group>"; };
 		84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Temperature.swift; path = smc/SMC/Temperature.swift; sourceTree = "<group>"; };
+		84C31D5C231D875300B8A9D5 /* FNYMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenu.swift; sourceTree = "<group>"; };
+		84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYStatusBar.swift; sourceTree = "<group>"; };
+		84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenuController.swift; sourceTree = "<group>"; };
+		84C31D63231D913E00B8A9D5 /* status-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +126,10 @@
 			isa = PBXGroup;
 			children = (
 				84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */,
+				84C31D5B231D871D00B8A9D5 /* Menu */,
 				84C31CEB231D776D00B8A9D5 /* MainMenu.xib */,
 				84C31CE9231D776D00B8A9D5 /* Assets.xcassets */,
+				84C31D63231D913E00B8A9D5 /* status-item-icon.png */,
 				84C31CEE231D776D00B8A9D5 /* Info.plist */,
 				84C31CEF231D776D00B8A9D5 /* Fanny.entitlements */,
 			);
@@ -185,6 +195,16 @@
 			);
 			name = Hardware;
 			path = smc/SMC/Hardware;
+			sourceTree = "<group>";
+		};
+		84C31D5B231D871D00B8A9D5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */,
+				84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */,
+				84C31D5C231D875300B8A9D5 /* FNYMenu.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */,
+				84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */,
 				84C31CED231D776D00B8A9D5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,10 +315,13 @@
 				84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */,
 				84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */,
 				84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */,
+				84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */,
+				84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */,
 				84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */,
 				84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */,
-				84C31D50231D7C9A00B8A9D5 /* SMC+Fans.swift in Sources */,
+				84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */,
 				84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */,
+				84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */,
 				84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
