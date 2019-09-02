@@ -15,6 +15,15 @@
 		84C31D02231D78B600B8A9D5 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D00231D78B600B8A9D5 /* TodayViewController.xib */; };
 		84C31D06231D78B600B8A9D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D04231D78B600B8A9D5 /* InfoPlist.strings */; };
 		84C31D0A231D78B600B8A9D5 /* FannyWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */; };
+		84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */; };
+		84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D43231D7C9A00B8A9D5 /* Device.swift */; };
+		84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */; };
+		84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */; };
+		84C31D50231D7C9A00B8A9D5 /* SMC+Fans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */; };
+		84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */; };
+		84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D49231D7C9A00B8A9D5 /* SMC.swift */; };
+		84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,15 @@
 		84C31D03231D78B600B8A9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C31D05231D78B600B8A9D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C31D07231D78B600B8A9D5 /* FannyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FannyWidget.entitlements; sourceTree = "<group>"; };
+		84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Sensor.swift"; path = "smc/SMC/SMC+Sensor.swift"; sourceTree = "<group>"; };
+		84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMCStructure.swift; path = smc/SMC/SMCStructure.swift; sourceTree = "<group>"; };
+		84C31D43231D7C9A00B8A9D5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = smc/SMC/Device.swift; sourceTree = "<group>"; };
+		84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Extensions.swift"; path = "smc/SMC/SMC+Extensions.swift"; sourceTree = "<group>"; };
+		84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+CPU.swift"; sourceTree = "<group>"; };
+		84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+Fans.swift"; sourceTree = "<group>"; };
+		84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+GPU.swift"; sourceTree = "<group>"; };
+		84C31D49231D7C9A00B8A9D5 /* SMC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMC.swift; path = smc/SMC/SMC.swift; sourceTree = "<group>"; };
+		84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Temperature.swift; path = smc/SMC/Temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 				84C31CFD231D78B600B8A9D5 /* FannyWidget */,
 				84C31CFA231D78B600B8A9D5 /* Frameworks */,
 				84C31CE5231D776C00B8A9D5 /* Products */,
+				84C31D0F231D7C6200B8A9D5 /* Submodules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +144,47 @@
 				84C31D07231D78B600B8A9D5 /* FannyWidget.entitlements */,
 			);
 			path = FannyWidget;
+			sourceTree = "<group>";
+		};
+		84C31D0F231D7C6200B8A9D5 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D10231D7C6200B8A9D5 /* Internal */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		84C31D10231D7C6200B8A9D5 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D11231D7C6200B8A9D5 /* SMC */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		84C31D11231D7C6200B8A9D5 /* SMC */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D49231D7C9A00B8A9D5 /* SMC.swift */,
+				84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */,
+				84C31D43231D7C9A00B8A9D5 /* Device.swift */,
+				84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */,
+				84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */,
+				84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */,
+				84C31D45231D7C9A00B8A9D5 /* Hardware */,
+			);
+			path = SMC;
+			sourceTree = "<group>";
+		};
+		84C31D45231D7C9A00B8A9D5 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */,
+				84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */,
+				84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */,
+			);
+			name = Hardware;
+			path = smc/SMC/Hardware;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +289,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */,
+				84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */,
+				84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */,
+				84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */,
 				84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */,
+				84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */,
+				84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */,
+				84C31D50231D7C9A00B8A9D5 /* SMC+Fans.swift in Sources */,
+				84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */,
+				84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
