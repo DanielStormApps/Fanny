@@ -37,6 +37,8 @@
 		84E99400232EE6FC009000FC /* FNYMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F0232ECDF8009000FC /* FNYMonitor.swift */; };
 		84E99401232EE704009000FC /* FNYLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */; };
 		84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */; };
+		84E99404232EEB3D009000FC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E99403232EEB3D009000FC /* Global.swift */; };
+		84E99405232EEB55009000FC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E99403232EEB3D009000FC /* Global.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,7 @@
 		84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYDelegateMulticast.swift; sourceTree = "<group>"; };
 		84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLocalStorage.swift; sourceTree = "<group>"; };
 		84E993FC232EE67A009000FC /* Fan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fan.swift; sourceTree = "<group>"; };
+		84E99403232EEB3D009000FC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */,
+				84E99403232EEB3D009000FC /* Global.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -367,6 +371,7 @@
 				84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */,
 				84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */,
 				84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */,
+				84E99404232EEB3D009000FC /* Global.swift in Sources */,
 				84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */,
 				84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */,
 				84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */,
@@ -389,6 +394,7 @@
 				84E993FE232EE69B009000FC /* Fan.swift in Sources */,
 				84E993FF232EE69E009000FC /* Temperature.swift in Sources */,
 				84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */,
+				84E99405232EEB55009000FC /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
