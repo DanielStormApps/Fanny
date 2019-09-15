@@ -129,7 +129,7 @@ extension FNYMenuController {
 
 private extension Fan {
     
-    // MARK: - SMC.Fan
+    // MARK: - Fan
     func menuItems() -> [NSMenuItem] {
         var items: [NSMenuItem] = []
         
