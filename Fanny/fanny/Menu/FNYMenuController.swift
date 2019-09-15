@@ -84,6 +84,15 @@ class FNYMenuController {
     
 }
 
+extension FNYMenuController: FNYMonitorDelegate {
+    
+    // MARK: - FNYMonitorDelegate
+    func monitor(_ monitor: FNYMonitor, didRefreshSystemStats stats: (fans: [SMC.Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?)) {
+        updateMenuItems()
+    }
+    
+}
+
 extension FNYMenuController {
     
     // MARK: - Default Menu Items

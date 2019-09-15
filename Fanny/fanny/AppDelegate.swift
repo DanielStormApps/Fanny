@@ -13,10 +13,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
     
-    private var menuController: FNYMenuController?
+    private var menuController: FNYMenuController!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         menuController = FNYMenuController()
+        
+        FNYMonitor.shared.start()
+        FNYMonitor.shared.delegate.add(menuController)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
