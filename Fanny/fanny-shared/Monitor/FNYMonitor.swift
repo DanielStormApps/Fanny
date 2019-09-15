@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FNYMonitorDelegate {
-    func monitor(_ monitor: FNYMonitor, didRefreshSystemStats stats: (fans: [SMC.Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?))
+    func monitorDidRefreshSystemStats(_ monitor: FNYMonitor)
 }
 
 class FNYMonitor {
@@ -55,16 +55,21 @@ class FNYMonitor {
     
     // MARK: - Refresh
     @objc private func refresh() {
-        let fans = SMC.shared.fans()
-        let cpuTemperature = SMC.shared.cpuTemperature()
-        let gpuTemperature = SMC.shared.gpuTemperature()
+        #if APP_EXTENSION
+            //
+        #else
+            let fans = SMC.shared.fans()
+            let cpuTemperature = SMC.shared.cpuTemperature()
+            let gpuTemperature = SMC.shared.gpuTemperature()
         
-        updateLocalStorageSystemStats((fans: fans, cpuTemperature: cpuTemperature, gpuTemperature: gpuTemperature))
-        delegate.invoke({ $0.monitor(self, didRefreshSystemStats: (fans: fans, cpuTemperature: cpuTemperature, gpuTemperature: gpuTemperature)) })
+            updateLocalStorageSystemStats((fans: fans, cpuTemperature: cpuTemperature, gpuTemperature: gpuTemperature))
+        #endif
+        
+        delegate.invoke({ $0.monitorDidRefreshSystemStats(self) })
     }
     
     // MARK: - Save
-    private func updateLocalStorageSystemStats(_ stats: (fans: [SMC.Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?)) {
+    private func updateLocalStorageSystemStats(_ stats: (fans: [Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?)) {
         FNYLocalStorage.save(fans: stats.fans)
         FNYLocalStorage.save(cpuTemperature: stats.cpuTemperature)
         FNYLocalStorage.save(gpuTemperature: stats.gpuTemperature)

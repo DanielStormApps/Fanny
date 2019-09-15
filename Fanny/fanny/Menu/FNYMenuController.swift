@@ -35,7 +35,7 @@ class FNYMenuController {
     }
     
     // MARK: - Formatted Menu Items
-    private func menuItems(fans: [SMC.Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?) -> [NSMenuItem] {
+    private func menuItems(fans: [Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?) -> [NSMenuItem] {
         var items: [NSMenuItem] = []
         
         for fan in fans {
@@ -85,9 +85,9 @@ class FNYMenuController {
 }
 
 extension FNYMenuController: FNYMonitorDelegate {
-    
+
     // MARK: - FNYMonitorDelegate
-    func monitor(_ monitor: FNYMonitor, didRefreshSystemStats stats: (fans: [SMC.Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?)) {
+    func monitorDidRefreshSystemStats(_ monitor: FNYMonitor) {
         updateMenuItems()
     }
     
@@ -127,7 +127,7 @@ extension FNYMenuController {
     
 }
 
-private extension SMC.Fan {
+private extension Fan {
     
     // MARK: - SMC.Fan
     func menuItems() -> [NSMenuItem] {
