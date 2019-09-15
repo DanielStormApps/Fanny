@@ -12,10 +12,11 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
-
+    
+    private var menuController: FNYMenuController?
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        //
+        menuController = FNYMenuController()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

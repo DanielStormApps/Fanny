@@ -20,10 +20,14 @@
 		84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D43231D7C9A00B8A9D5 /* Device.swift */; };
 		84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */; };
 		84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */; };
-		84C31D50231D7C9A00B8A9D5 /* SMC+Fans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */; };
 		84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */; };
 		84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D49231D7C9A00B8A9D5 /* SMC.swift */; };
 		84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */; };
+		84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */; };
+		84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5C231D875300B8A9D5 /* FNYMenu.swift */; };
+		84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */; };
+		84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */; };
+		84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D63231D913E00B8A9D5 /* status-item-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +60,14 @@
 		84C31CE9231D776D00B8A9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84C31CEC231D776D00B8A9D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		84C31CEE231D776D00B8A9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84C31CEF231D776D00B8A9D5 /* Fanny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fanny.entitlements; sourceTree = "<group>"; };
+		84C31CEF231D776D00B8A9D5 /* fanny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fanny.entitlements; sourceTree = "<group>"; };
 		84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FannyWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C31CFB231D78B600B8A9D5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		84C31CFE231D78B600B8A9D5 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		84C31D01231D78B600B8A9D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		84C31D03231D78B600B8A9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C31D05231D78B600B8A9D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		84C31D07231D78B600B8A9D5 /* FannyWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FannyWidget.entitlements; sourceTree = "<group>"; };
+		84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fanny-widget.entitlements"; sourceTree = "<group>"; };
 		84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Sensor.swift"; path = "smc/SMC/SMC+Sensor.swift"; sourceTree = "<group>"; };
 		84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMCStructure.swift; path = smc/SMC/SMCStructure.swift; sourceTree = "<group>"; };
 		84C31D43231D7C9A00B8A9D5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = smc/SMC/Device.swift; sourceTree = "<group>"; };
@@ -73,6 +77,10 @@
 		84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+GPU.swift"; sourceTree = "<group>"; };
 		84C31D49231D7C9A00B8A9D5 /* SMC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMC.swift; path = smc/SMC/SMC.swift; sourceTree = "<group>"; };
 		84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Temperature.swift; path = smc/SMC/Temperature.swift; sourceTree = "<group>"; };
+		84C31D5C231D875300B8A9D5 /* FNYMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenu.swift; sourceTree = "<group>"; };
+		84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYStatusBar.swift; sourceTree = "<group>"; };
+		84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenuController.swift; sourceTree = "<group>"; };
+		84C31D63231D913E00B8A9D5 /* status-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +105,9 @@
 		84C31CDB231D776C00B8A9D5 = {
 			isa = PBXGroup;
 			children = (
-				84C31CE6231D776C00B8A9D5 /* Fanny */,
-				84C31CFD231D78B600B8A9D5 /* FannyWidget */,
+				84E993EF232ECBC7009000FC /* fanny-shared */,
+				84C31CE6231D776C00B8A9D5 /* fanny */,
+				84C31CFD231D78B600B8A9D5 /* fanny-widget */,
 				84C31CFA231D78B600B8A9D5 /* Frameworks */,
 				84C31CE5231D776C00B8A9D5 /* Products */,
 				84C31D0F231D7C6200B8A9D5 /* Submodules */,
@@ -114,16 +123,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84C31CE6231D776C00B8A9D5 /* Fanny */ = {
+		84C31CE6231D776C00B8A9D5 /* fanny */ = {
 			isa = PBXGroup;
 			children = (
 				84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */,
+				84E993EE232ECB99009000FC /* Monitor */,
+				84C31D5B231D871D00B8A9D5 /* Menu */,
 				84C31CEB231D776D00B8A9D5 /* MainMenu.xib */,
 				84C31CE9231D776D00B8A9D5 /* Assets.xcassets */,
+				84C31D63231D913E00B8A9D5 /* status-item-icon.png */,
 				84C31CEE231D776D00B8A9D5 /* Info.plist */,
-				84C31CEF231D776D00B8A9D5 /* Fanny.entitlements */,
+				84C31CEF231D776D00B8A9D5 /* fanny.entitlements */,
 			);
-			path = Fanny;
+			path = fanny;
 			sourceTree = "<group>";
 		};
 		84C31CFA231D78B600B8A9D5 /* Frameworks */ = {
@@ -134,16 +146,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		84C31CFD231D78B600B8A9D5 /* FannyWidget */ = {
+		84C31CFD231D78B600B8A9D5 /* fanny-widget */ = {
 			isa = PBXGroup;
 			children = (
 				84C31CFE231D78B600B8A9D5 /* TodayViewController.swift */,
 				84C31D00231D78B600B8A9D5 /* TodayViewController.xib */,
 				84C31D03231D78B600B8A9D5 /* Info.plist */,
 				84C31D04231D78B600B8A9D5 /* InfoPlist.strings */,
-				84C31D07231D78B600B8A9D5 /* FannyWidget.entitlements */,
+				84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */,
 			);
-			path = FannyWidget;
+			path = "fanny-widget";
 			sourceTree = "<group>";
 		};
 		84C31D0F231D7C6200B8A9D5 /* Submodules */ = {
@@ -185,6 +197,30 @@
 			);
 			name = Hardware;
 			path = smc/SMC/Hardware;
+			sourceTree = "<group>";
+		};
+		84C31D5B231D871D00B8A9D5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */,
+				84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */,
+				84C31D5C231D875300B8A9D5 /* FNYMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		84E993EE232ECB99009000FC /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		84E993EF232ECBC7009000FC /* fanny-shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "fanny-shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */,
+				84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */,
 				84C31CED231D776D00B8A9D5 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,10 +331,13 @@
 				84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */,
 				84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */,
 				84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */,
+				84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */,
+				84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */,
 				84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */,
 				84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */,
-				84C31D50231D7C9A00B8A9D5 /* SMC+Fans.swift in Sources */,
+				84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */,
 				84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */,
+				84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */,
 				84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,11 +508,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fanny/Fanny.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fanny/fanny.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = Fanny/Info.plist;
+				INFOPLIST_FILE = fanny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -489,11 +529,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Fanny/Fanny.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Fanny/fanny.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = Fanny/Info.plist;
+				INFOPLIST_FILE = fanny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -508,11 +548,11 @@
 		84C31D0C231D78B600B8A9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = FannyWidget/FannyWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "fanny-widget/fanny-widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = FannyWidget/Info.plist;
+				INFOPLIST_FILE = "fanny-widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -529,11 +569,11 @@
 		84C31D0D231D78B600B8A9D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = FannyWidget/FannyWidget.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "fanny-widget/fanny-widget.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
-				INFOPLIST_FILE = FannyWidget/Info.plist;
+				INFOPLIST_FILE = "fanny-widget/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
