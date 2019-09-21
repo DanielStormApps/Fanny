@@ -11,12 +11,14 @@ import NotificationCenter
 
 class FNYWidgetViewController: NSViewController, NCWidgetProviding {
     
+    @IBOutlet private weak var containerView: NSView!
+    
     @IBOutlet private weak var headerTextField: FNYTextField!
     @IBOutlet private weak var radioButtonStackView: NSStackView! {
         didSet {
             radioButtonStackView.translatesAutoresizingMaskIntoConstraints = false
             radioButtonStackView.alphaValue = 0.0
-            radioButtonStackView.spacing = 32.0
+            radioButtonStackView.spacing = 8.0
         }
     }
     
@@ -24,14 +26,14 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
     @IBOutlet private weak var minimumRPMTextField: FNYTextField!
     @IBOutlet private weak var maximumRPMTextField: FNYTextField!
     @IBOutlet private weak var targetRPMTextField: FNYTextField!
-    
+
     @IBOutlet private weak var cpuTemperatureTextField: FNYTextField!
     @IBOutlet private weak var gpuTemperatureTextField: FNYTextField!
     
     private var selectedRadioButtonTag: Int = 0
     
     override var nibName: NSNib.Name? {
-        return NSNib.Name(String(describing: self))
+        return NSNib.Name("FNYWidgetViewController")
     }
     
     // MARK: - View Cycle
@@ -62,8 +64,8 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
         maximumRPMTextField.stringValue = "\(selectedFan.maximumRPM ?? 0) RPM"
         targetRPMTextField.stringValue = "\(selectedFan.targetRPM ?? 0) RPM"
 
-        cpuTemperatureTextField.stringValue = String(format: "CPU: %.02f °C", FNYLocalStorage.cpuTemperature()?.celsius ?? 0.0)
-        gpuTemperatureTextField.stringValue = String(format: "GPU: %.02f °C", FNYLocalStorage.gpuTemperature()?.celsius ?? 0.0)
+        cpuTemperatureTextField.stringValue = String(format: "%.02f °C", FNYLocalStorage.cpuTemperature()?.celsius ?? 0.0)
+        gpuTemperatureTextField.stringValue = String(format: "%.02f °C", FNYLocalStorage.gpuTemperature()?.celsius ?? 0.0)
     }
     
     // MARK: - Radio Button Action
@@ -76,6 +78,7 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
     private func updateStackViewIfNeeded() {
         guard
             let numberOfFans = FNYLocalStorage.numberOfFans(),
+            numberOfFans > 1,
             radioButtonStackView.subviews.count != numberOfFans
             else { return }
         
@@ -91,6 +94,8 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
             
             radioButtonStackView.addArrangedSubview(radioButton)
         }
+        
+        radioButtonStackView.alphaValue = 1.0
     }
     
 }

@@ -34,6 +34,7 @@ class FNYRadioButton: NSButton {
     private func setup() {
         setButtonType(.radio)
         controlSize = .mini
+        title = String()
     }
     
 }
