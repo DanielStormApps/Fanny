@@ -14,20 +14,20 @@ class FNYLocalStorage {
     private static let sharedDefaults: UserDefaults = UserDefaults(suiteName: FNYLocalStorage.sharedDefaultsSuiteName)!
     
     // MARK: - Fans
-    static func save(fans: [SMC.Fan]) {
+    static func save(fans: [Fan]) {
         save(numberOfFans: fans.count)
         for i in 0..<fans.count {
             sharedDefaults.set(fans[i].dictionaryRepresentation(), forKey: FNYStorageKey.fan(index: i).stringValue)
         }
     }
     
-    static func fans() -> [SMC.Fan] {
+    static func fans() -> [Fan] {
         guard let numberOfFans = FNYLocalStorage.numberOfFans() else { return [] }
-        var fans: [SMC.Fan] = []
+        var fans: [Fan] = []
         
         for i in 0..<numberOfFans {
             guard let dictionary = sharedDefaults.object(forKey: FNYStorageKey.fan(index: i).stringValue) as? [String: Any] else { continue }
-            fans.append(SMC.Fan.from(dictionary: dictionary))
+            fans.append(Fan.from(dictionary: dictionary))
         }
         
         return fans
