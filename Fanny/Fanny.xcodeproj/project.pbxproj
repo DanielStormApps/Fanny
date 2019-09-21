@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8410EFB42336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
 		8410EFB52336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
+		8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB72336B5B50003F94C /* FNYLauncher.swift */; };
 		84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */; };
 		84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C31CE9231D776D00B8A9D5 /* Assets.xcassets */; };
 		84C31CED231D776D00B8A9D5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C31CEB231D776D00B8A9D5 /* MainMenu.xib */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		8410EFB32336998D0003F94C /* Fan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fan.swift; path = smc/SMC/Fan.swift; sourceTree = "<group>"; };
+		8410EFB72336B5B50003F94C /* FNYLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLauncher.swift; sourceTree = "<group>"; };
 		84C31CE4231D776C00B8A9D5 /* Fanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C31CE9231D776D00B8A9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -122,6 +124,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8410EFB62336B5A50003F94C /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				8410EFB72336B5B50003F94C /* FNYLauncher.swift */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
 		84C31CDB231D776C00B8A9D5 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				84E9940C232EF0C0009000FC /* Widget */,
+				8410EFB62336B5A50003F94C /* Launcher */,
 				84E9940E232EF248009000FC /* Button */,
 				84E9940D232EF0D8009000FC /* TextField */,
 				84C31D03231D78B600B8A9D5 /* Info.plist */,
@@ -423,6 +434,7 @@
 				84E99409232EEC88009000FC /* FNYWidgetViewController.swift in Sources */,
 				84E99401232EE704009000FC /* FNYLocalStorage.swift in Sources */,
 				84E99400232EE6FC009000FC /* FNYMonitor.swift in Sources */,
+				8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */,
 				84E9940B232EEF7F009000FC /* FNYTextField.swift in Sources */,
 				84E993FF232EE69E009000FC /* Temperature.swift in Sources */,
 				84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */,

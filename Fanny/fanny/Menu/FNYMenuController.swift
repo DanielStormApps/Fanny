@@ -159,7 +159,7 @@ private extension Fan {
         
         if !items.isEmpty {
             let item = NSMenuItem()
-            item.title = "Fan: #\(String(self.identifier))"
+            item.title = "Fan: #\(String(self.identifier + 1))"
             items.insert(item, at: 0)
         }
         

@@ -30,10 +30,11 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
     @IBOutlet private weak var cpuTemperatureTextField: FNYTextField!
     @IBOutlet private weak var gpuTemperatureTextField: FNYTextField!
     
+    private let widgetNibName: String = "FNYWidgetViewController"
     private var selectedRadioButtonTag: Int = 0
     
     override var nibName: NSNib.Name? {
-        return NSNib.Name("FNYWidgetViewController")
+        return NSNib.Name(widgetNibName)
     }
     
     // MARK: - View Cycle
@@ -43,6 +44,11 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
         
         FNYMonitor.shared.start()
         FNYMonitor.shared.delegate.add(self)
+    }
+    
+    override func viewDidAppear() {
+        super.viewDidAppear()
+        FNYLauncher.shared.launchParentApplicationIfNeeded()
     }
     
     // MARK: - Widget Cycle
