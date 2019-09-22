@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="3er-qC-rPb">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14868"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="ak3-IE-nhh">
+            <objects>
+                <windowController storyboardIdentifier="FNYPreferencesWindow" id="3er-qC-rPb" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="FNYPreferences" animationBehavior="default" id="m3U-ws-IbH">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+                        <rect key="contentRect" x="425" y="461" width="320" height="400"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
+                        <connections>
+                            <outlet property="delegate" destination="3er-qC-rPb" id="Hrg-iF-W2W"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="f7D-mS-rfl" kind="relationship" relationship="window.shadowedContentViewController" id="JwY-0I-S8l"/>
+                    </connections>
+                </windowController>
+                <customObject id="K9L-ve-v2K" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="36"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="h7a-Dp-n4Q">
+            <objects>
+                <viewController id="f7D-mS-rfl" customClass="FNYPreferencesViewController" customModule="Fanny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="FFZ-n6-WSA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MU-ci-1bf" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
+                                <rect key="frame" x="18" y="96" width="170" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="Temperature Unit:" id="Epb-B2-ugL">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-Ta-jTg">
+                                <rect key="frame" x="192" y="90" width="111" height="25"/>
+                                <popUpButtonCell key="cell" type="push" title="Celsius (°C)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9jW-RZ-YJi" id="GOw-Ce-2dm">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <menu key="menu" id="c0J-uF-Kk8">
+                                        <items>
+                                            <menuItem title="Celsius (°C)" state="on" id="9jW-RZ-YJi"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="temperatureUnitPopUpButtonOptionClicked:" target="f7D-mS-rfl" id="KK7-9g-Z25"/>
+                                </connections>
+                            </popUpButton>
+                            <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-0r-rVv">
+                                <rect key="frame" x="20" y="70" width="280" height="5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ahu-Bh-N7S"/>
+                                </constraints>
+                            </box>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="SH4-BH-lnm">
+                                <rect key="frame" x="144" y="32" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="5ze-be-HkU"/>
+                                    <constraint firstAttribute="width" constant="32" id="ccl-vP-dfu"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="GitHub-Mark" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="mhZ-km-pNI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="gitHubButtonClicked:" target="f7D-mS-rfl" id="8Ki-s2-2Tj"/>
+                                </connections>
+                            </button>
+                            <textField verticalHuggingPriority="750" alphaValue="0.40000000000000002" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnS-gL-Ld2" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
+                                <rect key="frame" x="138" y="8" width="45" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="center" title="v0.0.0" id="LuI-8D-TRt">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Nk5-0r-rVv" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="0yp-14-IYO"/>
+                            <constraint firstItem="UnS-gL-Ld2" firstAttribute="top" secondItem="SH4-BH-lnm" secondAttribute="bottom" constant="8" id="4sf-ZV-bYc"/>
+                            <constraint firstItem="qPJ-Ta-jTg" firstAttribute="leading" secondItem="9MU-ci-1bf" secondAttribute="trailing" constant="8" id="8df-hq-uKq"/>
+                            <constraint firstItem="UnS-gL-Ld2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="BEz-S7-hcq"/>
+                            <constraint firstItem="SH4-BH-lnm" firstAttribute="top" secondItem="Nk5-0r-rVv" secondAttribute="bottom" constant="8" id="K8v-ZK-byW"/>
+                            <constraint firstItem="qPJ-Ta-jTg" firstAttribute="centerY" secondItem="9MU-ci-1bf" secondAttribute="centerY" id="OyP-Jm-BzB"/>
+                            <constraint firstItem="UnS-gL-Ld2" firstAttribute="centerX" secondItem="FFZ-n6-WSA" secondAttribute="centerX" id="Q85-ta-inS"/>
+                            <constraint firstItem="SH4-BH-lnm" firstAttribute="centerX" secondItem="FFZ-n6-WSA" secondAttribute="centerX" id="QDK-L0-ESp"/>
+                            <constraint firstItem="9MU-ci-1bf" firstAttribute="top" secondItem="FFZ-n6-WSA" secondAttribute="top" constant="20" id="aFh-sr-7hp"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UnS-gL-Ld2" secondAttribute="trailing" constant="20" id="cHc-2b-gUn"/>
+                            <constraint firstItem="Nk5-0r-rVv" firstAttribute="centerX" secondItem="FFZ-n6-WSA" secondAttribute="centerX" id="cbH-X3-5Z7"/>
+                            <constraint firstItem="Nk5-0r-rVv" firstAttribute="top" secondItem="qPJ-Ta-jTg" secondAttribute="bottom" constant="20" id="dyA-Bj-JMF"/>
+                            <constraint firstAttribute="bottom" secondItem="UnS-gL-Ld2" secondAttribute="bottom" constant="8" id="kL7-Oz-8zT"/>
+                            <constraint firstItem="9MU-ci-1bf" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="ogA-ho-GOQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Nk5-0r-rVv" secondAttribute="trailing" constant="20" id="tdS-94-Sdy"/>
+                            <constraint firstAttribute="trailing" secondItem="qPJ-Ta-jTg" secondAttribute="trailing" constant="20" id="wxK-OE-YGb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gitHubButton" destination="SH4-BH-lnm" id="onC-JC-iWi"/>
+                        <outlet property="temperatureUnitPopUpButton" destination="qPJ-Ta-jTg" id="jCg-N6-lEk"/>
+                        <outlet property="versionTextField" destination="UnS-gL-Ld2" id="6or-7P-nMH"/>
+                    </connections>
+                </viewController>
+                <customObject id="tf9-Ym-zfJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GitHub-Mark" width="32" height="32"/>
+    </resources>
+</document>

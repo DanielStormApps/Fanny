@@ -1,0 +1,775 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8410EFB42336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
+		8410EFB52336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
+		8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB72336B5B50003F94C /* FNYLauncher.swift */; };
+		8410EFBC2336C4690003F94C /* FNYPreferencesWindow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8410EFBB2336C4690003F94C /* FNYPreferencesWindow.storyboard */; };
+		8410EFBE2336C7230003F94C /* FNYPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFBD2336C7230003F94C /* FNYPreferencesViewController.swift */; };
+		8410EFBF2336C8E00003F94C /* FNYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9940A232EEF7F009000FC /* FNYTextField.swift */; };
+		8410EFC22336CBA40003F94C /* Main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8410EFC02336CBA40003F94C /* Main.xib */; };
+		8410EFC42336D4310003F94C /* FNYWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E99408232EEC88009000FC /* FNYWidgetViewController.swift */; };
+		8410EFC52336D50B0003F94C /* FNYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9940A232EEF7F009000FC /* FNYTextField.swift */; };
+		8410EFC72336DD6A0003F94C /* FNYUserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFC62336DD6A0003F94C /* FNYUserPreferences.swift */; };
+		8410EFC82336DD6A0003F94C /* FNYUserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFC62336DD6A0003F94C /* FNYUserPreferences.swift */; };
+		8410EFCB2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */; };
+		8410EFCC2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */; };
+		8410EFCE2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
+		8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
+		84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */; };
+		84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C31CE9231D776D00B8A9D5 /* Assets.xcassets */; };
+		84C31CFC231D78B600B8A9D5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C31CFB231D78B600B8A9D5 /* NotificationCenter.framework */; };
+		84C31D02231D78B600B8A9D5 /* FNYWidgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D00231D78B600B8A9D5 /* FNYWidgetViewController.xib */; };
+		84C31D06231D78B600B8A9D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D04231D78B600B8A9D5 /* InfoPlist.strings */; };
+		84C31D0A231D78B600B8A9D5 /* FannyWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */; };
+		84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */; };
+		84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D43231D7C9A00B8A9D5 /* Device.swift */; };
+		84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */; };
+		84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */; };
+		84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */; };
+		84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D49231D7C9A00B8A9D5 /* SMC.swift */; };
+		84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */; };
+		84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */; };
+		84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5C231D875300B8A9D5 /* FNYMenu.swift */; };
+		84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */; };
+		84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */; };
+		84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D63231D913E00B8A9D5 /* status-item-icon.png */; };
+		84E993F1232ECDF8009000FC /* FNYMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F0232ECDF8009000FC /* FNYMonitor.swift */; };
+		84E993F3232ECE5E009000FC /* FNYDelegateMulticast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */; };
+		84E993F9232ED2F8009000FC /* FNYLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */; };
+		84E993FF232EE69E009000FC /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */; };
+		84E99400232EE6FC009000FC /* FNYMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F0232ECDF8009000FC /* FNYMonitor.swift */; };
+		84E99401232EE704009000FC /* FNYLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */; };
+		84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */; };
+		84E99404232EEB3D009000FC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E99403232EEB3D009000FC /* Global.swift */; };
+		84E99405232EEB55009000FC /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E99403232EEB3D009000FC /* Global.swift */; };
+		84E99410232EF25A009000FC /* FNYRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E9940F232EF25A009000FC /* FNYRadioButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84C31D08231D78B600B8A9D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C31CDC231D776C00B8A9D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C31CF8231D78B500B8A9D5;
+			remoteInfo = FannyWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		84C31D0E231D78B600B8A9D5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84C31D0A231D78B600B8A9D5 /* FannyWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8410EFB32336998D0003F94C /* Fan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fan.swift; path = smc/SMC/Fan.swift; sourceTree = "<group>"; };
+		8410EFB72336B5B50003F94C /* FNYLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLauncher.swift; sourceTree = "<group>"; };
+		8410EFBB2336C4690003F94C /* FNYPreferencesWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FNYPreferencesWindow.storyboard; sourceTree = "<group>"; };
+		8410EFBD2336C7230003F94C /* FNYPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYPreferencesViewController.swift; sourceTree = "<group>"; };
+		8410EFC12336CBA40003F94C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Main.xib; sourceTree = "<group>"; };
+		8410EFC62336DD6A0003F94C /* FNYUserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYUserPreferences.swift; sourceTree = "<group>"; };
+		8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temperature+FNYExtensions.swift"; sourceTree = "<group>"; };
+		8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FNYExtensions.swift"; sourceTree = "<group>"; };
+		84C31CE4231D776C00B8A9D5 /* Fanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C31CE9231D776D00B8A9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C31CEE231D776D00B8A9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C31CEF231D776D00B8A9D5 /* fanny.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fanny.entitlements; sourceTree = "<group>"; };
+		84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FannyWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C31CFB231D78B600B8A9D5 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		84C31D01231D78B600B8A9D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FNYWidgetViewController.xib; sourceTree = "<group>"; };
+		84C31D03231D78B600B8A9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C31D05231D78B600B8A9D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fanny-widget.entitlements"; sourceTree = "<group>"; };
+		84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Sensor.swift"; path = "smc/SMC/SMC+Sensor.swift"; sourceTree = "<group>"; };
+		84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMCStructure.swift; path = smc/SMC/SMCStructure.swift; sourceTree = "<group>"; };
+		84C31D43231D7C9A00B8A9D5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = smc/SMC/Device.swift; sourceTree = "<group>"; };
+		84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Extensions.swift"; path = "smc/SMC/SMC+Extensions.swift"; sourceTree = "<group>"; };
+		84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+CPU.swift"; sourceTree = "<group>"; };
+		84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+Fans.swift"; sourceTree = "<group>"; };
+		84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SMC+GPU.swift"; sourceTree = "<group>"; };
+		84C31D49231D7C9A00B8A9D5 /* SMC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMC.swift; path = smc/SMC/SMC.swift; sourceTree = "<group>"; };
+		84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Temperature.swift; path = smc/SMC/Temperature.swift; sourceTree = "<group>"; };
+		84C31D5C231D875300B8A9D5 /* FNYMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenu.swift; sourceTree = "<group>"; };
+		84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYStatusBar.swift; sourceTree = "<group>"; };
+		84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenuController.swift; sourceTree = "<group>"; };
+		84C31D63231D913E00B8A9D5 /* status-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon.png"; sourceTree = "<group>"; };
+		84E993F0232ECDF8009000FC /* FNYMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMonitor.swift; sourceTree = "<group>"; };
+		84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYDelegateMulticast.swift; sourceTree = "<group>"; };
+		84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLocalStorage.swift; sourceTree = "<group>"; };
+		84E99403232EEB3D009000FC /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		84E99408232EEC88009000FC /* FNYWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYWidgetViewController.swift; sourceTree = "<group>"; };
+		84E9940A232EEF7F009000FC /* FNYTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYTextField.swift; sourceTree = "<group>"; };
+		84E9940F232EF25A009000FC /* FNYRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYRadioButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C31CE1231D776C00B8A9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C31CF6231D78B500B8A9D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C31CFC231D78B600B8A9D5 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8410EFB62336B5A50003F94C /* Launcher */ = {
+			isa = PBXGroup;
+			children = (
+				8410EFB72336B5B50003F94C /* FNYLauncher.swift */,
+			);
+			path = Launcher;
+			sourceTree = "<group>";
+		};
+		8410EFBA2336C40D0003F94C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8410EFBB2336C4690003F94C /* FNYPreferencesWindow.storyboard */,
+				8410EFBD2336C7230003F94C /* FNYPreferencesViewController.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		8410EFC92336E4820003F94C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */,
+				8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		84C31CDB231D776C00B8A9D5 = {
+			isa = PBXGroup;
+			children = (
+				84E993EF232ECBC7009000FC /* fanny-shared */,
+				84C31CE6231D776C00B8A9D5 /* fanny */,
+				84C31CFD231D78B600B8A9D5 /* fanny-widget */,
+				84C31CFA231D78B600B8A9D5 /* Frameworks */,
+				84C31CE5231D776C00B8A9D5 /* Products */,
+				84C31D0F231D7C6200B8A9D5 /* Submodules */,
+			);
+			sourceTree = "<group>";
+		};
+		84C31CE5231D776C00B8A9D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C31CE4231D776C00B8A9D5 /* Fanny.app */,
+				84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C31CE6231D776C00B8A9D5 /* fanny */ = {
+			isa = PBXGroup;
+			children = (
+				84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */,
+				8410EFC02336CBA40003F94C /* Main.xib */,
+				84C31D5B231D871D00B8A9D5 /* Menu */,
+				8410EFBA2336C40D0003F94C /* Preferences */,
+				84C31CE9231D776D00B8A9D5 /* Assets.xcassets */,
+				84C31D63231D913E00B8A9D5 /* status-item-icon.png */,
+				84C31CEE231D776D00B8A9D5 /* Info.plist */,
+				84C31CEF231D776D00B8A9D5 /* fanny.entitlements */,
+			);
+			path = fanny;
+			sourceTree = "<group>";
+		};
+		84C31CFA231D78B600B8A9D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84C31CFB231D78B600B8A9D5 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84C31CFD231D78B600B8A9D5 /* fanny-widget */ = {
+			isa = PBXGroup;
+			children = (
+				84E9940C232EF0C0009000FC /* Widget */,
+				8410EFB62336B5A50003F94C /* Launcher */,
+				84E9940E232EF248009000FC /* Button */,
+				84C31D03231D78B600B8A9D5 /* Info.plist */,
+				84C31D04231D78B600B8A9D5 /* InfoPlist.strings */,
+				84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */,
+			);
+			path = "fanny-widget";
+			sourceTree = "<group>";
+		};
+		84C31D0F231D7C6200B8A9D5 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D10231D7C6200B8A9D5 /* Internal */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		84C31D10231D7C6200B8A9D5 /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D11231D7C6200B8A9D5 /* SMC */,
+			);
+			path = Internal;
+			sourceTree = "<group>";
+		};
+		84C31D11231D7C6200B8A9D5 /* SMC */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D49231D7C9A00B8A9D5 /* SMC.swift */,
+				84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */,
+				84C31D43231D7C9A00B8A9D5 /* Device.swift */,
+				8410EFB32336998D0003F94C /* Fan.swift */,
+				84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */,
+				84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */,
+				84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */,
+				84C31D45231D7C9A00B8A9D5 /* Hardware */,
+			);
+			path = SMC;
+			sourceTree = "<group>";
+		};
+		84C31D45231D7C9A00B8A9D5 /* Hardware */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D46231D7C9A00B8A9D5 /* SMC+CPU.swift */,
+				84C31D47231D7C9A00B8A9D5 /* SMC+Fans.swift */,
+				84C31D48231D7C9A00B8A9D5 /* SMC+GPU.swift */,
+			);
+			name = Hardware;
+			path = smc/SMC/Hardware;
+			sourceTree = "<group>";
+		};
+		84C31D5B231D871D00B8A9D5 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */,
+				84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */,
+				84C31D5C231D875300B8A9D5 /* FNYMenu.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		84E993EE232ECB99009000FC /* Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				84E993F0232ECDF8009000FC /* FNYMonitor.swift */,
+			);
+			path = Monitor;
+			sourceTree = "<group>";
+		};
+		84E993EF232ECBC7009000FC /* fanny-shared */ = {
+			isa = PBXGroup;
+			children = (
+				84E993EE232ECB99009000FC /* Monitor */,
+				84E993F7232ED162009000FC /* Storage */,
+				84E9940D232EF0D8009000FC /* TextField */,
+				8410EFC92336E4820003F94C /* Extensions */,
+				84E993F5232ECEEF009000FC /* Utilities */,
+			);
+			path = "fanny-shared";
+			sourceTree = "<group>";
+		};
+		84E993F5232ECEEF009000FC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */,
+				84E99403232EEB3D009000FC /* Global.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		84E993F7232ED162009000FC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */,
+				8410EFC62336DD6A0003F94C /* FNYUserPreferences.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		84E9940C232EF0C0009000FC /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				84E99408232EEC88009000FC /* FNYWidgetViewController.swift */,
+				84C31D00231D78B600B8A9D5 /* FNYWidgetViewController.xib */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		84E9940D232EF0D8009000FC /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				84E9940A232EEF7F009000FC /* FNYTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		84E9940E232EF248009000FC /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				84E9940F232EF25A009000FC /* FNYRadioButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C31CE3231D776C00B8A9D5 /* Fanny */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C31CF2231D776D00B8A9D5 /* Build configuration list for PBXNativeTarget "Fanny" */;
+			buildPhases = (
+				84C31CE0231D776C00B8A9D5 /* Sources */,
+				84C31CE1231D776C00B8A9D5 /* Frameworks */,
+				84C31CE2231D776C00B8A9D5 /* Resources */,
+				84C31D0E231D78B600B8A9D5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C31D09231D78B600B8A9D5 /* PBXTargetDependency */,
+			);
+			name = Fanny;
+			productName = Fanny;
+			productReference = 84C31CE4231D776C00B8A9D5 /* Fanny.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84C31CF8231D78B500B8A9D5 /* FannyWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C31D0B231D78B600B8A9D5 /* Build configuration list for PBXNativeTarget "FannyWidget" */;
+			buildPhases = (
+				84C31CF5231D78B500B8A9D5 /* Sources */,
+				84C31CF6231D78B500B8A9D5 /* Frameworks */,
+				84C31CF7231D78B500B8A9D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FannyWidget;
+			productName = FannyWidget;
+			productReference = 84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C31CDC231D776C00B8A9D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Daniel Storm";
+				TargetAttributes = {
+					84C31CE3231D776C00B8A9D5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					84C31CF8231D78B500B8A9D5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 84C31CDF231D776C00B8A9D5 /* Build configuration list for PBXProject "Fanny" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C31CDB231D776C00B8A9D5;
+			productRefGroup = 84C31CE5231D776C00B8A9D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C31CE3231D776C00B8A9D5 /* Fanny */,
+				84C31CF8231D78B500B8A9D5 /* FannyWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C31CE2231D776C00B8A9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410EFBC2336C4690003F94C /* FNYPreferencesWindow.storyboard in Resources */,
+				84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */,
+				84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */,
+				8410EFC22336CBA40003F94C /* Main.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C31CF7231D78B500B8A9D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C31D02231D78B600B8A9D5 /* FNYWidgetViewController.xib in Resources */,
+				84C31D06231D78B600B8A9D5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C31CE0231D776C00B8A9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E993F1232ECDF8009000FC /* FNYMonitor.swift in Sources */,
+				8410EFB42336998D0003F94C /* Fan.swift in Sources */,
+				84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */,
+				84E993F3232ECE5E009000FC /* FNYDelegateMulticast.swift in Sources */,
+				8410EFCB2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */,
+				84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */,
+				84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */,
+				84C31D4F231D7C9A00B8A9D5 /* SMC+CPU.swift in Sources */,
+				84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */,
+				84C31D5A231D860200B8A9D5 /* SMC+Fans.swift in Sources */,
+				84E99404232EEB3D009000FC /* Global.swift in Sources */,
+				8410EFC72336DD6A0003F94C /* FNYUserPreferences.swift in Sources */,
+				8410EFBE2336C7230003F94C /* FNYPreferencesViewController.swift in Sources */,
+				84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */,
+				8410EFCE2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */,
+				84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */,
+				84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */,
+				84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */,
+				84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */,
+				84E993F9232ED2F8009000FC /* FNYLocalStorage.swift in Sources */,
+				84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */,
+				84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */,
+				8410EFBF2336C8E00003F94C /* FNYTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C31CF5231D78B500B8A9D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8410EFC52336D50B0003F94C /* FNYTextField.swift in Sources */,
+				84E99410232EF25A009000FC /* FNYRadioButton.swift in Sources */,
+				8410EFB52336998D0003F94C /* Fan.swift in Sources */,
+				8410EFC82336DD6A0003F94C /* FNYUserPreferences.swift in Sources */,
+				8410EFCC2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */,
+				84E99401232EE704009000FC /* FNYLocalStorage.swift in Sources */,
+				84E99400232EE6FC009000FC /* FNYMonitor.swift in Sources */,
+				8410EFC42336D4310003F94C /* FNYWidgetViewController.swift in Sources */,
+				8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */,
+				84E993FF232EE69E009000FC /* Temperature.swift in Sources */,
+				8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */,
+				84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */,
+				84E99405232EEB55009000FC /* Global.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C31D09231D78B600B8A9D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C31CF8231D78B500B8A9D5 /* FannyWidget */;
+			targetProxy = 84C31D08231D78B600B8A9D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8410EFC02336CBA40003F94C /* Main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8410EFC12336CBA40003F94C /* Base */,
+			);
+			name = Main.xib;
+			sourceTree = "<group>";
+		};
+		84C31D00231D78B600B8A9D5 /* FNYWidgetViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C31D01231D78B600B8A9D5 /* Base */,
+			);
+			name = FNYWidgetViewController.xib;
+			sourceTree = "<group>";
+		};
+		84C31D04231D78B600B8A9D5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C31D05231D78B600B8A9D5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C31CF0231D776D00B8A9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C31CF1231D776D00B8A9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		84C31CF3231D776D00B8A9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fanny/fanny.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = fanny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fannywidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84C31CF4231D776D00B8A9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = fanny/fanny.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = fanny/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fannywidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		84C31D0C231D78B600B8A9D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "fanny-widget/fanny-widget.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"APP_EXTENSION=1",
+				);
+				INFOPLIST_FILE = "fanny-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fannywidget.today-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APP_EXTENSION";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		84C31D0D231D78B600B8A9D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "fanny-widget/fanny-widget.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "APP_EXTENSION=1";
+				INFOPLIST_FILE = "fanny-widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fannywidget.today-extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APP_EXTENSION;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C31CDF231D776C00B8A9D5 /* Build configuration list for PBXProject "Fanny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C31CF0231D776D00B8A9D5 /* Debug */,
+				84C31CF1231D776D00B8A9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C31CF2231D776D00B8A9D5 /* Build configuration list for PBXNativeTarget "Fanny" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C31CF3231D776D00B8A9D5 /* Debug */,
+				84C31CF4231D776D00B8A9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C31D0B231D78B600B8A9D5 /* Build configuration list for PBXNativeTarget "FannyWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C31D0C231D78B600B8A9D5 /* Debug */,
+				84C31D0D231D78B600B8A9D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C31CDC231D776C00B8A9D5 /* Project object */;
+}

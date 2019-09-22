@@ -1,0 +1,3 @@
+[submodule "Fanny/Submodules/Internal/SMC"]
+	path = Fanny/Submodules/Internal/SMC
+	url = git@github.com:DanielStormApps/SMC.git
