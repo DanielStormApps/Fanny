@@ -44,7 +44,7 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2019 Daniel Storm. All rights reserved.</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 </dict>
