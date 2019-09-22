@@ -70,8 +70,8 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
         maximumRPMTextField.stringValue = "\(selectedFan.maximumRPM ?? 0) RPM"
         targetRPMTextField.stringValue = "\(selectedFan.targetRPM ?? 0) RPM"
 
-        cpuTemperatureTextField.stringValue = String(format: "%.02f °C", FNYLocalStorage.cpuTemperature()?.celsius ?? 0.0)
-        gpuTemperatureTextField.stringValue = String(format: "%.02f °C", FNYLocalStorage.gpuTemperature()?.celsius ?? 0.0)
+        cpuTemperatureTextField.stringValue = FNYLocalStorage.cpuTemperature()?.formattedTemperature() ?? String()
+        gpuTemperatureTextField.stringValue = FNYLocalStorage.gpuTemperature()?.formattedTemperature() ?? String()
     }
     
     // MARK: - Radio Button Action
