@@ -8,6 +8,9 @@
       location = "group:../LICENSE">
    </FileRef>
    <FileRef
+      location = "group:../readme-assets">
+   </FileRef>
+   <FileRef
       location = "group:Fanny.xcodeproj">
    </FileRef>
 </Workspace>
