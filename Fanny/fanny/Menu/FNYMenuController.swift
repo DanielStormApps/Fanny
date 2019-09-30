@@ -38,7 +38,15 @@ class FNYMenuController {
                               gpuTemperature: SMC.shared.gpuTemperature())
         
         guard !items.isEmpty else { return }
-        statusBar.menu.items = items
+        if #available(OSX 10.14, *) {
+            // This property is only settable in macOS 10.14 and later.
+            // Xcode does not throw a warning for this: https://stackoverflow.com/a/54682999/2108547
+            statusBar.menu.items = items
+        }
+        else {
+            statusBar.menu.removeAllItems()
+            items.forEach({ statusBar.menu.addItem($0) })
+        }
     }
     
     // MARK: - Formatted Menu Items
