@@ -25,7 +25,7 @@ class FNYStatusBar: NSStatusBar {
     
     // MARK: - Setup
     private func applyStatusItemIcon() {
-        let statusItemIcon = NSImage(named: "status-item-icon.png")
+        let statusItemIcon = NSImage(named: "status-item-icon-default.png")
         statusItemIcon?.isTemplate = true
         statusItem?.image = statusItemIcon
     }

@@ -22,6 +22,7 @@
 		8410EFCC2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */; };
 		8410EFCE2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
 		8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
+		8424681B235B945600E21182 /* status-item-icon-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424681A235B945600E21182 /* status-item-icon-default.png */; };
 		84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */; };
 		84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C31CE9231D776D00B8A9D5 /* Assets.xcassets */; };
 		84C31CFC231D78B600B8A9D5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C31CFB231D78B600B8A9D5 /* NotificationCenter.framework */; };
@@ -40,7 +41,7 @@
 		84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5C231D875300B8A9D5 /* FNYMenu.swift */; };
 		84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */; };
 		84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */; };
-		84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D63231D913E00B8A9D5 /* status-item-icon.png */; };
+		84C31D64231D913E00B8A9D5 /* status-item-icon-original.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D63231D913E00B8A9D5 /* status-item-icon-original.png */; };
 		84E993F1232ECDF8009000FC /* FNYMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F0232ECDF8009000FC /* FNYMonitor.swift */; };
 		84E993F3232ECE5E009000FC /* FNYDelegateMulticast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */; };
 		84E993F9232ED2F8009000FC /* FNYLocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */; };
@@ -86,6 +87,7 @@
 		8410EFC62336DD6A0003F94C /* FNYUserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYUserPreferences.swift; sourceTree = "<group>"; };
 		8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temperature+FNYExtensions.swift"; sourceTree = "<group>"; };
 		8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FNYExtensions.swift"; sourceTree = "<group>"; };
+		8424681A235B945600E21182 /* status-item-icon-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon-default.png"; sourceTree = "<group>"; };
 		84C31CE4231D776C00B8A9D5 /* Fanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C31CE9231D776D00B8A9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 		84C31D5C231D875300B8A9D5 /* FNYMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenu.swift; sourceTree = "<group>"; };
 		84C31D5F231D8A1400B8A9D5 /* FNYStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYStatusBar.swift; sourceTree = "<group>"; };
 		84C31D61231D8FCF00B8A9D5 /* FNYMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMenuController.swift; sourceTree = "<group>"; };
-		84C31D63231D913E00B8A9D5 /* status-item-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon.png"; sourceTree = "<group>"; };
+		84C31D63231D913E00B8A9D5 /* status-item-icon-original.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon-original.png"; sourceTree = "<group>"; };
 		84E993F0232ECDF8009000FC /* FNYMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYMonitor.swift; sourceTree = "<group>"; };
 		84E993F2232ECE5E009000FC /* FNYDelegateMulticast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYDelegateMulticast.swift; sourceTree = "<group>"; };
 		84E993F8232ED2F8009000FC /* FNYLocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLocalStorage.swift; sourceTree = "<group>"; };
@@ -164,6 +166,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		84246819235B930800E21182 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8424681A235B945600E21182 /* status-item-icon-default.png */,
+				84C31D63231D913E00B8A9D5 /* status-item-icon-original.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		84C31CDB231D776C00B8A9D5 = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +204,7 @@
 				84C31D5B231D871D00B8A9D5 /* Menu */,
 				8410EFBA2336C40D0003F94C /* Preferences */,
 				84C31CE9231D776D00B8A9D5 /* Assets.xcassets */,
-				84C31D63231D913E00B8A9D5 /* status-item-icon.png */,
+				84246819235B930800E21182 /* Assets */,
 				84C31CEE231D776D00B8A9D5 /* Info.plist */,
 				84C31CEF231D776D00B8A9D5 /* fanny.entitlements */,
 			);
@@ -419,8 +430,9 @@
 			files = (
 				8410EFBC2336C4690003F94C /* FNYPreferencesWindow.storyboard in Resources */,
 				84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */,
-				84C31D64231D913E00B8A9D5 /* status-item-icon.png in Resources */,
+				84C31D64231D913E00B8A9D5 /* status-item-icon-original.png in Resources */,
 				8410EFC22336CBA40003F94C /* Main.xib in Resources */,
+				8424681B235B945600E21182 /* status-item-icon-default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,7 +657,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = fanny/fanny.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -659,6 +671,7 @@
 				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fannywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -669,7 +682,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = fanny/fanny.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -683,6 +696,7 @@
 				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fannywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -691,7 +705,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "fanny-widget/fanny-widget.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -711,6 +725,7 @@
 				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fannywidget.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG APP_EXTENSION";
 				SWIFT_VERSION = 5.0;
@@ -721,7 +736,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "fanny-widget/fanny-widget.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = E5BK5K7RRN;
@@ -737,6 +752,7 @@
 				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fannywidget.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = APP_EXTENSION;
 				SWIFT_VERSION = 5.0;
