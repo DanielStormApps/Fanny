@@ -22,11 +22,11 @@ class FNYLocalStorage {
     }
     
     static func fans() -> [Fan] {
-        guard let numberOfFans = FNYLocalStorage.numberOfFans() else { return [] }
+        guard let numberOfFans: Int = FNYLocalStorage.numberOfFans() else { return [] }
         var fans: [Fan] = []
         
         for i in 0..<numberOfFans {
-            guard let dictionary = sharedDefaults.object(forKey: FNYStorageKey.fan(index: i).stringValue) as? [String: Any] else { continue }
+            guard let dictionary: [String: Any] = sharedDefaults.object(forKey: FNYStorageKey.fan(index: i).stringValue) as? [String: Any] else { continue }
             fans.append(Fan.from(dictionary: dictionary))
         }
         
@@ -47,7 +47,7 @@ class FNYLocalStorage {
     }
     
     static func cpuTemperature() -> Temperature? {
-        guard let dictionary = sharedDefaults.object(forKey: FNYStorageKey.cpu.stringValue) as? [String: Any] else { return nil }
+        guard let dictionary: [String: Any] = sharedDefaults.object(forKey: FNYStorageKey.cpu.stringValue) as? [String: Any] else { return nil }
         return Temperature.from(dictionary: dictionary)
     }
     
@@ -57,7 +57,7 @@ class FNYLocalStorage {
     }
     
     static func gpuTemperature() -> Temperature? {
-        guard let dictionary = sharedDefaults.object(forKey: FNYStorageKey.gpu.stringValue) as? [String: Any] else { return nil }
+        guard let dictionary: [String: Any] = sharedDefaults.object(forKey: FNYStorageKey.gpu.stringValue) as? [String: Any] else { return nil }
         return Temperature.from(dictionary: dictionary)
     }
     

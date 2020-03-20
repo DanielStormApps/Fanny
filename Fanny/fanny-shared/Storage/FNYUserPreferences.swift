@@ -29,7 +29,7 @@ class FNYUserPreferences {
     }
     
     static func temperatureUnitOption() -> TemperatureUnitOption {
-        let savedIndex = sharedDefaults.integer(forKey: FNYUserPreferencesKey.temperatureUnitOption.stringValue)
+        let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.temperatureUnitOption.stringValue)
         return temperatureUnitOptions.first(where: { $0.index == savedIndex }) ?? defaultTemperatureUnitOption
     }
     

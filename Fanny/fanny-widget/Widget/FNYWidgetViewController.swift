@@ -83,7 +83,7 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
     // MARK: - Helpers
     private func updateStackViewIfNeeded() {
         guard
-            let numberOfFans = FNYLocalStorage.numberOfFans(),
+            let numberOfFans: Int = FNYLocalStorage.numberOfFans(),
             numberOfFans > 1,
             radioButtonStackView.subviews.count != numberOfFans
             else { return }
@@ -93,10 +93,10 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
         }
         
         for i in 0..<numberOfFans {
-            let radioButton = FNYRadioButton(tag: i,
-                                             state: i == 0 ? .on : .off,
-                                             target: self,
-                                             action: #selector(radioButtonClicked(sender:)))
+            let radioButton: FNYRadioButton = FNYRadioButton(tag: i,
+                                                             state: i == 0 ? .on : .off,
+                                                             target: self,
+                                                             action: #selector(radioButtonClicked(sender:)))
             
             radioButtonStackView.addArrangedSubview(radioButton)
         }

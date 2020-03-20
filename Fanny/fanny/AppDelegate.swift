@@ -21,9 +21,5 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         FNYMonitor.shared.start()
         FNYMonitor.shared.delegate.add(menuController)
     }
-
-    func applicationWillTerminate(_ aNotification: Notification) {
-        //
-    }
     
 }

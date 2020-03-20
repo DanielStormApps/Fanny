@@ -10,8 +10,8 @@ import Foundation
 
 extension Bundle {
     
-    static var appVersion: String {
+    static let appVersion: String = {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
-    }
+    }()
     
 }

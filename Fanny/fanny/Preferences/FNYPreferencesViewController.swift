@@ -35,13 +35,13 @@ class FNYPreferencesViewController: NSViewController {
     // MARK: - Preference Actions
     @IBAction private func temperatureUnitPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
         let selectedIndex: Int = sender.indexOfSelectedItem
-        guard let selectedTemperatureUnitOption = FNYUserPreferences.temperatureUnitOptions.first(where: { $0.index == selectedIndex }) else { return }
+        guard let selectedTemperatureUnitOption: TemperatureUnitOption = FNYUserPreferences.temperatureUnitOptions.first(where: { $0.index == selectedIndex }) else { return }
         FNYUserPreferences.save(temperatureUnitOption: selectedTemperatureUnitOption)
     }
     
     // MARK: - Actions
     @IBAction private func gitHubButtonClicked(_ sender: NSButton) {
-        guard let url = URL(string: "https://github.com/DanielStormApps/Fanny") else { return }
+        guard let url: URL = URL(string: "https://github.com/DanielStormApps/Fanny") else { return }
         NSWorkspace.shared.open(url)
     }
     
