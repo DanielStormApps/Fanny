@@ -34,8 +34,8 @@ class FNYMenuController {
     // MARK: - Update Menu
     @objc private func updateMenuItems() {
         let items: [NSMenuItem] = menuItems(fans: SMC.shared.fans(),
-                                            cpuTemperature: SMC.shared.cpuTemperature(),
-                                            gpuTemperature: SMC.shared.gpuTemperature())
+                                            cpuTemperature: SMC.shared.cpuTemperatureAverage(),
+                                            gpuTemperature: SMC.shared.gpuTemperatureAverage())
         
         guard !items.isEmpty else { return }
         if #available(OSX 10.14, *) {
