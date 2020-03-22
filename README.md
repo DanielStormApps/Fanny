@@ -6,3 +6,6 @@
 
 #### License
 [MIT license](LICENSE)
+
+#### References
+- [SMC](https://github.com/DanielStormApps/SMC)
