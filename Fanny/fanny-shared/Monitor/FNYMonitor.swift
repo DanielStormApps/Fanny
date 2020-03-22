@@ -16,7 +16,7 @@ class FNYMonitor {
     
     var delegate: FNYDelegateMulticast<FNYMonitorDelegate> = FNYDelegateMulticast<FNYMonitorDelegate>()
     
-    private(set) var refreshTimeInterval: TimeInterval = 3.0 {
+    var refreshTimeInterval: TimeInterval = FNYUserPreferences.monitorRefreshTimeIntervalOption().timeInterval {
         didSet { restart() }
     }
     
@@ -54,6 +54,10 @@ class FNYMonitor {
     }
     
     // MARK: - Refresh
+    func refreshSystemStats() {
+        refresh()
+    }
+    
     @objc private func refresh() {
         #if APP_EXTENSION
             //

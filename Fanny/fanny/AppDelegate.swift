@@ -19,6 +19,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menuController = FNYMenuController()
         
         FNYMonitor.shared.start()
+        FNYMonitor.shared.refreshSystemStats()
         FNYMonitor.shared.delegate.add(menuController)
     }
     

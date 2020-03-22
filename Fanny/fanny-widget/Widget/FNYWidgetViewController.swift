@@ -30,11 +30,13 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
     @IBOutlet private weak var cpuTemperatureTextField: FNYTextField!
     @IBOutlet private weak var gpuTemperatureTextField: FNYTextField!
     
-    private let widgetNibName: String = "FNYWidgetViewController"
+    private static let widgetNibName: String = "FNYWidgetViewController"
+    private static let unavailableDisplayValue: String = "--"
+    
     private var selectedRadioButtonTag: Int = 0
     
     override var nibName: NSNib.Name? {
-        return NSNib.Name(widgetNibName)
+        return NSNib.Name(FNYWidgetViewController.widgetNibName)
     }
     
     // MARK: - View Cycle
@@ -65,13 +67,13 @@ class FNYWidgetViewController: NSViewController, NCWidgetProviding {
         guard fans.indices.contains(selectedRadioButtonTag) else { return }
         let selectedFan: Fan = fans[selectedRadioButtonTag]
         
-        currentRPMTextField.stringValue = "\(selectedFan.currentRPM ?? 0) RPM"
-        minimumRPMTextField.stringValue = "\(selectedFan.minimumRPM ?? 0) RPM"
-        maximumRPMTextField.stringValue = "\(selectedFan.maximumRPM ?? 0) RPM"
-        targetRPMTextField.stringValue = "\(selectedFan.targetRPM ?? 0) RPM"
+        currentRPMTextField.stringValue = selectedFan.currentRPM != nil ? "\(selectedFan.currentRPM ?? 0) RPM" : FNYWidgetViewController.unavailableDisplayValue
+        minimumRPMTextField.stringValue = selectedFan.minimumRPM != nil ? "\(selectedFan.minimumRPM ?? 0) RPM" : FNYWidgetViewController.unavailableDisplayValue
+        maximumRPMTextField.stringValue = selectedFan.maximumRPM != nil ? "\(selectedFan.maximumRPM ?? 0) RPM" : FNYWidgetViewController.unavailableDisplayValue
+        targetRPMTextField.stringValue = selectedFan.targetRPM != nil ? "\(selectedFan.targetRPM ?? 0) RPM" : FNYWidgetViewController.unavailableDisplayValue
 
-        cpuTemperatureTextField.stringValue = FNYLocalStorage.cpuTemperature()?.formattedTemperature() ?? String()
-        gpuTemperatureTextField.stringValue = FNYLocalStorage.gpuTemperature()?.formattedTemperature() ?? String()
+        cpuTemperatureTextField.stringValue = FNYLocalStorage.cpuTemperature()?.formattedTemperature() ?? FNYWidgetViewController.unavailableDisplayValue
+        gpuTemperatureTextField.stringValue = FNYLocalStorage.gpuTemperature()?.formattedTemperature() ?? FNYWidgetViewController.unavailableDisplayValue
     }
     
     // MARK: - Radio Button Action
