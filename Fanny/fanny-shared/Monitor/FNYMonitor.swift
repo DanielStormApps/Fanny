@@ -14,9 +14,9 @@ protocol FNYMonitorDelegate {
 
 class FNYMonitor {
     
-    var delegate = FNYDelegateMulticast<FNYMonitorDelegate>()
+    var delegate: FNYDelegateMulticast<FNYMonitorDelegate> = FNYDelegateMulticast<FNYMonitorDelegate>()
     
-    private(set) var refreshTimeInterval: TimeInterval = 3.0 {
+    var refreshTimeInterval: TimeInterval = FNYUserPreferences.monitorRefreshTimeIntervalOption().timeInterval {
         didSet { restart() }
     }
     
@@ -39,7 +39,7 @@ class FNYMonitor {
     // MARK: - Stop
     func stop() {
         guard
-            let timer = refreshTimer,
+            let timer: Timer = refreshTimer,
             timer.isValid
             else { return }
         
@@ -54,13 +54,17 @@ class FNYMonitor {
     }
     
     // MARK: - Refresh
+    func refreshSystemStats() {
+        refresh()
+    }
+    
     @objc private func refresh() {
         #if APP_EXTENSION
             //
         #else
-            let fans = SMC.shared.fans()
-            let cpuTemperature = SMC.shared.cpuTemperature()
-            let gpuTemperature = SMC.shared.gpuTemperature()
+            let fans: [Fan] = SMC.shared.fans()
+            let cpuTemperature: Temperature? = SMC.shared.cpuTemperatureAverage()
+            let gpuTemperature: Temperature? = SMC.shared.gpuTemperatureAverage()
         
             updateLocalStorageSystemStats((fans: fans, cpuTemperature: cpuTemperature, gpuTemperature: gpuTemperature))
         #endif

@@ -14,7 +14,7 @@ class FNYDelegateMulticast<T> {
     
     func add(_ delegate: T) {
         guard Mirror(reflecting: delegate).subjectType is AnyClass else { return }
-        let newDelegate = WeakDelegate(value: delegate as AnyObject)
+        let newDelegate: WeakDelegate = WeakDelegate(value: delegate as AnyObject)
         
         for delegate in delegates {
             guard newDelegate != delegate else { return }
@@ -25,7 +25,7 @@ class FNYDelegateMulticast<T> {
     
     func remove(_ delegate: T) {
         guard Mirror(reflecting: delegate).subjectType is AnyClass else { return }
-        let oldDelegate = WeakDelegate(value: delegate as AnyObject)
+        let oldDelegate: WeakDelegate = WeakDelegate(value: delegate as AnyObject)
         
         for i in 0..<delegates.count {
             guard delegates[i] == oldDelegate else { continue }
@@ -36,7 +36,7 @@ class FNYDelegateMulticast<T> {
     
     func invoke(_ invocation: (T) -> ()) {
         for delegate in delegates {
-            guard let delegate = delegate.value as? T else { continue }
+            guard let delegate: T = delegate.value as? T else { continue }
             invocation(delegate)
         }
     }

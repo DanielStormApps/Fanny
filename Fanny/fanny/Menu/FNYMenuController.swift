@@ -22,7 +22,7 @@ class FNYMenuController {
     }()
     
     private lazy var preferencesWindowController: NSWindowController? = {
-        let storyboard = NSStoryboard(name: FNYPreferencesViewController.storyboardName, bundle: nil)
+        let storyboard: NSStoryboard = NSStoryboard(name: FNYPreferencesViewController.storyboardName, bundle: nil)
         return storyboard.instantiateInitialController() as? NSWindowController
     }()
     
@@ -33,9 +33,9 @@ class FNYMenuController {
     
     // MARK: - Update Menu
     @objc private func updateMenuItems() {
-        let items = menuItems(fans: SMC.shared.fans(),
-                              cpuTemperature: SMC.shared.cpuTemperature(),
-                              gpuTemperature: SMC.shared.gpuTemperature())
+        let items: [NSMenuItem] = menuItems(fans: SMC.shared.fans(),
+                                            cpuTemperature: SMC.shared.cpuTemperatureAverage(),
+                                            gpuTemperature: SMC.shared.gpuTemperatureAverage())
         
         guard !items.isEmpty else { return }
         if #available(OSX 10.14, *) {
@@ -61,14 +61,14 @@ class FNYMenuController {
             items.append(NSMenuItem.separator())
         }
         
-        if let cpuTemperature = cpuTemperature {
-            let item = NSMenuItem()
+        if let cpuTemperature: Temperature = cpuTemperature {
+            let item: NSMenuItem = NSMenuItem()
             item.title = "CPU: \(cpuTemperature.formattedTemperature())"
             items.append(item)
         }
         
-        if let gpuTemperature = gpuTemperature {
-            let item = NSMenuItem()
+        if let gpuTemperature: Temperature = gpuTemperature {
+            let item: NSMenuItem = NSMenuItem()
             item.title = "GPU: \(gpuTemperature.formattedTemperature())"
             items.append(item)
         }
@@ -85,12 +85,12 @@ class FNYMenuController {
     
     // MARK: - Default Item Actions
     @objc private func gitHubClicked() {
-        guard let url = URL(string: "https://github.com/DanielStormApps/Fanny") else { return }
+        guard let url: URL = URL(string: "https://github.com/DanielStormApps/Fanny") else { return }
         NSWorkspace.shared.open(url)
     }
     
     @objc private func moreAppsClicked() {
-        guard let url = URL(string: "macappstore://itunes.apple.com/developer/daniel-storm/id432169230?mt=12&at=1l3vm3h&ct=FANNY") else { return }
+        guard let url: URL = URL(string: "macappstore://itunes.apple.com/developer/daniel-storm/id432169230?mt=12&at=1l3vm3h&ct=FANNY") else { return }
         NSWorkspace.shared.open(url)
     }
     
@@ -160,35 +160,35 @@ private extension Fan {
     func menuItems() -> [NSMenuItem] {
         var items: [NSMenuItem] = []
         
-        if let currentRPM = self.currentRPM {
-            let item = NSMenuItem()
+        if let currentRPM: Int = self.currentRPM {
+            let item: NSMenuItem = NSMenuItem()
             item.title = "Current: \(String(currentRPM)) RPM"
             items.append(item)
         }
         
-        if let minimumRPM = self.minimumRPM {
-            let item = NSMenuItem()
-            let title = "Min: \(String(minimumRPM)) RPM"
+        if let minimumRPM: Int = self.minimumRPM {
+            let item: NSMenuItem = NSMenuItem()
+            let title: String = "Min: \(String(minimumRPM)) RPM"
             item.attributedTitle = NSAttributedString(string: title, attributes: Fan.supplementaryItemFontAttributes)
             items.append(item)
         }
         
-        if let maximumRPM = self.maximumRPM {
-            let item = NSMenuItem()
-            let title = "Max: \(String(maximumRPM)) RPM"
+        if let maximumRPM: Int = self.maximumRPM {
+            let item: NSMenuItem = NSMenuItem()
+            let title: String = "Max: \(String(maximumRPM)) RPM"
             item.attributedTitle = NSAttributedString(string: title, attributes: Fan.supplementaryItemFontAttributes)
             items.append(item)
         }
         
-        if let targetRPM = self.targetRPM {
-            let item = NSMenuItem()
-            let title = "Target: \(String(targetRPM)) RPM"
+        if let targetRPM: Int = self.targetRPM {
+            let item: NSMenuItem = NSMenuItem()
+            let title: String = "Target: \(String(targetRPM)) RPM"
             item.attributedTitle = NSAttributedString(string: title, attributes: Fan.supplementaryItemFontAttributes)
             items.append(item)
         }
         
         if !items.isEmpty {
-            let item = NSMenuItem()
+            let item: NSMenuItem = NSMenuItem()
             item.title = "Fan: #\(String(self.identifier + 1))"
             items.insert(item, at: 0)
         }
