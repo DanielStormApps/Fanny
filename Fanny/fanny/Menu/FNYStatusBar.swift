@@ -19,15 +19,20 @@ class FNYStatusBar: NSStatusBar {
     override init() {
         super.init()
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        applyStatusItemIcon()
+        statusItem?.button?.title = "Loading.."
         statusItem?.menu = menu
     }
     
-    // MARK: - Setup
-    private func applyStatusItemIcon() {
-        guard let statusItemIcon: NSImage = NSImage(named: "status-item-icon-default.png") else { return }
-        statusItemIcon.isTemplate = true
-        statusItem?.image = statusItemIcon
+//    // MARK: - Setup
+//    private func applyStatusItemIcon() {
+//        guard let statusItemIcon: NSImage = NSImage(named: "status-item-icon-default.png") else { return }
+//        statusItemIcon.isTemplate = true
+//        statusItem?.image = statusItemIcon
+//    }
+
+    func updateStatusItem() {
+        let cpuTemperature = SMC.shared.cpuTemperatureAverage()
+        statusItem?.button?.title = cpuTemperature!.formattedTemperature(decimals: 0, useSpaceDelimiter: false)
     }
     
 }

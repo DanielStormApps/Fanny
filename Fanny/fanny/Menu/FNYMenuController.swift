@@ -110,6 +110,7 @@ extension FNYMenuController: FNYMonitorDelegate {
     // MARK: - FNYMonitorDelegate
     func monitorDidRefreshSystemStats(_ monitor: FNYMonitor) {
         updateMenuItems()
+        statusBar.updateStatusItem()
     }
     
 }
