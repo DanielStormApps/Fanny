@@ -110,7 +110,14 @@ extension FNYMenuController: FNYMonitorDelegate {
     // MARK: - FNYMonitorDelegate
     func monitorDidRefreshSystemStats(_ monitor: FNYMonitor) {
         updateMenuItems()
-        statusBar.updateStatusItem()
+       
+        let iconOption: IconOption = FNYUserPreferences.iconOption()
+        switch iconOption.index {
+        case 0: statusBar.applyStatusItemIcon()
+        case 1: statusBar.updateStatusItemTemperature()
+        case 2: statusBar.resetStatusItem() // TODO: menubar item still there, just small and invisible
+        default: statusBar.applyStatusItemIcon()
+        }
     }
     
 }
