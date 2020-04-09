@@ -10,9 +10,11 @@ import Foundation
 
 extension Temperature {
 
-    func formattedTemperature() -> String {
+    func formattedTemperature(decimals: Int = 2, useSpaceDelimiter: Bool = true) -> String {
         let temperature: Double
         let temperatureUnitOption: TemperatureUnitOption = FNYUserPreferences.temperatureUnitOption()
+        let formatSpecifier = ".0"+String(decimals)
+        let delimiter: String = useSpaceDelimiter ? " " : ""
         
         switch temperatureUnitOption.index {
         case 0: temperature = self.celsius
@@ -21,7 +23,7 @@ extension Temperature {
         default: temperature = self.celsius
         }
         
-        return String(format: "%.02f \(temperatureUnitOption.suffix)", temperature)
+        return String(format: "%\(formatSpecifier)f\(delimiter)\(temperatureUnitOption.suffix)", temperature)
     }
     
 }

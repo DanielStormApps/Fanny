@@ -12,6 +12,7 @@ class FNYPreferencesViewController: NSViewController {
     
     @IBOutlet private weak var monitorRefreshTimeIntervalPopUpButton: NSPopUpButton!
     @IBOutlet private weak var temperatureUnitPopUpButton: NSPopUpButton!
+    @IBOutlet private weak var iconPopUpButton: NSPopUpButton!
     
     @IBOutlet private weak var gitHubButton: NSButton!
     @IBOutlet private weak var versionTextField: FNYTextField! {
@@ -29,6 +30,7 @@ class FNYPreferencesViewController: NSViewController {
         super.viewWillAppear()
         prepareMonitorRefreshTimeIntervalPopUpButton()
         prepareTemperatureUnitPopUpButton()
+        prepareIconPopUpButton()
     }
     
     // MARK: - Setup
@@ -44,6 +46,12 @@ class FNYPreferencesViewController: NSViewController {
         temperatureUnitPopUpButton.selectItem(at: FNYUserPreferences.temperatureUnitOption().index)
     }
     
+    private func prepareIconPopUpButton() {
+        iconPopUpButton.removeAllItems()
+        iconPopUpButton.addItems(withTitles: FNYUserPreferences.iconOptions.map({ $0.title }))
+        iconPopUpButton.selectItem(at: FNYUserPreferences.iconOption().index)
+    }
+    
     // MARK: - Preference Actions
     @IBAction private func monitorRefreshTimeIntervalPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
         let selectedIndex: Int = sender.indexOfSelectedItem
@@ -57,6 +65,13 @@ class FNYPreferencesViewController: NSViewController {
         let selectedIndex: Int = sender.indexOfSelectedItem
         guard let selectedTemperatureUnitOption: TemperatureUnitOption = FNYUserPreferences.temperatureUnitOptions.first(where: { $0.index == selectedIndex }) else { return }
         FNYUserPreferences.save(temperatureUnitOption: selectedTemperatureUnitOption)
+        FNYMonitor.shared.refreshSystemStats()
+    }
+    
+    @IBAction private func iconPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
+        let selectedIndex: Int = sender.indexOfSelectedItem
+        guard let selectedIconOption: IconOption = FNYUserPreferences.iconOptions.first(where: { $0.index == selectedIndex }) else { return }
+        FNYUserPreferences.save(iconOption: selectedIconOption)
         FNYMonitor.shared.refreshSystemStats()
     }
     

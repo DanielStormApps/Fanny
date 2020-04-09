@@ -10,6 +10,7 @@ import Foundation
 
 typealias MonitorRefreshTimeIntervalOption = (index: Int, title: String, timeInterval: TimeInterval)
 typealias TemperatureUnitOption = (index: Int, title: String, suffix: String)
+typealias IconOption = (index: Int, title: String)
 
 class FNYUserPreferences {
     
@@ -28,8 +29,15 @@ class FNYUserPreferences {
                 (2, "Kelvin (°K)", "°K")]
     }()
     
+    static let iconOptions: [IconOption] = {
+        return [defaultIconOption,
+                (1, "Temperature"),
+                (2, "Nothing")]
+    }()
+    
     private static let defaultMonitorRefreshTimeIntervalOption: MonitorRefreshTimeIntervalOption = (0, "3 seconds", 3.0)
     private static let defaultTemperatureUnitOption: TemperatureUnitOption = (0, "Celsius (°C)", "°C")
+    private static let defaultIconOption: IconOption = (0, "Icon")
     
     private static let sharedDefaultsSuiteName: String = "fanny-shared-defaults"
     private static let sharedDefaults: UserDefaults = UserDefaults(suiteName: FNYUserPreferences.sharedDefaultsSuiteName)!
@@ -53,6 +61,16 @@ class FNYUserPreferences {
         let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.temperatureUnitOption.stringValue)
         return temperatureUnitOptions.first(where: { $0.index == savedIndex }) ?? defaultTemperatureUnitOption
     }
+
+    // MARK: - Icon
+    static func save(iconOption: IconOption) {
+        sharedDefaults.set(iconOption.index, forKey: FNYUserPreferencesKey.iconOption.stringValue)
+    }
+        
+    static func iconOption() -> IconOption {
+        let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.iconOption.stringValue)
+        return iconOptions.first(where: { $0.index == savedIndex }) ?? defaultIconOption
+    }
     
 }
 
@@ -61,11 +79,13 @@ private enum FNYUserPreferencesKey {
     
     case monitorRefreshTimeIntervalOption
     case temperatureUnitOption
+    case iconOption
     
     var stringValue: String {
         switch self {
         case .monitorRefreshTimeIntervalOption: return "FNYUserPreferencesKey_MonitorRefreshTimeIntervalOption"
         case .temperatureUnitOption: return "FNYUserPreferencesKey_TemperatureUnitOption"
+        case .iconOption: return "FNYUserPreferencesKey_IconOption"
         }
     }
     
