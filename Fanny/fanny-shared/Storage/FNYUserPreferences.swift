@@ -10,7 +10,7 @@ import Foundation
 
 typealias MonitorRefreshTimeIntervalOption = (index: Int, title: String, timeInterval: TimeInterval)
 typealias TemperatureUnitOption = (index: Int, title: String, suffix: String)
-typealias IconOption = (index: Int, title: String)
+typealias MenuBarIconOption = (index: Int, title: String)
 
 class FNYUserPreferences {
     
@@ -29,15 +29,15 @@ class FNYUserPreferences {
                 (2, "Kelvin (°K)", "°K")]
     }()
     
-    static let iconOptions: [IconOption] = {
-        return [defaultIconOption,
-                (1, "Temperature"),
-                (2, "Nothing")]
+    static let menuBarIconOptions: [MenuBarIconOption] = {
+        return [defaultMenuBarIconOption,
+                (1, "CPU Temperature"),
+                (2, "GPU Temperature")]
     }()
     
     private static let defaultMonitorRefreshTimeIntervalOption: MonitorRefreshTimeIntervalOption = (0, "3 seconds", 3.0)
     private static let defaultTemperatureUnitOption: TemperatureUnitOption = (0, "Celsius (°C)", "°C")
-    private static let defaultIconOption: IconOption = (0, "Icon")
+    private static let defaultMenuBarIconOption: MenuBarIconOption = (0, "Fanny Icon")
     
     private static let sharedDefaultsSuiteName: String = "fanny-shared-defaults"
     private static let sharedDefaults: UserDefaults = UserDefaults(suiteName: FNYUserPreferences.sharedDefaultsSuiteName)!
@@ -61,15 +61,15 @@ class FNYUserPreferences {
         let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.temperatureUnitOption.stringValue)
         return temperatureUnitOptions.first(where: { $0.index == savedIndex }) ?? defaultTemperatureUnitOption
     }
-
-    // MARK: - Icon
-    static func save(iconOption: IconOption) {
-        sharedDefaults.set(iconOption.index, forKey: FNYUserPreferencesKey.iconOption.stringValue)
+    
+    // MARK: - Menu Bar Icon
+    static func save(menuBarIconOption: MenuBarIconOption) {
+        sharedDefaults.set(menuBarIconOption.index, forKey: FNYUserPreferencesKey.menuBarIconOption.stringValue)
     }
-        
-    static func iconOption() -> IconOption {
-        let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.iconOption.stringValue)
-        return iconOptions.first(where: { $0.index == savedIndex }) ?? defaultIconOption
+    
+    static func menuBarIconOption() -> MenuBarIconOption {
+        let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.menuBarIconOption.stringValue)
+        return menuBarIconOptions.first(where: { $0.index == savedIndex }) ?? defaultMenuBarIconOption
     }
     
 }
@@ -79,13 +79,13 @@ private enum FNYUserPreferencesKey {
     
     case monitorRefreshTimeIntervalOption
     case temperatureUnitOption
-    case iconOption
+    case menuBarIconOption
     
     var stringValue: String {
         switch self {
         case .monitorRefreshTimeIntervalOption: return "FNYUserPreferencesKey_MonitorRefreshTimeIntervalOption"
         case .temperatureUnitOption: return "FNYUserPreferencesKey_TemperatureUnitOption"
-        case .iconOption: return "FNYUserPreferencesKey_IconOption"
+        case .menuBarIconOption: return "FNYUserPreferencesKey_MenuBarIconOption"
         }
     }
     
