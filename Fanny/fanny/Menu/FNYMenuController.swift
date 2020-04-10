@@ -28,10 +28,25 @@ class FNYMenuController {
     
     // MARK: - Init
     init() {
+        updateMenuIcon()
         updateMenuItems()
     }
     
-    // MARK: - Update Menu
+    // MARK: - Update Menu Icon
+    private func updateMenuIcon() {
+        var image: NSImage?
+        var title: String?
+        
+        switch FNYUserPreferences.menuBarIconOption().index {
+        case 1: title = SMC.shared.cpuTemperatureAverage()?.formattedTemperature()
+        case 2: title = SMC.shared.gpuTemperatureAverage()?.formattedTemperature()
+        default: image = NSImage(named: "status-item-icon-default.png")
+        }
+        
+        statusBar.updateStatusItem(image: image, title: title)
+    }
+    
+    // MARK: - Update Menu Items
     @objc private func updateMenuItems() {
         let items: [NSMenuItem] = menuItems(fans: SMC.shared.fans(),
                                             cpuTemperature: SMC.shared.cpuTemperatureAverage(),
@@ -109,15 +124,8 @@ extension FNYMenuController: FNYMonitorDelegate {
 
     // MARK: - FNYMonitorDelegate
     func monitorDidRefreshSystemStats(_ monitor: FNYMonitor) {
+        updateMenuIcon()
         updateMenuItems()
-       
-        let iconOption: IconOption = FNYUserPreferences.iconOption()
-        switch iconOption.index {
-        case 0: statusBar.applyStatusItemIcon()
-        case 1: statusBar.updateStatusItemTemperature()
-        case 2: statusBar.resetStatusItem() // TODO: menubar item still there, just small and invisible
-        default: statusBar.applyStatusItemIcon()
-        }
     }
     
 }

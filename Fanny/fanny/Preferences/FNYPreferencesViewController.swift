@@ -12,7 +12,7 @@ class FNYPreferencesViewController: NSViewController {
     
     @IBOutlet private weak var monitorRefreshTimeIntervalPopUpButton: NSPopUpButton!
     @IBOutlet private weak var temperatureUnitPopUpButton: NSPopUpButton!
-    @IBOutlet private weak var iconPopUpButton: NSPopUpButton!
+    @IBOutlet private weak var menuBarIconPopUpButton: NSPopUpButton!
     
     @IBOutlet private weak var gitHubButton: NSButton!
     @IBOutlet private weak var versionTextField: FNYTextField! {
@@ -47,9 +47,9 @@ class FNYPreferencesViewController: NSViewController {
     }
     
     private func prepareIconPopUpButton() {
-        iconPopUpButton.removeAllItems()
-        iconPopUpButton.addItems(withTitles: FNYUserPreferences.iconOptions.map({ $0.title }))
-        iconPopUpButton.selectItem(at: FNYUserPreferences.iconOption().index)
+        menuBarIconPopUpButton.removeAllItems()
+        menuBarIconPopUpButton.addItems(withTitles: FNYUserPreferences.menuBarIconOptions.map({ $0.title }))
+        menuBarIconPopUpButton.selectItem(at: FNYUserPreferences.menuBarIconOption().index)
     }
     
     // MARK: - Preference Actions
@@ -68,10 +68,10 @@ class FNYPreferencesViewController: NSViewController {
         FNYMonitor.shared.refreshSystemStats()
     }
     
-    @IBAction private func iconPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
+    @IBAction private func menuBarIconPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
         let selectedIndex: Int = sender.indexOfSelectedItem
-        guard let selectedIconOption: IconOption = FNYUserPreferences.iconOptions.first(where: { $0.index == selectedIndex }) else { return }
-        FNYUserPreferences.save(iconOption: selectedIconOption)
+        guard let selectedMenuBarIconIconOption: MenuBarIconOption = FNYUserPreferences.menuBarIconOptions.first(where: { $0.index == selectedIndex }) else { return }
+        FNYUserPreferences.save(menuBarIconOption: selectedMenuBarIconIconOption)
         FNYMonitor.shared.refreshSystemStats()
     }
     
