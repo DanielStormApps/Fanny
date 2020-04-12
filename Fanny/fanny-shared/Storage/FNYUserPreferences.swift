@@ -26,7 +26,7 @@ class FNYUserPreferences {
     static let temperatureUnitOptions: [TemperatureUnitOption] = {
         return [defaultTemperatureUnitOption,
                 (1, "Fahrenheit (°F)", "°F"),
-                (2, "Kelvin (°K)", "°K")]
+                (2, "Kelvin (K)", " K")]
     }()
     
     static let menuBarIconOptions: [MenuBarIconOption] = {

@@ -38,8 +38,8 @@ class FNYMenuController {
         var title: String?
         
         switch FNYUserPreferences.menuBarIconOption().index {
-        case 1: title = SMC.shared.cpuTemperatureAverage()?.formattedTemperature()
-        case 2: title = SMC.shared.gpuTemperatureAverage()?.formattedTemperature()
+        case 1: title = SMC.shared.cpuTemperatureAverage()?.formattedTemperature(rounded: true)
+        case 2: title = SMC.shared.gpuTemperatureAverage()?.formattedTemperature(rounded: true)
         default: image = NSImage(named: "status-item-icon-default.png")
         }
         
