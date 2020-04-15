@@ -23,6 +23,8 @@
 		8410EFCE2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
 		8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
 		8424681B235B945600E21182 /* status-item-icon-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424681A235B945600E21182 /* status-item-icon-default.png */; };
+		84620D862447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */; };
+		84620D872447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */; };
 		84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */; };
 		84C31CEA231D776D00B8A9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C31CE9231D776D00B8A9D5 /* Assets.xcassets */; };
 		84C31CFC231D78B600B8A9D5 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C31CFB231D78B600B8A9D5 /* NotificationCenter.framework */; };
@@ -87,6 +89,7 @@
 		8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temperature+FNYExtensions.swift"; sourceTree = "<group>"; };
 		8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FNYExtensions.swift"; sourceTree = "<group>"; };
 		8424681A235B945600E21182 /* status-item-icon-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon-default.png"; sourceTree = "<group>"; };
+		84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FNYExtensions.swift"; sourceTree = "<group>"; };
 		84C31CE4231D776C00B8A9D5 /* Fanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C31CE9231D776D00B8A9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */,
+				84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */,
 				8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */,
 			);
 			path = Extensions;
@@ -468,6 +472,7 @@
 				84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */,
 				84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */,
 				84E993F9232ED2F8009000FC /* FNYLocalStorage.swift in Sources */,
+				84620D862447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */,
 				84C31D5D231D875300B8A9D5 /* FNYMenu.swift in Sources */,
 				84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */,
 				8410EFBF2336C8E00003F94C /* FNYTextField.swift in Sources */,
@@ -488,6 +493,7 @@
 				8410EFC42336D4310003F94C /* FNYWidgetViewController.swift in Sources */,
 				8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */,
 				84E993FF232EE69E009000FC /* Temperature.swift in Sources */,
+				84620D872447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */,
 				8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */,
 				84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */,
 				84E99405232EEB55009000FC /* Global.swift in Sources */,

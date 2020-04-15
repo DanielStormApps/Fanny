@@ -30,6 +30,7 @@ class FNYMenuController {
     init() {
         updateMenuIcon()
         updateMenuItems()
+        updateMenuToolTip()
     }
     
     // MARK: - Update Menu Icon
@@ -62,6 +63,17 @@ class FNYMenuController {
             statusBar.menu.removeAllItems()
             items.forEach({ statusBar.menu.addItem($0) })
         }
+    }
+    
+    // MARK: - Update Menu Tool Tip
+    private func updateMenuToolTip() {
+        guard
+            let toolTip: String = menuToolTip(fans: SMC.shared.fans(),
+                                              cpuTemperature: SMC.shared.cpuTemperatureAverage(),
+                                              gpuTemperature: SMC.shared.gpuTemperatureAverage())
+            else { return }
+        
+        statusBar.updateStatusItem(toolTip: toolTip)
     }
     
     // MARK: - Formatted Menu Items
@@ -98,6 +110,30 @@ class FNYMenuController {
         return items
     }
     
+    // MARK: - Formatted Menu Tool Tip
+    private func menuToolTip(fans: [Fan], cpuTemperature: Temperature?, gpuTemperature: Temperature?) -> String? {
+        var toolTip: String = String()
+        
+        for fan in fans {
+            guard let fanToolTip: String = fan.menuToolTip() else { continue }
+            toolTip = toolTip.isEmpty
+                ? toolTip + fanToolTip
+                : toolTip + String.newLine + fanToolTip
+        }
+        
+        if let cpuTemperature: Temperature = cpuTemperature {
+            toolTip = toolTip + String.newLine + "CPU: \(cpuTemperature.formattedTemperature())"
+        }
+        
+        if let gpuTemperature: Temperature = gpuTemperature {
+            toolTip = toolTip + String.newLine + "GPU: \(gpuTemperature.formattedTemperature())"
+        }
+        
+        return toolTip.isEmpty
+            ? nil
+            : toolTip
+    }
+    
     // MARK: - Default Item Actions
     @objc private func gitHubClicked() {
         guard let url: URL = URL(string: "https://github.com/DanielStormApps/Fanny") else { return }
@@ -126,6 +162,7 @@ extension FNYMenuController: FNYMonitorDelegate {
     func monitorDidRefreshSystemStats(_ monitor: FNYMonitor) {
         updateMenuIcon()
         updateMenuItems()
+        updateMenuToolTip()
     }
     
 }
@@ -172,7 +209,7 @@ private extension Fan {
     
     private static let supplementaryItemFontAttributes: [NSAttributedString.Key: NSFont] = [.font: .menuBarFont(ofSize: 12.0)]
     
-    // MARK: - Fan
+    // MARK: - Fan Menu Items
     func menuItems() -> [NSMenuItem] {
         var items: [NSMenuItem] = []
         
@@ -210,6 +247,13 @@ private extension Fan {
         }
         
         return items
+    }
+    
+    // MARK: - Fan Tool Tip
+    func menuToolTip() -> String? {
+        guard let currentRPM: Int = self.currentRPM else { return nil }
+        let fanNumber: String = "Fan #\(String(self.identifier + 1))"
+        return "\(fanNumber): \(String(currentRPM)) RPM"
     }
     
 }
