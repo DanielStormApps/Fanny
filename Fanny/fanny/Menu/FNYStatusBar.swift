@@ -34,4 +34,8 @@ class FNYStatusBar: NSStatusBar {
         statusItem?.title = title
     }
     
+    func updateStatusItem(toolTip: String?) {
+        statusItem?.button?.toolTip = toolTip
+    }
+    
 }
