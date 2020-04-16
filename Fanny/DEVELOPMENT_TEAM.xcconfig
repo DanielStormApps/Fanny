@@ -1,0 +1,12 @@
+//
+//  DEVELOPMENT_TEAM.xcconfig
+//  Fanny
+//
+//  Created by Daniel Storm on 4/15/20.
+//  Copyright © 2020 Daniel Storm. All rights reserved.
+//
+
+// Replace XXXXXXXXXX with your Apple Developer Team ID.
+// Your Apple Developer Team ID can be found at:
+// https://developer.apple.com/account/#/membership
+DEVELOPMENT_TEAM = XXXXXXXXXX

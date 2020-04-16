@@ -90,6 +90,7 @@
 		8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+FNYExtensions.swift"; sourceTree = "<group>"; };
 		8424681A235B945600E21182 /* status-item-icon-default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "status-item-icon-default.png"; sourceTree = "<group>"; };
 		84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+FNYExtensions.swift"; sourceTree = "<group>"; };
+		84620D882447D697003B7B91 /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
 		84C31CE4231D776C00B8A9D5 /* Fanny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fanny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C31CE9231D776D00B8A9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		84C31CDB231D776C00B8A9D5 = {
 			isa = PBXGroup;
 			children = (
+				84620D882447D697003B7B91 /* DEVELOPMENT_TEAM.xcconfig */,
 				84E993EF232ECBC7009000FC /* fanny-shared */,
 				84C31CE6231D776C00B8A9D5 /* fanny */,
 				84C31CFD231D78B600B8A9D5 /* fanny-widget */,
@@ -540,6 +542,7 @@
 /* Begin XCBuildConfiguration section */
 		84C31CF0231D776D00B8A9D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84620D882447D697003B7B91 /* DEVELOPMENT_TEAM.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -573,6 +576,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM}";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -602,6 +606,7 @@
 		};
 		84C31CF1231D776D00B8A9D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84620D882447D697003B7B91 /* DEVELOPMENT_TEAM.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -635,6 +640,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM}";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -664,7 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM}";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = fanny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -690,7 +696,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM}";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = fanny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -714,7 +720,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM}";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -746,7 +752,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = E5BK5K7RRN;
+				DEVELOPMENT_TEAM = "${DEVELOPMENT_TEAM}";
 				ENABLE_HARDENED_RUNTIME = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "APP_EXTENSION=1";
 				INFOPLIST_FILE = "fanny-widget/Info.plist";
