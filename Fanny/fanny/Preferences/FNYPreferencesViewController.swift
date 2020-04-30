@@ -13,7 +13,9 @@ class FNYPreferencesViewController: NSViewController {
     @IBOutlet private weak var monitorRefreshTimeIntervalPopUpButton: NSPopUpButton!
     @IBOutlet private weak var temperatureUnitPopUpButton: NSPopUpButton!
     @IBOutlet private weak var menuBarIconPopUpButton: NSPopUpButton!
-    
+    @IBOutlet private weak var cpuSensorPopUpButton: NSPopUpButton!
+    @IBOutlet private weak var gpuSensorPopUpButton: NSPopUpButton!
+
     @IBOutlet private weak var gitHubButton: NSButton!
     @IBOutlet private weak var versionTextField: FNYTextField! {
         didSet { versionTextField.stringValue = "v\(Bundle.appVersion)" }
@@ -31,6 +33,8 @@ class FNYPreferencesViewController: NSViewController {
         prepareMonitorRefreshTimeIntervalPopUpButton()
         prepareTemperatureUnitPopUpButton()
         prepareIconPopUpButton()
+        prepareCPUSensorPopUpButton()
+        prepareGPUSensorPopUpButton()
     }
     
     // MARK: - Setup
@@ -50,6 +54,18 @@ class FNYPreferencesViewController: NSViewController {
         menuBarIconPopUpButton.removeAllItems()
         menuBarIconPopUpButton.addItems(withTitles: FNYUserPreferences.menuBarIconOptions.map({ $0.title }))
         menuBarIconPopUpButton.selectItem(at: FNYUserPreferences.menuBarIconOption().index)
+    }
+
+    private func prepareCPUSensorPopUpButton() {
+        cpuSensorPopUpButton.removeAllItems()
+        cpuSensorPopUpButton.addItems(withTitles: FNYUserPreferences.cpuSensorOptions.map({ $0.title }))
+        cpuSensorPopUpButton.selectItem(at: FNYUserPreferences.cpuSensorOption().index)
+    }
+
+    private func prepareGPUSensorPopUpButton() {
+        gpuSensorPopUpButton.removeAllItems()
+        gpuSensorPopUpButton.addItems(withTitles: FNYUserPreferences.gpuSensorOptions.map({ $0.title }))
+        gpuSensorPopUpButton.selectItem(at: FNYUserPreferences.gpuSensorOption().index)
     }
     
     // MARK: - Preference Actions
@@ -72,6 +88,20 @@ class FNYPreferencesViewController: NSViewController {
         let selectedIndex: Int = sender.indexOfSelectedItem
         guard let selectedMenuBarIconIconOption: MenuBarIconOption = FNYUserPreferences.menuBarIconOptions.first(where: { $0.index == selectedIndex }) else { return }
         FNYUserPreferences.save(menuBarIconOption: selectedMenuBarIconIconOption)
+        FNYMonitor.shared.refreshSystemStats()
+    }
+
+    @IBAction private func cpuSensorPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
+        let selectedIndex: Int = sender.indexOfSelectedItem
+        guard let selectedCPUSensorOption: CPUSensorOption = FNYUserPreferences.cpuSensorOptions.first(where: { $0.index == selectedIndex }) else { return }
+        FNYUserPreferences.save(cpuSensorOption: selectedCPUSensorOption)
+        FNYMonitor.shared.refreshSystemStats()
+    }
+
+    @IBAction private func gpuSensorPopUpButtonOptionClicked(_ sender: NSPopUpButton) {
+        let selectedIndex: Int = sender.indexOfSelectedItem
+        guard let selectedGPUSensorOption: GPUSensorOption = FNYUserPreferences.gpuSensorOptions.first(where: { $0.index == selectedIndex }) else { return }
+        FNYUserPreferences.save(gpuSensorOption: selectedGPUSensorOption)
         FNYMonitor.shared.refreshSystemStats()
     }
     

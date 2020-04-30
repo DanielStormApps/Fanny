@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="3er-qC-rPb">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="3er-qC-rPb">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,11 +31,11 @@
             <objects>
                 <viewController id="f7D-mS-rfl" customClass="FNYPreferencesViewController" customModule="Fanny" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="FFZ-n6-WSA">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="298"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCL-rq-w1N" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
-                                <rect key="frame" x="18" y="178" width="164" height="16"/>
+                                <rect key="frame" x="18" y="260" width="164" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="Refresh Interval:" id="RUC-3C-QPd">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -43,13 +43,13 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XMA-MT-qTf">
-                                <rect key="frame" x="186" y="172" width="117" height="25"/>
+                                <rect key="frame" x="186" y="254" width="117" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="112" id="4OT-M0-pXm"/>
                                 </constraints>
                                 <popUpButtonCell key="cell" type="push" title="3 Seconds" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="FBm-rj-RP0" id="6XD-I3-epj">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="ME8-bX-ktw">
                                         <items>
                                             <menuItem title="3 Seconds" state="on" id="FBm-rj-RP0">
@@ -63,7 +63,7 @@
                                 </connections>
                             </popUpButton>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9MU-ci-1bf" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
-                                <rect key="frame" x="18" y="137" width="164" height="16"/>
+                                <rect key="frame" x="18" y="219" width="164" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="Temperature Unit:" id="Epb-B2-ugL">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -71,13 +71,13 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qPJ-Ta-jTg">
-                                <rect key="frame" x="186" y="131" width="117" height="25"/>
+                                <rect key="frame" x="186" y="213" width="117" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="112" id="RxV-TR-LzR"/>
                                 </constraints>
                                 <popUpButtonCell key="cell" type="push" title="Celsius (°C)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="9jW-RZ-YJi" id="GOw-Ce-2dm">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="c0J-uF-Kk8">
                                         <items>
                                             <menuItem title="Celsius (°C)" state="on" id="9jW-RZ-YJi"/>
@@ -89,7 +89,7 @@
                                 </connections>
                             </popUpButton>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-fW-ZTI" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
-                                <rect key="frame" x="18" y="96" width="164" height="16"/>
+                                <rect key="frame" x="18" y="178" width="164" height="16"/>
                                 <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="Menu Bar:" id="KY8-f0-z57">
                                     <font key="font" usesAppearanceFont="YES"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -97,13 +97,13 @@
                                 </textFieldCell>
                             </textField>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EBX-fS-L8a">
-                                <rect key="frame" x="186" y="90" width="117" height="25"/>
+                                <rect key="frame" x="186" y="172" width="117" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="112" id="7sZ-rO-QUm"/>
                                 </constraints>
                                 <popUpButtonCell key="cell" type="push" title="Fanny Icon" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="aa9-Bg-8bx" id="qlR-25-V4m">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="fgO-yf-kk4">
                                         <items>
                                             <menuItem title="Fanny Icon" state="on" id="aa9-Bg-8bx"/>
@@ -112,6 +112,58 @@
                                 </popUpButtonCell>
                                 <connections>
                                     <action selector="menuBarIconPopUpButtonOptionClicked:" target="f7D-mS-rfl" id="4gk-Cx-hTf"/>
+                                </connections>
+                            </popUpButton>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI2-Ox-Kq9" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
+                                <rect key="frame" x="18" y="137" width="164" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="CPU Sensor:" id="Fmt-yg-5Ai">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3mt-sa-IXy" userLabel="CPU Sensor Pop Up Button">
+                                <rect key="frame" x="186" y="131" width="117" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="112" id="y8N-Bw-pOn"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Average" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="cJU-tL-E84" id="p73-84-LWX">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="big-ff-00I">
+                                        <items>
+                                            <menuItem title="Average" state="on" id="cJU-tL-E84"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="cpuSensorPopUpButtonOptionClicked:" target="f7D-mS-rfl" id="0fD-nS-djl"/>
+                                </connections>
+                            </popUpButton>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IV-gt-hml" customClass="FNYTextField" customModule="Fanny" customModuleProvider="target">
+                                <rect key="frame" x="18" y="96" width="164" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" refusesFirstResponder="YES" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="GPU Sensor:" id="9va-iC-LKP">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kxZ-J4-v7Y" userLabel="GPU Sensor Pop Up Button">
+                                <rect key="frame" x="186" y="90" width="117" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="112" id="968-4J-gBD"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" title="Average" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="d6U-gi-NWT" id="qIW-vu-97H">
+                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="xmI-Le-sL9">
+                                        <items>
+                                            <menuItem title="Average" state="on" id="d6U-gi-NWT"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <connections>
+                                    <action selector="gpuSensorPopUpButtonOptionClicked:" target="f7D-mS-rfl" id="9Q7-Eb-ElI"/>
                                 </connections>
                             </popUpButton>
                             <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Nk5-0r-rVv">
@@ -144,23 +196,32 @@
                             </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="3mt-sa-IXy" firstAttribute="centerY" secondItem="eI2-Ox-Kq9" secondAttribute="centerY" id="02L-eo-d2o"/>
                             <constraint firstItem="Nk5-0r-rVv" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="0yp-14-IYO"/>
                             <constraint firstItem="UnS-gL-Ld2" firstAttribute="top" secondItem="SH4-BH-lnm" secondAttribute="bottom" constant="8" id="4sf-ZV-bYc"/>
+                            <constraint firstItem="kxZ-J4-v7Y" firstAttribute="top" secondItem="3mt-sa-IXy" secondAttribute="bottom" constant="20" id="6E9-Nq-4gT"/>
+                            <constraint firstItem="4IV-gt-hml" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="7GU-dR-VgU"/>
                             <constraint firstItem="qPJ-Ta-jTg" firstAttribute="leading" secondItem="9MU-ci-1bf" secondAttribute="trailing" constant="8" id="8df-hq-uKq"/>
                             <constraint firstItem="UnS-gL-Ld2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="BEz-S7-hcq"/>
                             <constraint firstItem="XMA-MT-qTf" firstAttribute="top" secondItem="FFZ-n6-WSA" secondAttribute="top" constant="20" id="EOK-CX-GuV"/>
                             <constraint firstItem="EBX-fS-L8a" firstAttribute="width" secondItem="XMA-MT-qTf" secondAttribute="width" id="EVI-ly-0bc"/>
                             <constraint firstAttribute="trailing" secondItem="XMA-MT-qTf" secondAttribute="trailing" constant="20" id="EWY-8d-pAV"/>
+                            <constraint firstItem="3mt-sa-IXy" firstAttribute="width" secondItem="XMA-MT-qTf" secondAttribute="width" id="FLC-6e-UEE"/>
                             <constraint firstItem="EBX-fS-L8a" firstAttribute="centerY" secondItem="8AR-fW-ZTI" secondAttribute="centerY" id="GlF-Hq-9GU"/>
                             <constraint firstItem="qPJ-Ta-jTg" firstAttribute="width" secondItem="XMA-MT-qTf" secondAttribute="width" id="J0j-zp-OUj"/>
                             <constraint firstItem="SH4-BH-lnm" firstAttribute="top" secondItem="Nk5-0r-rVv" secondAttribute="bottom" constant="8" id="K8v-ZK-byW"/>
                             <constraint firstItem="XMA-MT-qTf" firstAttribute="centerY" secondItem="PCL-rq-w1N" secondAttribute="centerY" id="Mqn-JA-TuR"/>
                             <constraint firstItem="qPJ-Ta-jTg" firstAttribute="centerY" secondItem="9MU-ci-1bf" secondAttribute="centerY" id="OyP-Jm-BzB"/>
+                            <constraint firstAttribute="trailing" secondItem="kxZ-J4-v7Y" secondAttribute="trailing" constant="20" id="PxS-uA-acT"/>
                             <constraint firstItem="UnS-gL-Ld2" firstAttribute="centerX" secondItem="FFZ-n6-WSA" secondAttribute="centerX" id="Q85-ta-inS"/>
                             <constraint firstItem="SH4-BH-lnm" firstAttribute="centerX" secondItem="FFZ-n6-WSA" secondAttribute="centerX" id="QDK-L0-ESp"/>
+                            <constraint firstItem="3mt-sa-IXy" firstAttribute="top" secondItem="EBX-fS-L8a" secondAttribute="bottom" constant="20" id="QIC-2S-5t5"/>
                             <constraint firstItem="8AR-fW-ZTI" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="S3a-UK-gmv"/>
-                            <constraint firstItem="Nk5-0r-rVv" firstAttribute="top" secondItem="EBX-fS-L8a" secondAttribute="bottom" constant="20" id="WTD-ze-H4D"/>
+                            <constraint firstItem="eI2-Ox-Kq9" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="TCe-2o-8yF"/>
+                            <constraint firstItem="Nk5-0r-rVv" firstAttribute="top" secondItem="kxZ-J4-v7Y" secondAttribute="bottom" constant="20" id="WTD-ze-H4D"/>
+                            <constraint firstItem="kxZ-J4-v7Y" firstAttribute="centerY" secondItem="4IV-gt-hml" secondAttribute="centerY" id="ZoI-6Z-Mrv"/>
                             <constraint firstItem="EBX-fS-L8a" firstAttribute="top" secondItem="qPJ-Ta-jTg" secondAttribute="bottom" constant="20" id="a8D-hJ-QgR"/>
+                            <constraint firstItem="XMA-MT-qTf" firstAttribute="width" secondItem="kxZ-J4-v7Y" secondAttribute="width" id="aZ0-R9-Mb6"/>
                             <constraint firstItem="EBX-fS-L8a" firstAttribute="leading" secondItem="8AR-fW-ZTI" secondAttribute="trailing" constant="8" id="atu-tr-eqT"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UnS-gL-Ld2" secondAttribute="trailing" constant="20" id="cHc-2b-gUn"/>
                             <constraint firstItem="Nk5-0r-rVv" firstAttribute="centerX" secondItem="FFZ-n6-WSA" secondAttribute="centerX" id="cbH-X3-5Z7"/>
@@ -168,14 +229,19 @@
                             <constraint firstItem="PCL-rq-w1N" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="f2P-ge-3E1"/>
                             <constraint firstItem="XMA-MT-qTf" firstAttribute="leading" secondItem="PCL-rq-w1N" secondAttribute="trailing" constant="8" id="j33-Xy-wq4"/>
                             <constraint firstAttribute="bottom" secondItem="UnS-gL-Ld2" secondAttribute="bottom" constant="8" id="kL7-Oz-8zT"/>
+                            <constraint firstItem="3mt-sa-IXy" firstAttribute="leading" secondItem="eI2-Ox-Kq9" secondAttribute="trailing" constant="8" id="lar-EN-BKf"/>
                             <constraint firstItem="9MU-ci-1bf" firstAttribute="leading" secondItem="FFZ-n6-WSA" secondAttribute="leading" constant="20" id="ogA-ho-GOQ"/>
+                            <constraint firstItem="kxZ-J4-v7Y" firstAttribute="leading" secondItem="4IV-gt-hml" secondAttribute="trailing" constant="8" id="omG-y4-Ir7"/>
+                            <constraint firstAttribute="trailing" secondItem="3mt-sa-IXy" secondAttribute="trailing" constant="20" id="shh-jT-sXB"/>
                             <constraint firstAttribute="trailing" secondItem="Nk5-0r-rVv" secondAttribute="trailing" constant="20" id="tdS-94-Sdy"/>
                             <constraint firstAttribute="trailing" secondItem="EBX-fS-L8a" secondAttribute="trailing" constant="20" id="vck-wO-YFV"/>
                             <constraint firstAttribute="trailing" secondItem="qPJ-Ta-jTg" secondAttribute="trailing" constant="20" id="wxK-OE-YGb"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cpuSensorPopUpButton" destination="3mt-sa-IXy" id="dQN-zm-u5n"/>
                         <outlet property="gitHubButton" destination="SH4-BH-lnm" id="onC-JC-iWi"/>
+                        <outlet property="gpuSensorPopUpButton" destination="kxZ-J4-v7Y" id="Uz1-Vs-5Eg"/>
                         <outlet property="menuBarIconPopUpButton" destination="EBX-fS-L8a" id="Hb6-u3-asv"/>
                         <outlet property="monitorRefreshTimeIntervalPopUpButton" destination="XMA-MT-qTf" id="ruL-od-fUK"/>
                         <outlet property="temperatureUnitPopUpButton" destination="qPJ-Ta-jTg" id="jCg-N6-lEk"/>
