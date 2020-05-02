@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375F0C14245A956F000C7D4D /* Sensor+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F0C13245A956F000C7D4D /* Sensor+FNYExtensions.swift */; };
 		8410EFB42336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
 		8410EFB52336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
 		8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB72336B5B50003F94C /* FNYLauncher.swift */; };
@@ -80,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		375F0C13245A956F000C7D4D /* Sensor+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+FNYExtensions.swift"; sourceTree = "<group>"; };
 		8410EFB32336998D0003F94C /* Fan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fan.swift; path = smc/SMC/Fan.swift; sourceTree = "<group>"; };
 		8410EFB72336B5B50003F94C /* FNYLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLauncher.swift; sourceTree = "<group>"; };
 		8410EFBB2336C4690003F94C /* FNYPreferencesWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FNYPreferencesWindow.storyboard; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */,
 				84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */,
 				8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */,
+				375F0C13245A956F000C7D4D /* Sensor+FNYExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				8410EFB42336998D0003F94C /* Fan.swift in Sources */,
 				84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */,
 				84E993F3232ECE5E009000FC /* FNYDelegateMulticast.swift in Sources */,
+				375F0C14245A956F000C7D4D /* Sensor+FNYExtensions.swift in Sources */,
 				8410EFCB2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */,
 				84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */,
 				84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */,

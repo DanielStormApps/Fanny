@@ -63,8 +63,8 @@ class FNYMonitor {
             //
         #else
             let fans: [Fan] = SMC.shared.fans()
-            let cpuTemperature: Temperature? = SMC.shared.cpuTemperatureAverage()
-            let gpuTemperature: Temperature? = SMC.shared.gpuTemperatureAverage()
+            let cpuTemperature: Temperature? = .cpu()
+            let gpuTemperature: Temperature? = .gpu()
         
             updateLocalStorageSystemStats((fans: fans, cpuTemperature: cpuTemperature, gpuTemperature: gpuTemperature))
         #endif

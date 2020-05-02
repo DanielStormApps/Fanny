@@ -39,8 +39,8 @@ class FNYMenuController {
         var title: String?
         
         switch FNYUserPreferences.menuBarIconOption().index {
-        case 1: title = SMC.shared.cpuTemperatureAverage()?.formattedTemperature(rounded: true)
-        case 2: title = SMC.shared.gpuTemperatureAverage()?.formattedTemperature(rounded: true)
+        case 1: title = Temperature.cpu()?.formattedTemperature(rounded: true)
+        case 2: title = Temperature.gpu()?.formattedTemperature(rounded: true)
         default: image = NSImage(named: "status-item-icon-default.png")
         }
         
@@ -50,8 +50,8 @@ class FNYMenuController {
     // MARK: - Update Menu Items
     @objc private func updateMenuItems() {
         let items: [NSMenuItem] = menuItems(fans: SMC.shared.fans(),
-                                            cpuTemperature: SMC.shared.cpuTemperatureAverage(),
-                                            gpuTemperature: SMC.shared.gpuTemperatureAverage())
+                                            cpuTemperature: .cpu(),
+                                            gpuTemperature: .gpu())
         
         guard !items.isEmpty else { return }
         if #available(OSX 10.14, *) {
@@ -69,8 +69,8 @@ class FNYMenuController {
     private func updateMenuToolTip() {
         guard
             let toolTip: String = menuToolTip(fans: SMC.shared.fans(),
-                                              cpuTemperature: SMC.shared.cpuTemperatureAverage(),
-                                              gpuTemperature: SMC.shared.gpuTemperatureAverage())
+                                              cpuTemperature: .cpu(),
+                                              gpuTemperature: .gpu())
             else { return }
         
         statusBar.updateStatusItem(toolTip: toolTip)

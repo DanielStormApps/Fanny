@@ -25,5 +25,18 @@ extension Temperature {
             ? String(format: "%.0f\(temperatureUnitOption.suffix)", temperature.rounded())
             : String(format: "%.2f\(temperatureUnitOption.suffix)", temperature)
     }
-    
+
+    #if APP_EXTENSION
+        //
+    #else
+        static func cpu() -> Temperature? {
+            let cpuSensorOption = FNYUserPreferences.cpuSensorOption()
+            return cpuSensorOption.index == 0 ? SMC.shared.cpuTemperatureAverage() : SMC.shared.cpuTemperature(key: cpuSensorOption.key)
+        }
+
+        static func gpu() -> Temperature? {
+            let gpuSensorOption = FNYUserPreferences.gpuSensorOption()
+            return gpuSensorOption.index == 0 ? SMC.shared.gpuTemperatureAverage() : SMC.shared.gpuTemperature(key: gpuSensorOption.key)
+        }
+    #endif
 }
