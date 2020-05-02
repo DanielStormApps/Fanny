@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		375F0C14245A956F000C7D4D /* Sensor+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F0C13245A956F000C7D4D /* Sensor+FNYExtensions.swift */; };
 		8410EFB42336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
 		8410EFB52336998D0003F94C /* Fan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB32336998D0003F94C /* Fan.swift */; };
 		8410EFB92336B5B50003F94C /* FNYLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFB72336B5B50003F94C /* FNYLauncher.swift */; };
@@ -24,6 +23,7 @@
 		8410EFCE2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
 		8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */; };
 		8424681B235B945600E21182 /* status-item-icon-default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8424681A235B945600E21182 /* status-item-icon-default.png */; };
+		844F4E24245DDA96002D6DC4 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D41231D7C9A00B8A9D5 /* Sensor.swift */; };
 		84620D862447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */; };
 		84620D872447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */; };
 		84C31CE8231D776C00B8A9D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31CE7231D776C00B8A9D5 /* AppDelegate.swift */; };
@@ -32,7 +32,7 @@
 		84C31D02231D78B600B8A9D5 /* FNYWidgetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D00231D78B600B8A9D5 /* FNYWidgetViewController.xib */; };
 		84C31D06231D78B600B8A9D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C31D04231D78B600B8A9D5 /* InfoPlist.strings */; };
 		84C31D0A231D78B600B8A9D5 /* FannyWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84C31CF9231D78B500B8A9D5 /* FannyWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */; };
+		84C31D4B231D7C9A00B8A9D5 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D41231D7C9A00B8A9D5 /* Sensor.swift */; };
 		84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */; };
 		84C31D4D231D7C9A00B8A9D5 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D43231D7C9A00B8A9D5 /* Device.swift */; };
 		84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */; };
@@ -81,7 +81,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		375F0C13245A956F000C7D4D /* Sensor+FNYExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sensor+FNYExtensions.swift"; sourceTree = "<group>"; };
 		8410EFB32336998D0003F94C /* Fan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Fan.swift; path = smc/SMC/Fan.swift; sourceTree = "<group>"; };
 		8410EFB72336B5B50003F94C /* FNYLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNYLauncher.swift; sourceTree = "<group>"; };
 		8410EFBB2336C4690003F94C /* FNYPreferencesWindow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FNYPreferencesWindow.storyboard; sourceTree = "<group>"; };
@@ -104,7 +103,7 @@
 		84C31D03231D78B600B8A9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C31D05231D78B600B8A9D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fanny-widget.entitlements"; sourceTree = "<group>"; };
-		84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Sensor.swift"; path = "smc/SMC/SMC+Sensor.swift"; sourceTree = "<group>"; };
+		84C31D41231D7C9A00B8A9D5 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sensor.swift; path = smc/SMC/Sensor.swift; sourceTree = "<group>"; };
 		84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SMCStructure.swift; path = smc/SMC/SMCStructure.swift; sourceTree = "<group>"; };
 		84C31D43231D7C9A00B8A9D5 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = smc/SMC/Device.swift; sourceTree = "<group>"; };
 		84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SMC+Extensions.swift"; path = "smc/SMC/SMC+Extensions.swift"; sourceTree = "<group>"; };
@@ -167,7 +166,6 @@
 				8410EFCA2336E4A00003F94C /* Temperature+FNYExtensions.swift */,
 				84620D852447C2F3003B7B91 /* String+FNYExtensions.swift */,
 				8410EFCD2336F1CE0003F94C /* Bundle+FNYExtensions.swift */,
-				375F0C13245A956F000C7D4D /* Sensor+FNYExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,9 +259,9 @@
 				84C31D42231D7C9A00B8A9D5 /* SMCStructure.swift */,
 				84C31D43231D7C9A00B8A9D5 /* Device.swift */,
 				8410EFB32336998D0003F94C /* Fan.swift */,
+				84C31D41231D7C9A00B8A9D5 /* Sensor.swift */,
 				84C31D4A231D7C9A00B8A9D5 /* Temperature.swift */,
 				84C31D44231D7C9A00B8A9D5 /* SMC+Extensions.swift */,
-				84C31D41231D7C9A00B8A9D5 /* SMC+Sensor.swift */,
 				84C31D45231D7C9A00B8A9D5 /* Hardware */,
 			);
 			path = SMC;
@@ -461,7 +459,6 @@
 				8410EFB42336998D0003F94C /* Fan.swift in Sources */,
 				84C31D4E231D7C9A00B8A9D5 /* SMC+Extensions.swift in Sources */,
 				84E993F3232ECE5E009000FC /* FNYDelegateMulticast.swift in Sources */,
-				375F0C14245A956F000C7D4D /* Sensor+FNYExtensions.swift in Sources */,
 				8410EFCB2336E4A00003F94C /* Temperature+FNYExtensions.swift in Sources */,
 				84C31D4C231D7C9A00B8A9D5 /* SMCStructure.swift in Sources */,
 				84C31D51231D7C9A00B8A9D5 /* SMC+GPU.swift in Sources */,
@@ -473,7 +470,7 @@
 				8410EFBE2336C7230003F94C /* FNYPreferencesViewController.swift in Sources */,
 				84C31D60231D8A1400B8A9D5 /* FNYStatusBar.swift in Sources */,
 				8410EFCE2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */,
-				84C31D4B231D7C9A00B8A9D5 /* SMC+Sensor.swift in Sources */,
+				84C31D4B231D7C9A00B8A9D5 /* Sensor.swift in Sources */,
 				84C31D52231D7C9A00B8A9D5 /* SMC.swift in Sources */,
 				84C31D62231D8FCF00B8A9D5 /* FNYMenuController.swift in Sources */,
 				84C31D53231D7C9A00B8A9D5 /* Temperature.swift in Sources */,
@@ -502,6 +499,7 @@
 				84620D872447C2F3003B7B91 /* String+FNYExtensions.swift in Sources */,
 				8410EFCF2336F1CE0003F94C /* Bundle+FNYExtensions.swift in Sources */,
 				84E99402232EE709009000FC /* FNYDelegateMulticast.swift in Sources */,
+				844F4E24245DDA96002D6DC4 /* Sensor.swift in Sources */,
 				84E99405232EEB55009000FC /* Global.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
