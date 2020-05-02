@@ -207,10 +207,10 @@
 				8410EFC02336CBA40003F94C /* Main.xib */,
 				84C31D5B231D871D00B8A9D5 /* Menu */,
 				8410EFBA2336C40D0003F94C /* Preferences */,
-				84C31CE9231D776D00B8A9D5 /* Assets.xcassets */,
 				84246819235B930800E21182 /* Assets */,
-				84C31CEE231D776D00B8A9D5 /* Info.plist */,
+				84C31CE9231D776D00B8A9D5 /* Assets.xcassets */,
 				84C31CEF231D776D00B8A9D5 /* fanny.entitlements */,
+				84C31CEE231D776D00B8A9D5 /* Info.plist */,
 			);
 			path = fanny;
 			sourceTree = "<group>";
@@ -229,9 +229,9 @@
 				84E9940C232EF0C0009000FC /* Widget */,
 				8410EFB62336B5A50003F94C /* Launcher */,
 				84E9940E232EF248009000FC /* Button */,
+				84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */,
 				84C31D03231D78B600B8A9D5 /* Info.plist */,
 				84C31D04231D78B600B8A9D5 /* InfoPlist.strings */,
-				84C31D07231D78B600B8A9D5 /* fanny-widget.entitlements */,
 			);
 			path = "fanny-widget";
 			sourceTree = "<group>";
@@ -680,7 +680,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fannywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -706,7 +706,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.fannywidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -736,7 +736,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fannywidget.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -764,7 +764,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.2.2;
+				MARKETING_VERSION = 2.3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fannywidget.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
