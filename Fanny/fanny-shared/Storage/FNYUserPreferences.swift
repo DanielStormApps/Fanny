@@ -11,8 +11,8 @@ import Foundation
 typealias MonitorRefreshTimeIntervalOption = (index: Int, title: String, timeInterval: TimeInterval)
 typealias TemperatureUnitOption = (index: Int, title: String, suffix: String)
 typealias MenuBarIconOption = (index: Int, title: String)
-typealias CPUSensorOption = (index: Int, title: String, key: String)
-typealias GPUSensorOption = (index: Int, title: String, key: String)
+typealias CPUSensorOption = (index: Int, title: String, key: String?)
+typealias GPUSensorOption = (index: Int, title: String, key: String?)
 
 class FNYUserPreferences {
     
@@ -37,23 +37,19 @@ class FNYUserPreferences {
                 (2, "GPU Temperature")]
     }()
 
-    #if APP_EXTENSION
-        //
-    #else
-        static let cpuSensorOptions: [CPUSensorOption] = {
-            return [defaultCPUSensorOption] + SMC.Sensor.CPU.all.enumerated().map { ($0 + 1, SMC.Sensor.CPU.title(for: $1), $1) }
-        }()
+    static let cpuSensorOptions: [CPUSensorOption] = {
+        return [defaultCPUSensorOption] + Sensor.CPU.allCases.map({ ($0.index + 1, $0.title, $0.key) })
+    }()
 
-        static let gpuSensorOptions: [GPUSensorOption] = {
-            return [defaultGPUSensorOption] + SMC.Sensor.GPU.all.enumerated().map { ($0 + 1, SMC.Sensor.GPU.title(for: $1), $1) }
-        }()
-    #endif
+    static let gpuSensorOptions: [GPUSensorOption] = {
+        return [defaultGPUSensorOption] + Sensor.GPU.allCases.map({ ($0.index + 1, $0.title, $0.key) })
+    }()
     
     private static let defaultMonitorRefreshTimeIntervalOption: MonitorRefreshTimeIntervalOption = (0, "3 seconds", 3.0)
     private static let defaultTemperatureUnitOption: TemperatureUnitOption = (0, "Celsius (°C)", "°C")
     private static let defaultMenuBarIconOption: MenuBarIconOption = (0, "Fanny Icon")
-    private static let defaultCPUSensorOption: CPUSensorOption = (0, "Average", "")
-    private static let defaultGPUSensorOption: GPUSensorOption = (0, "Average", "")
+    private static let defaultCPUSensorOption: CPUSensorOption = (0, "Average", nil)
+    private static let defaultGPUSensorOption: GPUSensorOption = (0, "Average", nil)
 
     private static let sharedDefaultsSuiteName: String = "fanny-shared-defaults"
     private static let sharedDefaults: UserDefaults = UserDefaults(suiteName: FNYUserPreferences.sharedDefaultsSuiteName)!
@@ -88,29 +84,26 @@ class FNYUserPreferences {
         return menuBarIconOptions.first(where: { $0.index == savedIndex }) ?? defaultMenuBarIconOption
     }
     
-    #if APP_EXTENSION
-        //
-    #else
-        // MARK: - CPU Sensor
-        static func save(cpuSensorOption: CPUSensorOption) {
-            sharedDefaults.set(cpuSensorOption.key, forKey: FNYUserPreferencesKey.cpuSensorOption.stringValue)
-        }
+    // MARK: - CPU Sensor
+    static func save(cpuSensorOption: CPUSensorOption) {
+        sharedDefaults.set(cpuSensorOption.index, forKey: FNYUserPreferencesKey.cpuSensorOption.stringValue)
+    }
 
-        static func cpuSensorOption() -> CPUSensorOption {
-            let savedKey: String? = sharedDefaults.string(forKey: FNYUserPreferencesKey.cpuSensorOption.stringValue)
-            return cpuSensorOptions.first(where: { $0.key == savedKey }) ?? defaultCPUSensorOption
-        }
+    static func cpuSensorOption() -> CPUSensorOption {
+        let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.cpuSensorOption.stringValue)
+        return cpuSensorOptions.first(where: { $0.index == savedIndex }) ?? defaultCPUSensorOption
+    }
 
-        // MARK: - GPU Sensor
-        static func save(gpuSensorOption: GPUSensorOption) {
-            sharedDefaults.set(gpuSensorOption.key, forKey: FNYUserPreferencesKey.gpuSensorOption.stringValue)
-        }
+    // MARK: - GPU Sensor
+    static func save(gpuSensorOption: GPUSensorOption) {
+        sharedDefaults.set(gpuSensorOption.index, forKey: FNYUserPreferencesKey.gpuSensorOption.stringValue)
+    }
 
-        static func gpuSensorOption() -> GPUSensorOption {
-            let savedKey: String? = sharedDefaults.string(forKey: FNYUserPreferencesKey.gpuSensorOption.stringValue)
-            return gpuSensorOptions.first(where: { $0.key == savedKey }) ?? defaultGPUSensorOption
-        }
-    #endif
+    static func gpuSensorOption() -> GPUSensorOption {
+        let savedIndex: Int = sharedDefaults.integer(forKey: FNYUserPreferencesKey.gpuSensorOption.stringValue)
+        return gpuSensorOptions.first(where: { $0.index == savedIndex }) ?? defaultGPUSensorOption
+    }
+    
 }
 
 // MARK: - FNYUserPreferencesKey

@@ -63,8 +63,26 @@ class FNYMonitor {
             //
         #else
             let fans: [Fan] = SMC.shared.fans()
-            let cpuTemperature: Temperature? = .cpu()
-            let gpuTemperature: Temperature? = .gpu()
+        
+            var cpuTemperature: Temperature?
+            if
+                let cpuSensorOptionKey: SensorKey = FNYUserPreferences.cpuSensorOption().key,
+                let cpuSensor: Sensor.CPU = Sensor.CPU(key: cpuSensorOptionKey) {
+                cpuTemperature = SMC.shared.cpuTemperature(sensor: cpuSensor)
+            }
+            else {
+                cpuTemperature = SMC.shared.cpuTemperatureAverage()
+            }
+            
+            var gpuTemperature: Temperature?
+            if
+                let gpuSensorOptionKey: SensorKey = FNYUserPreferences.gpuSensorOption().key,
+                let gpuSensor: Sensor.GPU = Sensor.GPU(key: gpuSensorOptionKey) {
+                gpuTemperature = SMC.shared.gpuTemperature(sensor: gpuSensor)
+            }
+            else {
+                gpuTemperature = SMC.shared.gpuTemperatureAverage()
+            }
         
             updateLocalStorageSystemStats((fans: fans, cpuTemperature: cpuTemperature, gpuTemperature: gpuTemperature))
         #endif
