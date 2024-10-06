@@ -13,6 +13,7 @@ typealias TemperatureUnitOption = (index: Int, title: String, suffix: String)
 typealias MenuBarIconOption = (index: Int, title: String)
 typealias CPUSensorOption = (index: Int, title: String, key: String?)
 typealias GPUSensorOption = (index: Int, title: String, key: String?)
+typealias FanSensorOption = (index: Int, title: String, key: String?)
 
 class FNYUserPreferences {
     
@@ -34,7 +35,8 @@ class FNYUserPreferences {
     static let menuBarIconOptions: [MenuBarIconOption] = {
         return [defaultMenuBarIconOption,
                 (1, "CPU Temperature"),
-                (2, "GPU Temperature")]
+                (2, "GPU Temperature"),
+                (3, "Fastest Fan RPM")]
     }()
 
     static let cpuSensorOptions: [CPUSensorOption] = {

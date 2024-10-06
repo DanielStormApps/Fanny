@@ -41,6 +41,7 @@ class FNYMenuController {
         switch FNYUserPreferences.menuBarIconOption().index {
         case 1: title = FNYLocalStorage.cpuTemperature()?.formattedTemperature(rounded: true)
         case 2: title = FNYLocalStorage.gpuTemperature()?.formattedTemperature(rounded: true)
+        case 3: title = FNYLocalStorage.fans().fastest()?.formattedRPM()
         default: image = NSImage(named: "status-item-icon-default.png")
         }
         
