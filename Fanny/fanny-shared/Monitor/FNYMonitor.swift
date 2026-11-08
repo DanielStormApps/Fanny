@@ -68,7 +68,7 @@ class FNYMonitor {
             if
                 let cpuSensorOptionKey: SensorKey = FNYUserPreferences.cpuSensorOption().key,
                 let cpuSensor: Sensor.CPU = Sensor.CPU(key: cpuSensorOptionKey) {
-                cpuTemperature = SMC.shared.cpuTemperature(sensor: cpuSensor)
+                cpuTemperature = SMC.shared.cpuTemperature(sensor: cpuSensor) ?? SMC.shared.cpuTemperatureAverage()
             }
             else {
                 cpuTemperature = SMC.shared.cpuTemperatureAverage()
@@ -78,7 +78,7 @@ class FNYMonitor {
             if
                 let gpuSensorOptionKey: SensorKey = FNYUserPreferences.gpuSensorOption().key,
                 let gpuSensor: Sensor.GPU = Sensor.GPU(key: gpuSensorOptionKey) {
-                gpuTemperature = SMC.shared.gpuTemperature(sensor: gpuSensor)
+                gpuTemperature = SMC.shared.gpuTemperature(sensor: gpuSensor) ?? SMC.shared.gpuTemperatureAverage()
             }
             else {
                 gpuTemperature = SMC.shared.gpuTemperatureAverage()
