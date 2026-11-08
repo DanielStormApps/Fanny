@@ -38,9 +38,11 @@ class FNYMenuController {
         var image: NSImage?
         var title: String?
         
+        // A missing temperature shows as "--", as for a reading of 0 °C, so the status item is never empty.
+        let noTemperature: Temperature = Temperature.from(celsius: 0.0)
         switch FNYUserPreferences.menuBarIconOption().index {
-        case 1: title = FNYLocalStorage.cpuTemperature()?.formattedTemperature(rounded: true)
-        case 2: title = FNYLocalStorage.gpuTemperature()?.formattedTemperature(rounded: true)
+        case 1: title = (FNYLocalStorage.cpuTemperature() ?? noTemperature).formattedTemperature(rounded: true)
+        case 2: title = (FNYLocalStorage.gpuTemperature() ?? noTemperature).formattedTemperature(rounded: true)
         default: image = NSImage(named: "status-item-icon-default.png")
         }
         
