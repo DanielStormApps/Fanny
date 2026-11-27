@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "PER INIZIARE",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Come funziona Fanny?",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny vive nella barra dei menu e mostra la velocità delle ventole del Mac e la temperatura di CPU e GPU."
+            },
+            {
+              "type": "bold",
+              "text": "Cosa vedrai:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "La velocità attuale di ogni ventola, con sotto la velocità minima, massima e obiettivo",
+                "Le temperature di CPU e GPU",
+                "Tutte le letture a colpo d'occhio passando il puntatore sull'elemento nella barra dei menu"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Fai clic sull'icona di Fanny nella barra dei menu per vedere le letture, aprire Impostazioni o uscire da Fanny. Mentre il menu è aperto, le letture si aggiornano ogni secondo."
+            },
+            {
+              "type": "bold",
+              "text": "Da sapere:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny si limita a leggere i sensori del Mac. Non cambia mai il funzionamento delle ventole",
+                "Fanny deve restare aperta nella barra dei menu per mantenere aggiornate letture e widget"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "Come scelgo cosa mostra la barra dei menu?",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny può mostrare la propria icona, le velocità delle ventole e le temperature di CPU e GPU direttamente nella barra dei menu, nell'ordine che preferisci."
+            },
+            {
+              "type": "bold",
+              "text": "Per cambiare l'impostazione:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic sull'icona di Fanny nella barra dei menu e scegli Impostazioni",
+                "Seleziona Barra dei menu nella barra laterale",
+                "Sotto Mostra nella barra dei menu, seleziona ogni elemento che vuoi vedere",
+                "Trascina gli elementi nell'ordine che preferisci"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "L'icona di Fanny è sempre la prima e torna da sola se non è selezionato nient'altro. Anche una temperatura che disattivi in Sensori esce dalla barra dei menu."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni della barra dei menu",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "Come uso la finestra fluttuante?",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "La finestra fluttuante mantiene le letture sullo schermo, sopra le altre finestre, così puoi tenerle d'occhio mentre lavori."
+            },
+            {
+              "type": "bold",
+              "text": "Per attivarla:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic sull'icona di Fanny nella barra dei menu",
+                "Scegli Finestra fluttuante"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Per scegliere cosa mostra:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Apri Impostazioni e seleziona Finestra fluttuante nella barra laterale",
+                "Seleziona le schede che vuoi, come CPU, GPU o una delle ventole",
+                "Seleziona le letture che vuoi su ogni scheda",
+                "Trascina le schede e le letture per metterle nell'ordine che preferisci",
+                "Scegli Orizzontale o Verticale da Disposizione per cambiare come sono disposte le schede"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Da sapere:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Trascina la finestra fluttuante dove vuoi sullo schermo",
+                "Passaci sopra con il puntatore e fai clic sul pulsante meno per chiuderla",
+                "Fai clic con il tasto destro per le opzioni rapide, come nasconderla o aprire Impostazioni",
+                "Modifica l'intensità di Liquid Glass nelle impostazioni Aspetto",
+                "Se disattivi la temperatura di CPU o GPU nelle impostazioni Sensori, la relativa scheda mostra Disattivata. Fai clic sulla scheda per aprire le impostazioni Sensori"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Finestra fluttuante",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "Perché le mie ventole risultano ferme?",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Ferma significa che la ventola non sta girando, ed è normale. I Mac con chip Apple spesso tengono le ventole ferme finché restano freschi e silenziosi, e le avviano solo quando serve."
+            },
+            {
+              "type": "bold",
+              "text": "Da sapere:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Le ventole di solito si avviano quando il Mac lavora sodo, per esempio durante l'esportazione di video o mentre giochi",
+                "La velocità obiettivo indica cosa sta chiedendo il Mac alla ventola",
+                "Alcuni Mac, come MacBook Air, non hanno ventole, quindi Fanny mostra Questo Mac non ha ventole"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Se Fanny mostra Letture non disponibili, esci da Fanny e riaprila. Se non basta, scrivimi."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Contattaci",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "SENSORI",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Quale sensore usa Fanny?",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Il Mac ha molti sensori di temperatura e Apple non indica una temperatura ufficiale della CPU. Per impostazione predefinita Fanny mostra la media dei core della CPU, come la maggior parte delle app di monitoraggio del Mac, e puoi scegliere un'altra lettura in qualsiasi momento."
+            },
+            {
+              "type": "bold",
+              "text": "Sensore CPU:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Media mostra la media di tutti i core",
+                "Più caldo mostra il core più caldo",
+                "Die mostra il sensore die della CPU"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Sensore GPU:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Media mostra la media dei sensori della GPU",
+                "Più caldo mostra il sensore GPU più caldo"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Media è una buona scelta per la maggior parte delle persone. Puoi anche disattivare la temperatura di CPU o GPU se non ti serve, e Fanny smette di leggerla."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Sensori",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "Perché le letture sono diverse da quelle di altre app?",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Le app possono leggere sensori diversi dello stesso Mac e le temperature cambiano di secondo in secondo, quindi due app raramente mostrano lo stesso identico valore."
+            },
+            {
+              "type": "bold",
+              "text": "Perché i valori differiscono:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Un'app può mostrare il core più caldo mentre un'altra mostra la media",
+                "Le app si aggiornano in momenti diversi, quindi rilevano istanti diversi",
+                "La barra dei menu arrotonda ai gradi interi, mentre il menu mostra un decimale"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Per confrontare con un'app che mostra la parte più calda del chip, imposta Sensore CPU su Più caldo."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Sensori",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "Come cambio l'unità o la frequenza di aggiornamento?",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny mostra le temperature in Celsius o Fahrenheit in base all'area geografica del Mac e aggiorna le letture ogni 4 secondi. Puoi cambiare entrambe le impostazioni."
+            },
+            {
+              "type": "bold",
+              "text": "Per cambiarle:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic sull'icona di Fanny nella barra dei menu e scegli Impostazioni",
+                "Seleziona Sensori nella barra laterale",
+                "Da Unità di temperatura scegli Celsius, Fahrenheit o Kelvin",
+                "Imposta Intervallo di aggiornamento sul numero di secondi che vuoi tra una lettura e l'altra"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "La barra dei menu, il menu, i widget e Siri usano tutti l'unità che scegli."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Sensori",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "WIDGET E SIRI",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "Come aggiungo un widget?",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Il widget di Fanny mostra ventole e temperature sulla scrivania o nel Centro Notifiche, nelle dimensioni piccola, media, grande ed extra grande."
+            },
+            {
+              "type": "bold",
+              "text": "Per aggiungerlo:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic con il tasto destro su un punto vuoto della scrivania e scegli Modifica widget",
+                "Cerca Fanny",
+                "Scegli una dimensione e trascinalo dove vuoi"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Cosa mostra:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Le velocità delle ventole e le temperature, con l'indicazione di quanto tempo fa sono state aggiornate",
+                "Fai clic per aggiornare quando le letture non sono aggiornate o non sono disponibili, per esempio dopo che Fanny è stata chiusa, quando l'ultima lettura risale a più di un'ora fa o quando Fanny non è riuscita a leggere le ventole. Fai clic sul widget per aprire Fanny e aggiornarlo"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "Come uso Siri e Comandi rapidi?",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Puoi chiedere a Siri le tue letture oppure usarle nei tuoi comandi rapidi."
+            },
+            {
+              "type": "bold",
+              "text": "Prova a dire:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "\"Quali sono le mie letture di Fanny\"",
+                "\"Qual è la velocità della ventola di Fanny\"",
+                "\"Qual è la temperatura della CPU in Fanny\" oppure \"Qual è la temperatura della GPU in Fanny\"",
+                "\"Mostra la finestra fluttuante di Fanny\" oppure \"Nascondi la finestra fluttuante di Fanny\"",
+                "\"Verifica aggiornamenti di Fanny\"",
+                "\"Apri le impostazioni di Fanny\""
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Per usarle in Comandi rapidi:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Apri l'app Comandi rapidi",
+                "Crea un nuovo comando rapido e cerca Fanny",
+                "Aggiungi una qualsiasi azione di Fanny, come Ottieni letture o Imposta unità di temperatura di Fanny"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Le temperature vengono restituite nell'unità che hai scelto in Sensori. Se una temperatura è disattivata lì, Siri te lo farà sapere."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Sensori",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "ASSISTENZA",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "Come aggiorno Fanny?",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny verifica una volta al giorno la presenza di una nuova versione e ti avvisa quando è pronta."
+            },
+            {
+              "type": "bold",
+              "text": "Quando un aggiornamento è pronto:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Aggiornamento disponibile compare nel menu di Fanny",
+                "Fai clic per aprire la pagina di download, poi sostituisci Fanny nella cartella Applicazioni con la nuova versione"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Per verificare subito:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic sull'icona di Fanny nella barra dei menu e scegli Impostazioni",
+                "Seleziona Generali nella barra laterale",
+                "Fai clic su Verifica ora accanto a Verifica aggiornamenti"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Puoi disattivare Verifica aggiornamenti automaticamente in Generali e controllare quando preferisci."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Generali",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "Come apro Fanny all'avvio del Mac?",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny può aprirsi quando accedi, così le letture sono sempre nella barra dei menu. È disattivata finché non la attivi e puoi cambiarla in qualsiasi momento."
+            },
+            {
+              "type": "bold",
+              "text": "Per attivarla o disattivarla:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic sull'icona di Fanny nella barra dei menu e scegli Impostazioni",
+                "Seleziona Generali nella barra laterale",
+                "Attiva o disattiva Apri al login"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Se macOS ti chiede prima di approvare Fanny, compare una riga Approvazione richiesta con un pulsante che apre Impostazioni di Sistema. Consenti Fanny in Elementi login."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Generali",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Cosa raccoglie Fanny?",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Le tue letture restano sul Mac. Fanny non invia mai da nessuna parte le velocità delle ventole o le temperature."
+            },
+            {
+              "type": "bold",
+              "text": "Cosa invia Fanny:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Dati di utilizzo anonimi, come le impostazioni in uso, per aiutare a migliorare Fanny",
+                "Rapporti anonimi sugli arresti anomali, per poter individuare e risolvere i problemi",
+                "Una verifica giornaliera degli aggiornamenti su GitHub, che include solo la versione di Fanny"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "I dati di utilizzo e i rapporti sugli arresti anomali sono anonimi e non includono mai le tue letture. Puoi disattivarli entrambi in Privacy nelle Impostazioni e leggere l'informativa completa sulla privacy da Info nelle Impostazioni."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Privacy",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "Come disinstallo Fanny?",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Puoi rimuovere Fanny in qualsiasi momento, come qualsiasi altra app."
+            },
+            {
+              "type": "bold",
+              "text": "Per disinstallare Fanny:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Rimuovi i widget di Fanny dalla scrivania e dal Centro Notifiche",
+                "Disattiva Apri al login nelle impostazioni Generali",
+                "Fai clic sull'icona di Fanny nella barra dei menu e scegli Esci da Fanny",
+                "Apri la cartella Applicazioni e trascina Fanny nel Cestino"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Apri le impostazioni Generali",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "Come contatto l'assistenza?",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Hai una domanda, un'idea o un problema? Mi farebbe piacere sentirti."
+            },
+            {
+              "type": "bold",
+              "text": "Per metterti in contatto:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fai clic su Contattaci alla fine di questo articolo",
+                "Scrivi il messaggio e invia"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Si apre un'email con l'indirizzo dell'assistenza già inserito. Se usi Mail, viene allegata una copia dei log di Fanny per aiutarmi a esaminare più rapidamente qualsiasi problema."
+            },
+            {
+              "type": "bold",
+              "text": "Consigli per ricevere aiuto in fretta:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Descrivi cosa stavi facendo quando si è verificato il problema",
+                "Indica il modello del Mac e la versione di macOS"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Puoi anche richiedere una funzionalità o segnalare un problema su GitHub. In Impostazioni, seleziona Info, poi fai clic su Richiedi o Segnala."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Contattaci",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "INFO",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "Chi ha creato questa app?",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Ciao! Sono Daniel Storm, uno sviluppatore indipendente di Knoxville, nel Tennessee, dove vivo con mia moglie e la nostra Golden Retriever English Cream, Maisy."
+            },
+            {
+              "type": "paragraph",
+              "text": "Ho creato Fanny perché volevo un modo semplice per vedere quanto sta lavorando il mio Mac, direttamente dalla barra dei menu."
+            },
+            {
+              "type": "paragraph",
+              "text": "Grazie mille per usare Fanny. Se vuoi sostenermi, dai un'occhiata alla mia altra app, Positive, per una dose quotidiana di positività. Aiuta anche a mantenere Fanny gratuita per tutti!"
+            },
+            {
+              "type": "paragraph",
+              "text": "Leggo ogni messaggio che arriva, quindi non esitare a scrivermi."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Scarica Positive",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "Contattaci",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

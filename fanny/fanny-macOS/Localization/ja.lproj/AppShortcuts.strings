@@ -1,0 +1,13 @@
+/* App Shortcut Siri phrases (ja). Keys must stay byte-identical to the phrases in
+   AppShortcuts.swift; keep ${applicationName} verbatim in every value. */
+"What's my ${applicationName} fan speed" = "${applicationName}のファン速度は？";
+"How fast are my fans in ${applicationName}" = "${applicationName}でファンはどのくらいの速さで回っている？";
+"What's my CPU temperature in ${applicationName}" = "${applicationName}でCPU温度を教えて";
+"What's my GPU temperature in ${applicationName}" = "${applicationName}でGPU温度を教えて";
+"Open ${applicationName} settings" = "${applicationName}の設定を開いて";
+"What are my ${applicationName} readings" = "${applicationName}の測定値を教えて";
+"How hot is my Mac in ${applicationName}" = "${applicationName}でMacの温度はどのくらい？";
+"What's the speed of ${fan} in ${applicationName}" = "${applicationName}で${fan}の速度を教えて";
+"Show ${applicationName} floating window" = "${applicationName}のフローティングウインドウを表示して";
+"Hide ${applicationName} floating window" = "${applicationName}のフローティングウインドウを非表示にして";
+"Check for ${applicationName} updates" = "${applicationName}のアップデートを確認して";

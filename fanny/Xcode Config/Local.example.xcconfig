@@ -1,0 +1,10 @@
+//
+//  Local.example.xcconfig
+//  fanny
+//
+//  Duplicate this file, rename the copy to Local.xcconfig (the gitignored name), and fill in your team ID,
+//  found in Xcode under Settings, Accounts, or at developer.apple.com/account under Membership.
+//  The app and widget sign with that team, and their shared app group becomes <team ID>.com.fannywidget.
+//
+
+DEVELOPMENT_TEAM =

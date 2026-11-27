@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "AAN DE SLAG",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Hoe werkt Fanny?",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny woont in je menubalk en laat zien hoe snel de ventilatoren van je Mac draaien en hoe warm de CPU en GPU zijn."
+            },
+            {
+              "type": "bold",
+              "text": "Wat je ziet:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "De huidige snelheid van elke ventilator, met daaronder het minimum, het maximum en het doel",
+                "De CPU- en GPU-temperatuur",
+                "Alle metingen in één oogopslag als je de aanwijzer over het onderdeel in de menubalk beweegt"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Klik op het Fanny-symbool in je menubalk om je metingen te zien, Instellingen te openen of Fanny te stoppen. Zolang het menu open is, worden de metingen elke seconde ververst."
+            },
+            {
+              "type": "bold",
+              "text": "Goed om te weten:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny leest alleen de sensoren van je Mac uit. Fanny verandert nooit hoe je ventilatoren draaien",
+                "Fanny moet geopend blijven in je menubalk om je metingen en widgets actueel te houden"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "Hoe kies ik wat de menubalk toont?",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny kan zijn symbool, je ventilatorsnelheden en je CPU- en GPU-temperatuur direct in je menubalk tonen, in elke gewenste volgorde."
+            },
+            {
+              "type": "bold",
+              "text": "Zo wijzig je het:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik op het Fanny-symbool in je menubalk en kies Instellingen",
+                "Selecteer Menubalk in de navigatiekolom",
+                "Vink onder Toon in menubalk elk onderdeel aan dat je wilt zien",
+                "Sleep de onderdelen in de gewenste volgorde"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Het Fanny-symbool staat altijd vooraan en komt vanzelf terug als niets anders is aangevinkt. Een temperatuur die je uitzet bij Sensoren verdwijnt ook uit de menubalk."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open instellingen voor menubalk",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "Hoe gebruik ik het zwevende venster?",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Het zwevende venster houdt je metingen op het scherm, boven je andere vensters, zodat je ze kunt volgen terwijl je werkt."
+            },
+            {
+              "type": "bold",
+              "text": "Zo zet je het aan:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik op het Fanny-symbool in je menubalk",
+                "Kies Zwevend venster"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Zo kies je wat het toont:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Open Instellingen en selecteer Zwevend venster in de navigatiekolom",
+                "Vink de kaarten aan die je wilt, zoals CPU, GPU of een van je ventilatoren",
+                "Vink de metingen aan die je op elke kaart wilt zien",
+                "Sleep kaarten en metingen om ze in de gewenste volgorde te zetten",
+                "Kies Horizontaal of Verticaal bij Indeling om te wijzigen hoe de kaarten staan"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Goed om te weten:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Sleep het zwevende venster waar je maar wilt op je scherm",
+                "Beweeg de aanwijzer erover en klik op de min-knop om het te sluiten",
+                "Klik met de rechtermuisknop voor snelle opties, zoals het verbergen of het openen van Instellingen",
+                "Wijzig hoe getint het glas is in de Weergave-instellingen",
+                "Als je de CPU- of GPU-temperatuur uitzet in de Sensoren-instellingen, toont de kaart Uitgeschakeld. Klik op de kaart om de Sensoren-instellingen te openen"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open instellingen voor zwevend venster",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "Waarom staan mijn ventilatoren op Uit?",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Uit betekent dat de ventilator stilstaat, wat normaal is. Macs met Apple-silicon houden hun ventilatoren vaak stil zolang ze koel en rustig zijn, en laten ze alleen draaien als dat nodig is."
+            },
+            {
+              "type": "bold",
+              "text": "Goed om te weten:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Ventilatoren starten meestal als je Mac hard werkt, bijvoorbeeld bij het exporteren van video of het spelen van games",
+                "Het doel toont wat je Mac de ventilator vraagt als volgende te doen",
+                "Sommige Macs, zoals de MacBook Air, hebben helemaal geen ventilatoren, dus dan toont Fanny Deze Mac heeft geen ventilatoren"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Als Fanny Metingen niet beschikbaar toont, stop Fanny dan en open het opnieuw. Helpt dat niet, neem dan gerust contact op."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Neem contact op",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "SENSOREN",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Welke sensor gebruikt Fanny?",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Je Mac heeft veel temperatuursensoren en Apple noemt er geen enkele de officiële CPU-temperatuur. Fanny toont standaard het gemiddelde van de CPU-kernen, zoals de meeste monitoringapps voor de Mac, en je kunt op elk moment een andere meting kiezen."
+            },
+            {
+              "type": "bold",
+              "text": "CPU-sensor:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Gemiddelde toont het gemiddelde van alle kernen",
+                "Heetste toont de heetste kern",
+                "Die toont de CPU-diesensor"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "GPU-sensor:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Gemiddelde toont het gemiddelde van de GPU-sensoren",
+                "Heetste toont de heetste GPU-sensor"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Gemiddelde is voor de meeste mensen een goede keuze. Je kunt de CPU- of GPU-temperatuur ook uitzetten als je die niet nodig hebt. Fanny stopt dan met uitlezen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open Sensoren-instellingen",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "Waarom wijken mijn metingen af van andere apps?",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Apps kunnen op dezelfde Mac verschillende sensoren uitlezen en temperaturen veranderen van seconde tot seconde, dus twee apps tonen zelden precies hetzelfde getal."
+            },
+            {
+              "type": "bold",
+              "text": "Waarom de getallen verschillen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "De ene app toont misschien de heetste kern, terwijl een andere het gemiddelde toont",
+                "Apps verversen op verschillende momenten, dus ze pakken verschillende momentopnames",
+                "De menubalk rondt af op hele graden, terwijl het menu één decimaal toont"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Om te vergelijken met een app die het heetste deel van de chip toont, zet je CPU-sensor op Heetste."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open Sensoren-instellingen",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "Hoe wijzig ik de eenheid of de verversingssnelheid?",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny toont temperaturen in Celsius of Fahrenheit, afhankelijk van de regio van je Mac, en ververst je metingen elke 4 seconden. Je kunt beide wijzigen."
+            },
+            {
+              "type": "bold",
+              "text": "Zo wijzig je dit:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik op het Fanny-symbool in je menubalk en kies Instellingen",
+                "Selecteer Sensoren in de navigatiekolom",
+                "Kies Celsius, Fahrenheit of Kelvin bij Temperatuureenheid",
+                "Stel Verversingsinterval in op het aantal seconden dat je tussen metingen wilt"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Je menubalk, menu, widgets en Siri gebruiken allemaal de eenheid die je kiest."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open Sensoren-instellingen",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "WIDGETS & SIRI",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "Hoe voeg ik een widget toe?",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "De widget van Fanny toont je ventilatoren en temperaturen op je bureaublad of in het Berichtencentrum, in de formaten klein, middelgroot, groot en extra groot."
+            },
+            {
+              "type": "bold",
+              "text": "Zo voeg je hem toe:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik met de rechtermuisknop op een lege plek op je bureaublad en kies Widgets bewerken",
+                "Zoek naar Fanny",
+                "Kies een formaat en sleep de widget naar de gewenste plek"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Wat je ziet:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Je ventilatorsnelheden en temperaturen, met hoe lang geleden ze zijn bijgewerkt",
+                "Klik om te verversen als de metingen verouderd of niet beschikbaar zijn, bijvoorbeeld nadat Fanny is gestopt, als de laatste meting meer dan een uur oud is of als Fanny de ventilatoren niet kon uitlezen. Klik op de widget om Fanny te openen en de metingen te verversen"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "Hoe gebruik ik Siri en Opdrachten?",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Je kunt Siri om je metingen vragen of ze gebruiken in je eigen opdrachten."
+            },
+            {
+              "type": "bold",
+              "text": "Probeer bijvoorbeeld:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "\"Wat zijn mijn metingen in Fanny\"",
+                "\"Wat is de ventilatorsnelheid in Fanny\"",
+                "\"Wat is mijn CPU-temperatuur in Fanny\" of \"Wat is mijn GPU-temperatuur in Fanny\"",
+                "\"Toon het zwevende venster van Fanny\" of \"Verberg het zwevende venster van Fanny\"",
+                "\"Zoek naar updates voor Fanny\"",
+                "\"Open de instellingen van Fanny\""
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Zo gebruik je ze in Opdrachten:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Open de app Opdrachten",
+                "Maak een nieuwe opdracht en zoek naar Fanny",
+                "Voeg een van de acties van Fanny toe, zoals Vraag metingen op of Stel Fanny-temperatuureenheid in"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Temperaturen komen terug in de eenheid die je bij Sensoren hebt gekozen. Als een temperatuur daar is uitgezet, laat Siri het je weten."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open Sensoren-instellingen",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "ONDERSTEUNING",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "Hoe werk ik Fanny bij?",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny zoekt één keer per dag naar een nieuwe versie en laat het je weten als er een klaarstaat."
+            },
+            {
+              "type": "bold",
+              "text": "Als er een update klaarstaat:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Update beschikbaar verschijnt in het Fanny-menu",
+                "Klik erop om de downloadpagina te openen en vervang daarna Fanny in je map Programma's door de nieuwe versie"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Zo zoek je direct naar updates:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik op het Fanny-symbool in je menubalk en kies Instellingen",
+                "Selecteer Algemeen in de navigatiekolom",
+                "Klik op Nu zoeken naast Zoek naar updates"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Je kunt Zoek automatisch naar updates uitzetten bij Algemeen en zelf zoeken wanneer je wilt."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open algemene instellingen",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "Hoe open ik Fanny als mijn Mac opstart?",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny kan openen wanneer je inlogt, zodat je metingen altijd in de menubalk staan. Het staat uit totdat je het aanzet en je kunt het op elk moment wijzigen."
+            },
+            {
+              "type": "bold",
+              "text": "Zo zet je het aan of uit:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik op het Fanny-symbool in je menubalk en kies Instellingen",
+                "Selecteer Algemeen in de navigatiekolom",
+                "Zet Open bij inloggen aan of uit"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Als macOS je vraagt Fanny eerst goed te keuren, verschijnt een rij Goedkeuring nodig met een knop die Systeeminstellingen opent. Sta Fanny daar toe onder Inlogonderdelen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open algemene instellingen",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Wat verzamelt Fanny?",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Je metingen blijven op je Mac. Fanny verstuurt je ventilatorsnelheden of temperaturen nooit ergens naartoe."
+            },
+            {
+              "type": "bold",
+              "text": "Wat Fanny verstuurt:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Anonieme gebruiksgegevens, zoals welke instellingen in gebruik zijn, om Fanny te helpen verbeteren",
+                "Anonieme crashrapporten, zodat problemen gevonden en opgelost kunnen worden",
+                "Een dagelijkse controle op updates bij GitHub, waarin alleen de versie van Fanny wordt meegestuurd"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Gebruiksgegevens en crashrapporten zijn anoniem en bevatten nooit je metingen. Je kunt beide uitzetten bij Privacy in Instellingen en het volledige privacybeleid lezen via Over in Instellingen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open Privacy-instellingen",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "Hoe verwijder ik Fanny?",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Je kunt Fanny op elk moment verwijderen, net als elke andere app."
+            },
+            {
+              "type": "bold",
+              "text": "Zo verwijder je Fanny:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Verwijder alle Fanny-widgets van je bureaublad en uit het Berichtencentrum",
+                "Zet Open bij inloggen uit bij Algemeen in Instellingen",
+                "Klik op het Fanny-symbool in je menubalk en kies Stop Fanny",
+                "Open je map Programma's en sleep Fanny naar de prullenmand"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Open algemene instellingen",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "Hoe neem ik contact op met de ondersteuning?",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Heb je een vraag, een idee of een probleem? Ik hoor het graag van je."
+            },
+            {
+              "type": "bold",
+              "text": "Zo neem je contact op:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klik op Neem contact op aan het einde van dit artikel",
+                "Schrijf je bericht en verstuur het"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Hiermee opent een e-mail met het ondersteuningsadres al ingevuld. Als je Mail gebruikt, wordt een kopie van de logboeken van Fanny bijgevoegd, zodat ik problemen sneller kan onderzoeken."
+            },
+            {
+              "type": "bold",
+              "text": "Tips om snel hulp te krijgen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Beschrijf wat je aan het doen was toen het probleem optrad",
+                "Vermeld je Mac-model en macOS-versie"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Je kunt ook een functie aanvragen of een probleem melden op GitHub. Selecteer in Instellingen Over en klik op Vraag aan of Meld."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Neem contact op",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "OVER",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "Wie heeft deze app gemaakt?",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Hallo! Ik ben Daniel Storm, een onafhankelijke ontwikkelaar uit Knoxville, Tennessee, waar ik woon met mijn vrouw en onze English Cream Golden Retriever, Maisy."
+            },
+            {
+              "type": "paragraph",
+              "text": "Ik heb Fanny gemaakt omdat ik een eenvoudige manier wilde om te zien hoe hard mijn Mac werkt, direct vanuit de menubalk."
+            },
+            {
+              "type": "paragraph",
+              "text": "Hartelijk dank dat je Fanny gebruikt. Wil je me steunen? Bekijk dan mijn andere app, Positive, voor een dagelijkse dosis positiviteit. Zo help je ook om Fanny gratis te houden voor iedereen!"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ik lees elk bericht dat binnenkomt, dus aarzel niet om contact op te nemen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Download Positive",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "Neem contact op",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

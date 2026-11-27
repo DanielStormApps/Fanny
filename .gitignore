@@ -26,3 +26,25 @@ xcuserdata/
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+## Duplicate xcodeproj-level Package.resolved
+## The canonical Package.resolved lives at the xcworkspace level; xcodebuild
+## regenerates a duplicate at the xcodeproj level that we don't want to track.
+**/*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
+
+## Claude Code runtime artifacts
+## Session-local lock file from the harness's scheduled-tasks feature and
+## per-machine settings overrides. `.claude/skills/` stays tracked.
+.claude/scheduled_tasks.lock
+.claude/settings.local.json
+
+## Playwright MCP runtime artifacts
+## Console/page dumps the Playwright MCP server writes during browser runs.
+.playwright-mcp/
+
+## Analytics IDs (never committed; config.example.json is tracked)
+fanny/fanny-macOS/Config/config.json
+fanny/fanny-macOS/GoogleService-Info.plist
+
+## Signing team (never committed; fanny/Xcode Config/Signing.xcconfig explains it)
+fanny/Xcode Config/Local.xcconfig

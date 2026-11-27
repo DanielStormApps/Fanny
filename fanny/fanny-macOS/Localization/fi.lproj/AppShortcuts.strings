@@ -1,0 +1,13 @@
+/* App Shortcut Siri phrases (fi). Keys must stay byte-identical to the phrases in
+   AppShortcuts.swift; keep ${applicationName} verbatim in every value. */
+"What's my ${applicationName} fan speed" = "Mikä on tuulettimen nopeus sovelluksessa ${applicationName}";
+"How fast are my fans in ${applicationName}" = "Kuinka nopeasti tuulettimeni pyörivät sovelluksessa ${applicationName}";
+"What's my CPU temperature in ${applicationName}" = "Mikä on CPU:n lämpötila sovelluksessa ${applicationName}";
+"What's my GPU temperature in ${applicationName}" = "Mikä on GPU:n lämpötila sovelluksessa ${applicationName}";
+"Open ${applicationName} settings" = "Avaa sovelluksen ${applicationName} asetukset";
+"What are my ${applicationName} readings" = "Mitkä ovat lukemani sovelluksessa ${applicationName}";
+"How hot is my Mac in ${applicationName}" = "Kuinka kuuma Macini on sovelluksessa ${applicationName}";
+"What's the speed of ${fan} in ${applicationName}" = "Mikä on kohteen ${fan} nopeus sovelluksessa ${applicationName}";
+"Show ${applicationName} floating window" = "Näytä sovelluksen ${applicationName} kelluva ikkuna";
+"Hide ${applicationName} floating window" = "Piilota sovelluksen ${applicationName} kelluva ikkuna";
+"Check for ${applicationName} updates" = "Tarkista sovelluksen ${applicationName} päivitykset";

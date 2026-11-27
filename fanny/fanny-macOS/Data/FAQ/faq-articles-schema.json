@@ -1,0 +1,127 @@
+{
+  "title": "FAQ Articles JSON Schema",
+  "type": "object",
+  "required": ["schemaVersion", "sections"],
+
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Increment only when JSON structure changes (new fields, type changes, etc.)."
+    },
+
+    "sections": {
+      "type": "array",
+      "description": "List of FAQ section objects.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/section" }
+    }
+  },
+
+  "$defs": {
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "articles"],
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for the section (e.g., 'getting-started')."
+        },
+
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display title for the section header (e.g., 'GETTING STARTED')."
+        },
+
+        "articles": {
+          "type": "array",
+          "description": "List of articles in this section.",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "$ref": "#/$defs/article" }
+        }
+      }
+    },
+
+    "article": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "lastUpdated", "content"],
+
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Unique identifier for the article (e.g., 'change-app-icon')."
+        },
+
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display title for the article."
+        },
+
+        "lastUpdated": {
+          "type": "string",
+          "format": "date",
+          "description": "Last updated date in ISO 8601 format (e.g., '2026-01-18')."
+        },
+
+        "symbol": {
+          "type": "string",
+          "minLength": 1,
+          "description": "SF Symbol name for the article icon (e.g., 'star'). Defaults to 'questionmark.circle' if omitted."
+        },
+
+        "content": {
+          "type": "array",
+          "description": "Ordered list of content blocks.",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/contentBlock" }
+        }
+      }
+    },
+
+    "contentBlock": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["paragraph", "bold", "numberedList", "bulletList", "navigationLink", "image"]
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "type": { "const": "paragraph" } } },
+          "then": { "required": ["text"], "properties": { "text": { "type": "string" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "bold" } } },
+          "then": { "required": ["text"], "properties": { "text": { "type": "string" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "numberedList" } } },
+          "then": { "required": ["items"], "properties": { "items": { "type": "array", "items": { "type": "string" } } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "bulletList" } } },
+          "then": { "required": ["items"], "properties": { "items": { "type": "array", "items": { "type": "string" } } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "navigationLink" } } },
+          "then": { "required": ["text", "destination"], "properties": { "text": { "type": "string" }, "destination": { "type": "string" } } }
+        },
+        {
+          "if": { "properties": { "type": { "const": "image" } } },
+          "then": { "required": ["name"], "properties": { "name": { "type": "string" } } }
+        }
+      ]
+    }
+  }
+}

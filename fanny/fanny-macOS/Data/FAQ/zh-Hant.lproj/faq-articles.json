@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "入門指南",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Fanny 是如何運作的？",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 會常駐在你的選單列，顯示 Mac 風扇的轉速，以及 CPU 和 GPU 的溫度。"
+            },
+            {
+              "type": "bold",
+              "text": "你會看到："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "每個風扇目前的轉速，下方並列出最低、最高和目標轉速",
+                "CPU 和 GPU 的溫度",
+                "將指標移到選單列項目上，即可一眼看到所有讀數"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "按一下選單列中的 Fanny 圖像，就能查看讀數、開啟「設定」或結束 Fanny。選單開啟時，讀數會每秒更新一次。"
+            },
+            {
+              "type": "bold",
+              "text": "小提醒："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny 只會讀取 Mac 的感測器，絕不會改變風扇的運作方式",
+                "Fanny 需要保持在選單列中開啟，讀數和小工具才能持續更新"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "如何選擇選單列要顯示的內容？",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 可以直接在選單列中顯示它的圖像、風扇轉速，以及 CPU 和 GPU 溫度，順序任你安排。"
+            },
+            {
+              "type": "bold",
+              "text": "更改方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "按一下選單列中的 Fanny 圖像，然後選擇「設定」",
+                "在側邊欄選擇「選單列」",
+                "在「在選單列中顯示」下，勾選你想看到的每個項目",
+                "將項目拖移成你喜歡的順序"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Fanny 圖像一律排在最前面，如果沒有勾選其他項目，它也會自動回到選單列。在「感測器」中關閉的溫度也會從選單列中移除。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「選單列」設定",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "如何使用浮動視窗？",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "浮動視窗會將讀數保持在螢幕上，並顯示在其他視窗之上，讓你工作時隨時都能查看。"
+            },
+            {
+              "type": "bold",
+              "text": "開啟方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "按一下選單列中的 Fanny 圖像",
+                "選擇「浮動視窗」"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "選擇顯示內容的方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "開啟「設定」，並在側邊欄選擇「浮動視窗」",
+                "勾選你想要的卡片，例如 CPU、GPU 或其中一個風扇",
+                "在每張卡片上勾選你想要的讀數",
+                "拖移卡片和讀數，依照你喜歡的順序排列",
+                "在「版面配置」中選擇「水平」或「垂直」，更改卡片的排列方式"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "小提醒："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "可將浮動視窗拖移到螢幕上的任何位置",
+                "將指標移到視窗上，然後按一下減號按鈕即可關閉",
+                "按一下滑鼠右鍵可使用快速選項，例如隱藏視窗或開啟「設定」",
+                "在「外觀」設定中更改玻璃的色調濃淡",
+                "如果你在「感測器」設定中關閉 CPU 或 GPU 溫度，其卡片會顯示「已關閉」。按一下卡片即可開啟「感測器」設定"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「浮動視窗」設定",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "為什麼我的風扇顯示「已停止」？",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "「已停止」表示風扇沒有轉動，這是正常的。搭載 Apple 晶片的 Mac 在涼爽安靜時，通常會讓風扇保持不動，需要時才會轉動。"
+            },
+            {
+              "type": "bold",
+              "text": "小提醒："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "當 Mac 高負載運作時，風扇通常就會啟動，例如匯出影片或玩遊戲時",
+                "目標轉速代表 Mac 接下來要求風扇達到的轉速",
+                "有些 Mac（例如 MacBook Air）完全沒有風扇，因此 Fanny 會顯示「這部 Mac 沒有風扇」"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "如果 Fanny 顯示「無法取得讀數」，請結束 Fanny 後再重新開啟。如果仍然無法解決，歡迎來信告訴我。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "聯絡我們",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "感測器",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Fanny 使用哪個感測器？",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "你的 Mac 有許多溫度感測器，而 Apple 並未指定哪一個是官方的 CPU 溫度。和大多數 Mac 監控 App 一樣，Fanny 預設顯示 CPU 核心的平均值，你也可以隨時改選其他讀數。"
+            },
+            {
+              "type": "bold",
+              "text": "CPU 感測器："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "「平均」會顯示所有核心的平均值",
+                "「最熱」會顯示最熱的核心",
+                "「晶粒」會顯示 CPU 晶粒感測器"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "GPU 感測器："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "「平均」會顯示 GPU 感測器的平均值",
+                "「最熱」會顯示最熱的 GPU 感測器"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "對大多數人來說，「平均」是不錯的選擇。如果不需要，你也可以關閉 CPU 或 GPU 溫度，Fanny 就會停止讀取。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「感測器」設定",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "為什麼我的讀數和其他 App 不一樣？",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "不同的 App 可能會讀取同一部 Mac 上不同的感測器，而且溫度每秒都在變化，所以兩個 App 很少會顯示完全相同的數字。"
+            },
+            {
+              "type": "bold",
+              "text": "數字不同的原因："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "有的 App 可能顯示最熱的核心，有的則顯示平均值",
+                "各個 App 的更新時間不同，因此捕捉到的時刻也不同",
+                "選單列的溫度會四捨五入到整數度，選單則顯示到小數點後一位"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "若要與顯示晶片最熱部分的 App 比較，請將「CPU 感測器」設為「最熱」。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「感測器」設定",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "如何更改單位或更新頻率？",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 會依你的 Mac 地區顯示攝氏或華氏溫度，並每 4 秒更新一次讀數。這兩項你都可以更改。"
+            },
+            {
+              "type": "bold",
+              "text": "更改方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "按一下選單列中的 Fanny 圖像，然後選擇「設定」",
+                "在側邊欄選擇「感測器」",
+                "在「溫度單位」中選擇「攝氏」、「華氏」或「克耳文」",
+                "將「更新間隔」設為你希望每次讀取之間相隔的秒數"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "你的選單列、選單、小工具和 Siri 都會使用你選擇的單位。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「感測器」設定",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "小工具與 Siri",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "如何加入小工具？",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 的小工具可以在桌面或「通知中心」顯示風扇和溫度，提供小、中、大和特大四種尺寸。"
+            },
+            {
+              "type": "bold",
+              "text": "加入方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "在桌面空白處按一下滑鼠右鍵，然後選擇「編輯小工具」",
+                "搜尋 Fanny",
+                "選擇尺寸，並將它拖到你想要的位置"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "顯示內容："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "你的風扇轉速和溫度，以及它們是多久前更新的",
+                "當讀數過期或無法取得時，會顯示「按一下以更新」，例如 Fanny 結束後、上次讀取已超過一小時，或 Fanny 無法讀取風扇時。按一下小工具即可開啟 Fanny 並更新讀數"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "如何使用 Siri 和「捷徑」？",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "你可以詢問 Siri 取得讀數，也可以在自己的捷徑中使用這些讀數。"
+            },
+            {
+              "type": "bold",
+              "text": "試著這樣說："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "「我的 Fanny 讀數是多少」",
+                "「我的 Fanny 風扇轉速是多少」",
+                "「我的 Fanny CPU 溫度是多少」或「我的 Fanny GPU 溫度是多少」",
+                "「顯示 Fanny 浮動視窗」或「隱藏 Fanny 浮動視窗」",
+                "「檢查 Fanny 更新」",
+                "「開啟 Fanny 設定」"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "在「捷徑」中使用的方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "開啟「捷徑」App",
+                "建立新的捷徑，然後搜尋 Fanny",
+                "加入任何 Fanny 動作，例如「取得讀數」或「設定 Fanny 溫度單位」"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "溫度會以你在「感測器」中選擇的單位傳回。如果該處已關閉某項溫度，Siri 會告訴你。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「感測器」設定",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "支援",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "如何更新 Fanny？",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 每天會檢查一次是否有新版本，並在有新版本時通知你。"
+            },
+            {
+              "type": "bold",
+              "text": "有可用更新時："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny 選單中會出現「有可用更新」",
+                "按一下即可開啟下載頁面，然後用新版本取代「應用程式」檔案夾中的 Fanny"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "立即檢查的方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "按一下選單列中的 Fanny 圖像，然後選擇「設定」",
+                "在側邊欄選擇「一般」",
+                "按一下「檢查更新」旁邊的「立即檢查」"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "你可以在「一般」中關閉「自動檢查更新」，並隨時自行檢查。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「一般」設定",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "如何讓 Mac 啟動時自動開啟 Fanny？",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 可以在你登入時自動開啟，讓讀數隨時都在選單列中。在你開啟之前，此功能是關閉的，你也可以隨時更改。"
+            },
+            {
+              "type": "bold",
+              "text": "開啟或關閉的方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "按一下選單列中的 Fanny 圖像，然後選擇「設定」",
+                "在側邊欄選擇「一般」",
+                "開啟或關閉「登入時開啟」"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "如果 macOS 要求你先核准 Fanny，會出現「需要核准」列，並附有開啟「系統設定」的按鈕。請在該處的「登入項目」中允許 Fanny。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「一般」設定",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Fanny 會收集哪些資料？",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "你的讀數只會留在你的 Mac 上。Fanny 絕不會將你的風扇轉速或溫度傳送到任何地方。"
+            },
+            {
+              "type": "bold",
+              "text": "Fanny 會傳送的資料："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "匿名的使用資料，例如正在使用哪些設定，用來協助改進 Fanny",
+                "匿名當機報告，以便找出並修正問題",
+                "每天向 GitHub 進行一次更新檢查，其中只包含 Fanny 的版本"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "使用資料和當機報告都是匿名的，絕不包含你的讀數。你可以在「設定」的「隱私權」中關閉任一項，並從「設定」的「關於」中閱讀完整的隱私權政策。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「隱私權」設定",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "如何解除安裝 Fanny？",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "你可以隨時移除 Fanny，就和其他 App 一樣。"
+            },
+            {
+              "type": "bold",
+              "text": "解除安裝方法："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "從桌面和「通知中心」移除所有 Fanny 小工具",
+                "在「一般」設定中關閉「登入時開啟」",
+                "按一下選單列中的 Fanny 圖像，然後選擇「結束 Fanny」",
+                "開啟「應用程式」檔案夾，並將 Fanny 拖到垃圾桶"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "開啟「一般」設定",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "如何聯絡支援？",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "有問題、想法或遇到狀況嗎？我很樂意聽聽你的意見。"
+            },
+            {
+              "type": "bold",
+              "text": "聯絡方式："
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "按一下本文末尾的「聯絡我們」",
+                "撰寫訊息並傳送"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "這會開啟一封已填入支援地址的電子郵件。如果你使用「郵件」，會附上 Fanny 記錄的副本，幫助我更快查明問題。"
+            },
+            {
+              "type": "bold",
+              "text": "快速獲得協助的小訣竅："
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "描述問題發生時你正在做什麼",
+                "告訴我你的 Mac 機型和 macOS 版本"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "你也可以在 GitHub 上提出功能建議或回報問題。在「設定」中選擇「關於」，然後按一下「建議」或「回報」。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "聯絡我們",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "關於",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "這個 App 是誰做的？",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "嗨！我是 Daniel Storm，一位住在美國田納西州諾克斯維爾的獨立開發者，和我太太以及我們的英國奶油色黃金獵犬 Maisy 住在一起。"
+            },
+            {
+              "type": "paragraph",
+              "text": "我做 Fanny，是因為我想用一個簡單的方式，直接從選單列看出我的 Mac 運作得有多吃力。"
+            },
+            {
+              "type": "paragraph",
+              "text": "非常感謝你使用 Fanny。如果你想支持我，歡迎看看我的另一個 App Positive，每天為你帶來一點正能量。這也能讓 Fanny 持續免費提供給所有人！"
+            },
+            {
+              "type": "paragraph",
+              "text": "我會閱讀每一則來信，所以請不用客氣，歡迎隨時聯絡我。"
+            },
+            {
+              "type": "navigationLink",
+              "text": "取得 Positive",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "聯絡我們",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "KOM I GANG",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Hvordan fungerer Fanny?",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny bor i menylinjen og viser hvor fort viftene på Macen din går, og hvor varme CPU-en og GPU-en er."
+            },
+            {
+              "type": "bold",
+              "text": "Dette ser du:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Hastigheten til hver vifte akkurat nå, med minimum, maksimum og målhastighet under",
+                "CPU- og GPU-temperaturene",
+                "Alle målinger på et øyeblikk når du holder pekeren over menylinjeobjektet"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Klikk på Fanny-symbolet i menylinjen for å se målingene dine, åpne Innstillinger eller avslutte Fanny. Mens menyen er åpen, oppdateres målingene hvert sekund."
+            },
+            {
+              "type": "bold",
+              "text": "Greit å vite:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny leser bare sensorene på Macen din. Den endrer aldri hvordan viftene går",
+                "Fanny må være åpen i menylinjen for å holde målingene og widgetene oppdatert"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "Hvordan velger jeg hva menylinjen viser?",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny kan vise symbolet sitt, viftehastighetene og CPU- og GPU-temperaturene dine rett i menylinjen, i den rekkefølgen du vil."
+            },
+            {
+              "type": "bold",
+              "text": "Slik endrer du det:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klikk på Fanny-symbolet i menylinjen og velg Innstillinger",
+                "Velg Menylinje i sidepanelet",
+                "Under Vis i menylinjen huker du av hvert objekt du vil se",
+                "Dra objektene i den rekkefølgen du vil"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Fanny-symbolet kommer alltid først, og det dukker opp igjen av seg selv hvis ingenting annet er avhuket. En temperatur du slår av i Sensorer, forsvinner også fra menylinjen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Menylinje-innstillinger",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "Hvordan bruker jeg det flytende vinduet?",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Det flytende vinduet holder målingene dine på skjermen, over de andre vinduene, så du kan følge med mens du jobber."
+            },
+            {
+              "type": "bold",
+              "text": "Slik slår du det på:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klikk på Fanny-symbolet i menylinjen",
+                "Velg Flytende vindu"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Slik velger du hva det viser:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Åpne Innstillinger og velg Flytende vindu i sidepanelet",
+                "Huk av kortene du vil ha, for eksempel CPU, GPU eller en av viftene dine",
+                "Huk av målingene du vil ha på hvert kort",
+                "Dra kort og målinger for å legge dem i den rekkefølgen du vil",
+                "Velg Horisontal eller Vertikal i Oppsett for å endre hvordan kortene ligger"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Greit å vite:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Dra det flytende vinduet hvor som helst på skjermen",
+                "Hold pekeren over det og klikk på minusknappen for å lukke det",
+                "Høyreklikk på det for hurtigvalg, for eksempel å skjule det eller åpne Innstillinger",
+                "Endre fargetonen på glasset i Utseende-innstillingene",
+                "Hvis du slår av CPU- eller GPU-temperaturen i Sensorer-innstillingene, viser kortet Slått av. Klikk på kortet for å åpne Sensorer-innstillingene"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne innstillinger for flytende vindu",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "Hvorfor viser viftene mine Av?",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Av betyr at viften står stille, og det er helt normalt. Macer med Apple silicon holder ofte viftene stille så lenge de er kjølige og stille, og setter dem bare i gang når det trengs."
+            },
+            {
+              "type": "bold",
+              "text": "Greit å vite:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Viftene starter vanligvis når Macen jobber hardt, for eksempel under eksport av video eller når du spiller spill",
+                "Målhastigheten viser hva Macen ber viften om å gjøre videre",
+                "Noen Macer, som MacBook Air, har ingen vifter i det hele tatt, så Fanny viser Denne Macen har ingen vifter"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Hvis Fanny viser Målinger utilgjengelige, avslutter du Fanny og åpner den på nytt. Hvis det ikke hjelper, ta gjerne kontakt."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Kontakt oss",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "SENSORER",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Hvilken sensor bruker Fanny?",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Macen din har mange temperatursensorer, og Apple peker ikke ut én offisiell CPU-temperatur. Fanny viser som standard gjennomsnittet av CPU-kjernene, slik de fleste overvåkingsapper for Mac gjør, og du kan når som helst velge en annen måling."
+            },
+            {
+              "type": "bold",
+              "text": "CPU-sensor:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Gjennomsnitt viser gjennomsnittet av alle kjernene",
+                "Varmest viser den varmeste kjernen",
+                "Brikke viser CPU-brikkesensoren"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "GPU-sensor:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Gjennomsnitt viser gjennomsnittet av GPU-sensorene",
+                "Varmest viser den varmeste GPU-sensoren"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Gjennomsnitt er et godt valg for de fleste. Du kan også slå av CPU- eller GPU-temperaturen hvis du ikke trenger den, så slutter Fanny å lese den."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Sensorer-innstillinger",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "Hvorfor er målingene mine annerledes enn i andre apper?",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Apper kan lese ulike sensorer på samme Mac, og temperaturen endrer seg fra sekund til sekund, så to apper viser sjelden nøyaktig det samme tallet."
+            },
+            {
+              "type": "bold",
+              "text": "Hvorfor tallene er ulike:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Én app kan vise den varmeste kjernen mens en annen viser gjennomsnittet",
+                "Apper oppdaterer til ulike tider, så de fanger opp ulike øyeblikk",
+                "Menylinjen runder av til hele grader, mens menyen viser én desimal"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Hvis du vil sammenligne med en app som viser den varmeste delen av brikken, setter du CPU-sensor til Varmest."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Sensorer-innstillinger",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "Hvordan endrer jeg enheten eller oppdateringshastigheten?",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny viser temperaturer i Celsius eller Fahrenheit basert på regionen til Macen din, og oppdaterer målingene hvert 4. sekund. Du kan endre begge deler."
+            },
+            {
+              "type": "bold",
+              "text": "Slik endrer du dem:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klikk på Fanny-symbolet i menylinjen og velg Innstillinger",
+                "Velg Sensorer i sidepanelet",
+                "Velg Celsius, Fahrenheit eller Kelvin i Temperaturenhet",
+                "Sett Oppdateringsintervall til antall sekunder du vil ha mellom målingene"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Menylinjen, menyen, widgetene og Siri bruker alle enheten du velger."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Sensorer-innstillinger",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "WIDGETER OG SIRI",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "Hvordan legger jeg til en widget?",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Widgeten til Fanny viser viftene og temperaturene dine på skrivebordet eller i Varslingssenter, i liten, middels, stor og ekstra stor størrelse."
+            },
+            {
+              "type": "bold",
+              "text": "Slik legger du den til:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Høyreklikk på et tomt sted på skrivebordet og velg Rediger widgeter",
+                "Søk etter Fanny",
+                "Velg en størrelse og dra den dit du vil ha den"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Dette viser den:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Viftehastighetene og temperaturene dine, med hvor lenge siden de ble oppdatert",
+                "Klikk for å oppdatere når målingene er utdaterte eller utilgjengelige, for eksempel etter at Fanny er avsluttet, når den siste målingen er over en time gammel, eller når Fanny ikke kunne lese viftene. Klikk på widgeten for å åpne Fanny og oppdatere den"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "Hvordan bruker jeg Siri og Snarveier?",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Du kan spørre Siri om målingene dine, eller bruke dem i dine egne snarveier."
+            },
+            {
+              "type": "bold",
+              "text": "Prøv å si:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "«Hva er målingene mine i Fanny»",
+                "«Hva er viftehastigheten min i Fanny»",
+                "«Hva er CPU-temperaturen min i Fanny» eller «Hva er GPU-temperaturen min i Fanny»",
+                "«Vis det flytende vinduet i Fanny» eller «Skjul det flytende vinduet i Fanny»",
+                "«Se etter oppdateringer for Fanny»",
+                "«Åpne innstillinger i Fanny»"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Slik bruker du dem i Snarveier:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Åpne Snarveier-appen",
+                "Opprett en ny snarvei og søk etter Fanny",
+                "Legg til hvilken som helst av handlingene til Fanny, for eksempel Hent målinger eller Velg temperaturenhet for Fanny"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Temperaturene kommer tilbake i enheten du valgte i Sensorer. Hvis en temperatur er slått av der, sier Siri fra."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Sensorer-innstillinger",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "STØTTE",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "Hvordan oppdaterer jeg Fanny?",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny ser etter en ny versjon én gang om dagen og gir deg beskjed når en er klar."
+            },
+            {
+              "type": "bold",
+              "text": "Når en oppdatering er klar:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Oppdatering tilgjengelig vises i Fanny-menyen",
+                "Klikk på den for å åpne nedlastingssiden, og erstatt deretter Fanny i Programmer-mappen med den nye versjonen"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Slik sjekker du med en gang:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klikk på Fanny-symbolet i menylinjen og velg Innstillinger",
+                "Velg Generelt i sidepanelet",
+                "Klikk på Sjekk nå ved siden av Se etter oppdateringer"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Du kan slå av Se etter oppdateringer automatisk i Generelt og sjekke når du vil."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Generelt-innstillinger",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "Hvordan åpner jeg Fanny når Macen starter?",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny kan åpnes når du logger inn, slik at målingene dine alltid er i menylinjen. Det er av helt til du slår det på, og du kan endre det når som helst."
+            },
+            {
+              "type": "bold",
+              "text": "Slik slår du det av eller på:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klikk på Fanny-symbolet i menylinjen og velg Innstillinger",
+                "Velg Generelt i sidepanelet",
+                "Slå Åpne ved pålogging av eller på"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Hvis macOS ber deg godkjenne Fanny først, vises en rad med Godkjenning kreves og en knapp som åpner Systeminnstillinger. Tillat Fanny under Påloggingsobjekter der."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Generelt-innstillinger",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Hva samler Fanny inn?",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Målingene dine blir på Macen din. Fanny sender aldri viftehastighetene eller temperaturene dine noe sted."
+            },
+            {
+              "type": "bold",
+              "text": "Dette sender Fanny:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Anonyme bruksdata, for eksempel hvilke innstillinger som er i bruk, for å hjelpe til med å forbedre Fanny",
+                "Anonyme krasjrapporter, slik at problemer kan oppdages og rettes",
+                "En daglig oppdateringssjekk mot GitHub, som bare inneholder versjonen av Fanny"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Bruksdata og krasjrapporter er anonyme og inneholder aldri målingene dine. Du kan slå av begge i Personvern i Innstillinger, og lese hele personvernerklæringen fra Om i Innstillinger."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Personvern-innstillinger",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "Hvordan avinstallerer jeg Fanny?",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Du kan fjerne Fanny når som helst, akkurat som alle andre apper."
+            },
+            {
+              "type": "bold",
+              "text": "Slik avinstallerer du Fanny:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Fjern alle Fanny-widgeter fra skrivebordet og Varslingssenter",
+                "Slå av Åpne ved pålogging i Generelt",
+                "Klikk på Fanny-symbolet i menylinjen og velg Avslutt Fanny",
+                "Åpne Programmer-mappen og dra Fanny til papirkurven"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Åpne Generelt-innstillinger",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "Hvordan kontakter jeg kundestøtte?",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Har du et spørsmål, en idé eller et problem? Jeg hører gjerne fra deg."
+            },
+            {
+              "type": "bold",
+              "text": "Slik tar du kontakt:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klikk på Kontakt oss nederst i denne artikkelen",
+                "Skriv meldingen din og send den"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Dette åpner en e-post med støtteadressen fylt ut. Hvis du bruker Mail, legges en kopi av loggene til Fanny ved, så jeg raskere kan undersøke problemet."
+            },
+            {
+              "type": "bold",
+              "text": "Tips for å få hjelp raskt:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Beskriv hva du holdt på med da problemet oppstod",
+                "Oppgi Mac-modellen din og macOS-versjonen"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Du kan også foreslå en funksjon eller rapportere et problem på GitHub. Velg Om i Innstillinger, og klikk deretter på Foreslå eller Rapporter."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Kontakt oss",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "OM",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "Hvem har laget denne appen?",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Hei! Jeg er Daniel Storm, en uavhengig utvikler fra Knoxville i Tennessee, hvor jeg bor med kona mi og den engelske kremfargede golden retrieveren vår, Maisy."
+            },
+            {
+              "type": "paragraph",
+              "text": "Jeg lagde Fanny fordi jeg ville ha en enkel måte å se hvor hardt Macen min jobber på, rett fra menylinjen."
+            },
+            {
+              "type": "paragraph",
+              "text": "Tusen takk for at du bruker Fanny. Hvis du vil støtte meg, ta en titt på den andre appen min, Positive, for en daglig dose positivitet. Det bidrar også til å holde Fanny gratis for alle!"
+            },
+            {
+              "type": "paragraph",
+              "text": "Jeg leser hver eneste melding som kommer inn, så ikke nøl med å ta kontakt."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Skaff deg Positive",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "Kontakt oss",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

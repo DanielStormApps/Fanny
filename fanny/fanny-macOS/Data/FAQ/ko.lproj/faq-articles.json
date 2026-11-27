@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "시작하기",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Fanny는 어떻게 작동하나요?",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny는 메뉴 막대에 머물면서 Mac의 팬이 얼마나 빠르게 도는지, CPU와 GPU가 얼마나 뜨거운지 보여 줘요."
+            },
+            {
+              "type": "bold",
+              "text": "볼 수 있는 정보:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "각 팬의 현재 속도와 그 아래에 표시되는 최소, 최대, 목표 속도",
+                "CPU와 GPU 온도",
+                "메뉴 막대 항목 위에 포인터를 올리면 모든 측정값을 한눈에 확인"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "메뉴 막대의 Fanny 아이콘을 클릭하면 측정값을 확인하고, 설정을 열고, Fanny를 종료할 수 있어요. 메뉴가 열려 있는 동안에는 측정값이 1초마다 갱신돼요."
+            },
+            {
+              "type": "bold",
+              "text": "알아두면 좋은 점:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny는 Mac의 센서를 읽기만 해요. 팬이 작동하는 방식은 절대 바꾸지 않아요",
+                "측정값과 위젯을 최신 상태로 유지하려면 Fanny가 메뉴 막대에 계속 열려 있어야 해요"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "메뉴 막대에 표시할 항목은 어떻게 고르나요?",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny는 아이콘, 팬 속도, CPU와 GPU 온도를 메뉴 막대에 원하는 순서대로 바로 표시할 수 있어요."
+            },
+            {
+              "type": "bold",
+              "text": "바꾸려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "메뉴 막대의 Fanny 아이콘을 클릭하고 설정을 선택하세요",
+                "사이드바에서 메뉴 막대를 선택하세요",
+                "메뉴 막대에 표시 아래에서 보고 싶은 항목을 각각 체크하세요",
+                "항목을 드래그하여 원하는 순서로 정리하세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Fanny 아이콘은 항상 맨 앞에 표시되며, 다른 항목이 하나도 체크되어 있지 않으면 저절로 다시 나타나요. 센서에서 끈 온도도 메뉴 막대에서 사라져요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "메뉴 막대 설정 열기",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "플로팅 윈도우는 어떻게 사용하나요?",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "플로팅 윈도우는 다른 윈도우 위에 측정값을 계속 표시해서, 작업하면서도 바로 확인할 수 있게 해 줘요."
+            },
+            {
+              "type": "bold",
+              "text": "켜려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "메뉴 막대의 Fanny 아이콘을 클릭하세요",
+                "플로팅 윈도우를 선택하세요"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "표시할 항목을 고르려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "설정을 열고 사이드바에서 플로팅 윈도우를 선택하세요",
+                "CPU, GPU 또는 팬처럼 원하는 카드를 체크하세요",
+                "각 카드에서 원하는 측정값을 체크하세요",
+                "카드와 측정값을 드래그하여 원하는 순서로 정리하세요",
+                "레이아웃에서 가로 또는 세로를 선택하여 카드가 놓이는 방식을 바꾸세요"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "알아두면 좋은 점:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "플로팅 윈도우를 화면 어디로든 드래그할 수 있어요",
+                "포인터를 올리고 빼기 버튼을 클릭하면 닫혀요",
+                "오른쪽 클릭하면 가리기나 설정 열기 같은 빠른 옵션을 사용할 수 있어요",
+                "유리의 틴트 정도는 화면 모드 설정에서 바꿀 수 있어요",
+                "센서 설정에서 CPU 또는 GPU 온도를 끄면 해당 카드에 꺼짐이 표시돼요. 카드를 클릭하면 센서 설정이 열려요"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "플로팅 윈도우 설정 열기",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "팬이 꺼짐으로 표시되는 이유는 무엇인가요?",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "꺼짐은 팬이 멈춰 있다는 뜻이며 정상이에요. Apple 실리콘 Mac은 시원하고 조용할 때는 팬을 멈춰 두었다가 필요할 때만 돌리는 경우가 많아요."
+            },
+            {
+              "type": "bold",
+              "text": "알아두면 좋은 점:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "팬은 보통 비디오를 내보내거나 게임을 할 때처럼 Mac이 열심히 일할 때 작동하기 시작해요",
+                "목표 속도는 Mac이 팬에게 다음으로 요청하는 속도를 보여 줘요",
+                "MacBook Air처럼 팬이 아예 없는 Mac도 있어서, 이 경우 Fanny에는 이 Mac에는 팬이 없음이 표시돼요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Fanny에 측정값을 사용할 수 없음이 표시되면 Fanny를 종료한 뒤 다시 열어 보세요. 그래도 해결되지 않으면 언제든 문의해 주세요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "문의하기",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "센서",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Fanny는 어떤 센서를 사용하나요?",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Mac에는 온도 센서가 많이 있고, Apple은 공식 CPU 온도를 따로 정해 두지 않았어요. 대부분의 Mac 모니터링 앱처럼 Fanny는 기본으로 CPU 코어의 평균값을 보여 주며, 다른 측정값은 언제든 직접 선택할 수 있어요."
+            },
+            {
+              "type": "bold",
+              "text": "CPU 센서:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "평균은 모든 코어의 평균값을 보여 줘요",
+                "가장 뜨거운 센서는 가장 뜨거운 코어를 보여 줘요",
+                "다이는 CPU 다이 센서를 보여 줘요"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "GPU 센서:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "평균은 GPU 센서의 평균값을 보여 줘요",
+                "가장 뜨거운 센서는 가장 뜨거운 GPU 센서를 보여 줘요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "대부분의 경우 평균을 추천해요. 필요하지 않다면 CPU 또는 GPU 온도를 끌 수도 있으며, 그러면 Fanny가 해당 온도를 읽지 않아요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "센서 설정 열기",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "측정값이 다른 앱과 다른 이유는 무엇인가요?",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "같은 Mac에서도 앱마다 읽는 센서가 다를 수 있고 온도는 매초 변하기 때문에, 두 앱이 완전히 같은 숫자를 보여 주는 경우는 드물어요."
+            },
+            {
+              "type": "bold",
+              "text": "숫자가 다른 이유:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "한 앱은 가장 뜨거운 코어를, 다른 앱은 평균값을 보여 줄 수 있어요",
+                "앱마다 갱신되는 시점이 달라서 서로 다른 순간의 값을 읽어요",
+                "메뉴 막대는 온도를 정수로 반올림해서 보여 주고, 메뉴는 소수점 한 자리까지 보여 줘요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "칩에서 가장 뜨거운 부분을 보여 주는 앱과 비교하려면 CPU 센서를 가장 뜨거운 센서로 설정하세요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "센서 설정 열기",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "단위나 갱신 주기를 바꾸려면 어떻게 하나요?",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny는 Mac의 지역 설정에 따라 섭씨 또는 화씨로 온도를 표시하고, 4초마다 측정값을 갱신해요. 둘 다 바꿀 수 있어요."
+            },
+            {
+              "type": "bold",
+              "text": "바꾸려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "메뉴 막대의 Fanny 아이콘을 클릭하고 설정을 선택하세요",
+                "사이드바에서 센서를 선택하세요",
+                "온도 단위에서 섭씨, 화씨 또는 켈빈을 선택하세요",
+                "갱신 주기에서 측정 사이의 간격을 초 단위로 원하는 만큼 설정하세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "메뉴 막대, 메뉴, 위젯, Siri 모두 선택한 단위를 사용해요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "센서 설정 열기",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "위젯 및 Siri",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "위젯을 추가하려면 어떻게 하나요?",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny 위젯은 작은 크기, 중간 크기, 큰 크기, 매우 큰 크기로 데스크탑이나 알림 센터에 팬과 온도를 보여 줘요."
+            },
+            {
+              "type": "bold",
+              "text": "추가하려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "데스크탑의 빈 곳을 오른쪽 클릭하고 위젯 편집을 선택하세요",
+                "Fanny를 검색하세요",
+                "크기를 고르고 원하는 곳으로 드래그하세요"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "표시되는 정보:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "팬 속도와 온도, 그리고 얼마 전에 갱신되었는지",
+                "측정값이 오래되었거나 사용할 수 없을 때(예: Fanny가 종료된 뒤, 마지막으로 읽은 지 1시간이 넘었을 때, Fanny가 팬을 읽지 못했을 때) 클릭하여 갱신이 표시돼요. 위젯을 클릭하면 Fanny가 열리고 측정값이 갱신돼요"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "Siri와 단축어는 어떻게 사용하나요?",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Siri에게 측정값을 물어보거나 나만의 단축어에서 사용할 수 있어요."
+            },
+            {
+              "type": "bold",
+              "text": "이렇게 말해 보세요:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "\"Fanny 측정값 알려 줘\"",
+                "\"Fanny 팬 속도 알려 줘\"",
+                "\"Fanny CPU 온도 알려 줘\" 또는 \"Fanny GPU 온도 알려 줘\"",
+                "\"Fanny 플로팅 윈도우 보여 줘\" 또는 \"Fanny 플로팅 윈도우 가려 줘\"",
+                "\"Fanny 업데이트 확인해 줘\"",
+                "\"Fanny 설정 열어 줘\""
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "단축어에서 사용하려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "단축어 앱을 여세요",
+                "새로운 단축어를 만들고 Fanny를 검색하세요",
+                "측정값 가져오기나 Fanny 온도 단위 설정처럼 Fanny의 동작을 원하는 만큼 추가하세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "온도는 센서에서 선택한 단위로 전달돼요. 해당 온도가 꺼져 있으면 Siri가 알려 줘요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "센서 설정 열기",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "지원",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "Fanny를 업데이트하려면 어떻게 하나요?",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny는 하루에 한 번 새 버전을 확인하고, 준비되면 알려 줘요."
+            },
+            {
+              "type": "bold",
+              "text": "업데이트가 준비되면:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny 메뉴에 업데이트 가능이 나타나요",
+                "클릭해서 다운로드 페이지를 열고, 응용 프로그램 폴더의 Fanny를 새 버전으로 바꾸세요"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "지금 바로 확인하려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "메뉴 막대의 Fanny 아이콘을 클릭하고 설정을 선택하세요",
+                "사이드바에서 일반을 선택하세요",
+                "업데이트 확인 옆의 지금 확인을 클릭하세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "일반에서 자동으로 업데이트 확인을 끄고 원할 때 직접 확인할 수도 있어요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "일반 설정 열기",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "Mac을 켤 때 Fanny가 열리게 하려면 어떻게 하나요?",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny는 로그인할 때 열릴 수 있어서, 측정값이 항상 메뉴 막대에 표시돼요. 직접 켜기 전에는 꺼져 있으며, 언제든 바꿀 수 있어요."
+            },
+            {
+              "type": "bold",
+              "text": "켜거나 끄려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "메뉴 막대의 Fanny 아이콘을 클릭하고 설정을 선택하세요",
+                "사이드바에서 일반을 선택하세요",
+                "로그인 시 열기를 켜거나 끄세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "macOS에서 먼저 Fanny를 승인하라고 요청하면, 시스템 설정을 여는 버튼이 있는 승인 필요 행이 나타나요. 그곳의 로그인 항목에서 Fanny를 허용하세요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "일반 설정 열기",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Fanny는 어떤 정보를 수집하나요?",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "측정값은 Mac에만 남아 있어요. Fanny는 팬 속도나 온도를 어디에도 보내지 않아요."
+            },
+            {
+              "type": "bold",
+              "text": "Fanny가 전송하는 정보:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny를 개선하는 데 도움이 되도록, 어떤 설정을 사용하는지 같은 익명 사용 데이터",
+                "문제를 찾아 고칠 수 있도록 보내는 충돌 보고서",
+                "하루에 한 번 GitHub로 보내는 업데이트 확인 요청이며, Fanny의 버전 정보만 포함돼요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "사용 데이터와 충돌 보고서는 익명이며 측정값은 절대 포함되지 않아요. 설정의 개인정보 보호에서 둘 중 하나를 끌 수 있고, 설정의 정보에서 전체 개인정보 처리방침을 읽을 수 있어요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "개인정보 보호 설정 열기",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "Fanny를 삭제하려면 어떻게 하나요?",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "다른 앱과 마찬가지로 Fanny도 언제든 삭제할 수 있어요."
+            },
+            {
+              "type": "bold",
+              "text": "Fanny를 삭제하려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "데스크탑과 알림 센터에서 Fanny 위젯을 모두 제거하세요",
+                "일반에서 로그인 시 열기를 끄세요",
+                "메뉴 막대의 Fanny 아이콘을 클릭하고 Fanny 종료를 선택하세요",
+                "응용 프로그램 폴더를 열고 Fanny를 휴지통으로 드래그하세요"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "일반 설정 열기",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "지원팀에 문의하려면 어떻게 하나요?",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "궁금한 점이나 아이디어, 문제가 있나요? 기쁘게 들어 볼게요."
+            },
+            {
+              "type": "bold",
+              "text": "연락하려면:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "이 글 끝에 있는 문의하기를 클릭하세요",
+                "메시지를 작성하고 보내세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "지원 이메일 주소가 입력된 이메일이 열려요. Mail을 사용하면 문제를 더 빠르게 살펴볼 수 있도록 Fanny의 로그 사본이 첨부돼요."
+            },
+            {
+              "type": "bold",
+              "text": "빠르게 도움을 받는 팁:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "문제가 생겼을 때 무엇을 하고 있었는지 설명해 주세요",
+                "Mac 모델과 macOS 버전을 알려 주세요"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "GitHub에서 기능을 요청하거나 문제를 보고할 수도 있어요. 설정에서 정보를 선택한 다음 요청 또는 보고를 클릭하세요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "문의하기",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "앱 소개",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "이 앱은 누가 만들었나요?",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "안녕하세요! 저는 미국 테네시주 녹스빌에서 아내와 잉글리시 크림 골든 리트리버 메이지와 함께 살고 있는 인디 개발자 Daniel Storm이에요."
+            },
+            {
+              "type": "paragraph",
+              "text": "Mac이 얼마나 열심히 일하고 있는지 메뉴 막대에서 간단히 확인하고 싶어서 Fanny를 만들었어요."
+            },
+            {
+              "type": "paragraph",
+              "text": "Fanny를 사용해 주셔서 정말 감사합니다. 저를 응원하고 싶으시다면 매일 긍정의 한마디를 전하는 제 다른 앱 Positive도 살펴봐 주세요. Fanny를 모두에게 계속 무료로 제공하는 데에도 도움이 돼요!"
+            },
+            {
+              "type": "paragraph",
+              "text": "보내 주시는 메시지는 모두 읽고 있으니, 망설이지 말고 연락 주세요."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Positive 받기",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "문의하기",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

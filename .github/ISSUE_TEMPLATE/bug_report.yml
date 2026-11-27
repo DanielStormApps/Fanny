@@ -1,0 +1,51 @@
+name: Report a Problem
+description: Something in Fanny isn't working right.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1.
+        2.
+        3.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Logs help find the problem, and never include your readings.
+        1. In Fanny, open Settings > Privacy.
+        2. Next to Log Files, click Show in Finder.
+        3. Drag the log files into this box.
+  - type: input
+    id: fanny-version
+    attributes:
+      label: Fanny version
+      description: Shown in Settings > About.
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+  - type: input
+    id: chip
+    attributes:
+      label: Chip
+  - type: input
+    id: fan-count
+    attributes:
+      label: Number of fans
