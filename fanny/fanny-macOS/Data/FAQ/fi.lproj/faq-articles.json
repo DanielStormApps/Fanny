@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "ALOITUS",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Miten Fanny toimii?",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny asuu valikkorivilläsi ja näyttää, kuinka nopeasti Macisi tuulettimet pyörivät ja kuinka lämpimänä CPU ja GPU käyvät."
+            },
+            {
+              "type": "bold",
+              "text": "Näin se näkyy:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Kunkin tuulettimen nykyinen nopeus sekä sen minimi-, maksimi- ja tavoitenopeus alapuolella",
+                "CPU:n ja GPU:n lämpötilat",
+                "Kaikki lukemat yhdellä silmäyksellä, kun viet osoittimen valikkorivin kohdan päälle"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Napsauta Fanny-kuvaketta valikkorivillä nähdäksesi lukemat, avataksesi Asetukset tai lopettaaksesi Fannyn. Kun valikko on auki, lukemat päivittyvät sekunnin välein."
+            },
+            {
+              "type": "bold",
+              "text": "Hyvä tietää:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny vain lukee Macisi antureita. Se ei koskaan muuta tuulettimien toimintaa",
+                "Fannyn täytyy pysyä auki valikkorivillä, jotta lukemat ja widgetit pysyvät ajan tasalla"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "Miten valitsen, mitä valikkorivillä näkyy?",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny voi näyttää kuvakkeensa, tuulettimien nopeudet sekä CPU:n ja GPU:n lämpötilat suoraan valikkorivilläsi, missä järjestyksessä haluat."
+            },
+            {
+              "type": "bold",
+              "text": "Näin muutat sitä:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta Fanny-kuvaketta valikkorivillä ja valitse Asetukset",
+                "Valitse sivupalkista Valikkorivi",
+                "Valitse Näytä valikkorivillä -kohdasta kukin kohde, jonka haluat nähdä",
+                "Vedä kohteet haluamaasi järjestykseen"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Fanny-kuvake on aina ensimmäisenä, ja se palaa itsestään, jos mitään muuta ei ole valittu. Myös Antureissa pois päältä kytketty lämpötila poistuu valikkoriviltä."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Valikkorivi-asetukset",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "Miten käytän kelluvaa ikkunaa?",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Kelluva ikkuna pitää lukemasi näytöllä muiden ikkunoiden päällä, jotta voit seurata niitä työskennellessäsi."
+            },
+            {
+              "type": "bold",
+              "text": "Näin kytket sen päälle:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta Fanny-kuvaketta valikkorivillä",
+                "Valitse Kelluva ikkuna"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Näin valitset, mitä se näyttää:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Avaa Asetukset ja valitse sivupalkista Kelluva ikkuna",
+                "Valitse haluamasi kortit, kuten CPU, GPU tai jokin tuulettimistasi",
+                "Valitse haluamasi lukemat kullekin kortille",
+                "Vedä kortit ja lukemat mieleiseesi järjestykseen",
+                "Valitse Asettelu-kohdasta Vaakasuora tai Pystysuora muuttaaksesi korttien sijoittelua"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Hyvä tietää:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Vedä kelluva ikkuna minne tahansa näytöllä",
+                "Vie osoitin sen päälle ja sulje se napsauttamalla miinuspainiketta",
+                "Napsauta sitä hiiren kakkospainikkeella nähdäksesi pikavalinnat, kuten piilottamisen tai Asetusten avaamisen",
+                "Muuta sen lasin sävyä Ulkoasu-asetuksissa",
+                "Jos kytket CPU:n tai GPU:n lämpötilan pois päältä Anturit-asetuksissa, sen kortissa lukee Pois päältä. Napsauta korttia avataksesi Anturit-asetukset"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Kelluvan ikkunan asetukset",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "Miksi tuulettimet näyttävät tilan Pois?",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Pois tarkoittaa, että tuuletin on pysähtynyt, mikä on normaalia. Apple silicon -Macit pitävät tuulettimensa usein paikallaan, kun ne ovat viileitä ja hiljaisia, ja käynnistävät ne vasta tarvittaessa."
+            },
+            {
+              "type": "bold",
+              "text": "Hyvä tietää:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Tuulettimet käynnistyvät yleensä, kun Macisi tekee raskasta työtä, esimerkiksi videota viedessä tai pelatessa",
+                "Tavoitenopeus näyttää, mitä nopeutta Mac pyytää tuuletinta tavoittelemaan seuraavaksi",
+                "Joissakin Maceissa, kuten MacBook Airissa, ei ole lainkaan tuulettimia, joten Fanny näyttää tekstin Tässä Macissa ei ole tuulettimia"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Jos Fanny näyttää tekstin Lukemat eivät ole saatavilla, lopeta Fanny ja avaa se uudelleen. Jos se ei auta, ota yhteyttä."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Ota meihin yhteyttä",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "ANTURIT",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Mitä anturia Fanny käyttää?",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Macissasi on monta lämpötila-anturia, eikä Apple nimeä mitään niistä viralliseksi CPU:n lämpötilaksi. Fanny näyttää oletuksena CPU-ytimien keskiarvon, kuten useimmat Macin valvontasovellukset, ja voit valita toisen lukeman milloin tahansa."
+            },
+            {
+              "type": "bold",
+              "text": "CPU-anturi:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Keskiarvo näyttää kaikkien ytimien keskiarvon",
+                "Kuumin näyttää kuumimman ytimen",
+                "Siru näyttää CPU:n sirun anturin"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "GPU-anturi:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Keskiarvo näyttää GPU-anturien keskiarvon",
+                "Kuumin näyttää kuumimman GPU-anturin"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Keskiarvo sopii useimmille. Voit myös kytkeä CPU:n tai GPU:n lämpötilan pois päältä, jos et tarvitse sitä, ja Fanny lopettaa sen lukemisen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Anturit-asetukset",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "Miksi lukemani eroavat muista sovelluksista?",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Sovellukset voivat lukea samassa Macissa eri antureita, ja lämpötilat muuttuvat sekunti sekunnilta, joten kaksi sovellusta näyttää harvoin täsmälleen saman luvun."
+            },
+            {
+              "type": "bold",
+              "text": "Miksi luvut eroavat:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Yksi sovellus voi näyttää kuumimman ytimen, kun toinen näyttää keskiarvon",
+                "Sovellukset päivittyvät eri aikoina, joten ne tallentavat eri hetkiä",
+                "Valikkorivi pyöristää kokonaisiin asteisiin, kun taas valikko näyttää yhden desimaalin"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Jos haluat verrata sovellukseen, joka näyttää sirun kuumimman kohdan, aseta CPU-anturiksi Kuumin."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Anturit-asetukset",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "Miten muutan yksikköä tai päivitysväliä?",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny näyttää lämpötilat Celsius- tai Fahrenheit-asteina Macisi alueen mukaan ja päivittää lukemat 4 sekunnin välein. Voit muuttaa molempia."
+            },
+            {
+              "type": "bold",
+              "text": "Näin muutat niitä:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta Fanny-kuvaketta valikkorivillä ja valitse Asetukset",
+                "Valitse sivupalkista Anturit",
+                "Valitse Lämpötilayksikkö-kohdasta Celsius, Fahrenheit tai Kelvin",
+                "Aseta Päivitysväli haluamaksesi sekuntimääräksi lukemien välillä"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Valikkorivi, valikko, widgetit ja Siri käyttävät kaikki valitsemaasi yksikköä."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Anturit-asetukset",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "WIDGETIT JA SIRI",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "Miten lisään widgetin?",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fannyn widget näyttää tuulettimesi ja lämpötilasi työpöydällä tai Ilmoituskeskuksessa pienenä, keskikokoisena, suurena ja erittäin suurena."
+            },
+            {
+              "type": "bold",
+              "text": "Näin lisäät sen:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta työpöydän tyhjää kohtaa hiiren kakkospainikkeella ja valitse Muokkaa widgettejä",
+                "Hae Fanny",
+                "Valitse koko ja vedä widget haluamaasi paikkaan"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Mitä se näyttää:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Tuulettimiesi nopeudet ja lämpötilasi sekä sen, kuinka kauan sitten ne päivitettiin",
+                "Päivitä napsauttamalla, kun lukemat ovat vanhentuneita tai eivät ole saatavilla, esimerkiksi kun Fanny on suljettu, kun viimeisestä lukemasta on yli tunti tai kun Fanny ei voinut lukea tuulettimia. Napsauta widgettiä avataksesi Fannyn ja päivittääksesi sen"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "Miten käytän Siriä ja Pikakomentoja?",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Voit kysyä Sirilta lukemiasi tai käyttää niitä omissa pikakomennoissasi."
+            },
+            {
+              "type": "bold",
+              "text": "Kokeile sanoa:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "\"Mitkä ovat lukemani sovelluksessa Fanny\"",
+                "\"Mikä on tuulettimen nopeus sovelluksessa Fanny\"",
+                "\"Mikä on CPU:n lämpötila sovelluksessa Fanny\" tai \"Mikä on GPU:n lämpötila sovelluksessa Fanny\"",
+                "\"Näytä sovelluksen Fanny kelluva ikkuna\" tai \"Piilota sovelluksen Fanny kelluva ikkuna\"",
+                "\"Tarkista sovelluksen Fanny päivitykset\"",
+                "\"Avaa sovelluksen Fanny asetukset\""
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Näin käytät niitä Pikakomennoissa:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Avaa Pikakomennot-sovellus",
+                "Luo uusi pikakomento ja hae Fanny",
+                "Lisää mikä tahansa Fannyn toiminto, kuten Hae lukemat tai Aseta Fannyn lämpötilayksikkö"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Lämpötilat palautetaan Antureissa valitsemallasi yksiköllä. Jos lämpötila on siellä kytketty pois päältä, Siri kertoo siitä."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Anturit-asetukset",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "TUKI",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "Miten päivitän Fannyn?",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny tarkistaa uuden version kerran päivässä ja ilmoittaa, kun sellainen on valmiina."
+            },
+            {
+              "type": "bold",
+              "text": "Kun päivitys on valmis:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fannyn valikkoon ilmestyy Päivitys saatavilla",
+                "Napsauta sitä avataksesi lataussivun ja korvaa sitten Fanny Ohjelmat-kansiossa uudella versiolla"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Näin tarkistat heti:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta Fanny-kuvaketta valikkorivillä ja valitse Asetukset",
+                "Valitse sivupalkista Yleiset",
+                "Napsauta Tarkista nyt Tarkista päivitykset -kohdan vieressä"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Voit kytkeä Tarkista päivitykset automaattisesti pois päältä Yleisissä ja tarkistaa milloin haluat."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Yleiset-asetukset",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "Miten saan Fannyn aukeamaan, kun Mac käynnistyy?",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny voi avautua, kun kirjaudut sisään, jolloin lukemasi ovat aina valikkorivillä. Se on pois päältä, kunnes kytket sen päälle, ja voit muuttaa sitä milloin tahansa."
+            },
+            {
+              "type": "bold",
+              "text": "Näin kytket sen päälle tai pois:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta Fanny-kuvaketta valikkorivillä ja valitse Asetukset",
+                "Valitse sivupalkista Yleiset",
+                "Kytke Käynnistä kirjautuessa päälle tai pois"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Jos macOS pyytää sinua hyväksymään Fannyn ensin, näkyviin tulee Hyväksyntä tarvitaan -rivi, jossa on painike, joka avaa Järjestelmäasetukset. Salli Fanny siellä Kirjautumiskohteissa."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Yleiset-asetukset",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Mitä tietoja Fanny kerää?",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Lukemasi pysyvät Macissasi. Fanny ei koskaan lähetä tuulettimien nopeuksia tai lämpötiloja minnekään."
+            },
+            {
+              "type": "bold",
+              "text": "Mitä Fanny lähettää:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Anonyymia käyttötietoa, kuten mitkä asetukset ovat käytössä, jotta Fannya voidaan parantaa",
+                "Kaatumisraportteja, jotta ongelmat voidaan löytää ja korjata",
+                "Päivittäisen päivitystarkistuksen GitHubiin, joka sisältää vain Fannyn version"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Käyttötiedot ja kaatumisraportit ovat anonyymeja eivätkä koskaan sisällä lukemiasi. Voit kytkeä kummankin pois päältä Asetusten Tietosuoja-osiossa ja lukea koko tietosuojakäytännön Asetusten Tietoja-osiosta."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Tietosuoja-asetukset",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "Miten poistan Fannyn?",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Voit poistaa Fannyn milloin tahansa, kuten minkä tahansa muun sovelluksen."
+            },
+            {
+              "type": "bold",
+              "text": "Näin poistat Fannyn:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Poista kaikki Fanny-widgetit työpöydältä ja Ilmoituskeskuksesta",
+                "Kytke Käynnistä kirjautuessa pois päältä Yleisissä",
+                "Napsauta Fanny-kuvaketta valikkorivillä ja valitse Lopeta Fanny",
+                "Avaa Ohjelmat-kansio ja vedä Fanny roskakoriin"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Avaa Yleiset-asetukset",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "Miten otan yhteyttä tukeen?",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Onko sinulla kysymys, idea tai ongelma? Kuulen sinusta mielelläni."
+            },
+            {
+              "type": "bold",
+              "text": "Näin otat yhteyttä:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Napsauta tämän artikkelin lopussa olevaa Ota meihin yhteyttä -painiketta",
+                "Kirjoita viestisi ja lähetä"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Tämä avaa sähköpostin, johon tukiosoite on valmiiksi täytetty. Jos käytät Mailia, Fannyn lokien kopio liitetään mukaan, jotta voin selvittää ongelman nopeammin."
+            },
+            {
+              "type": "bold",
+              "text": "Vinkkejä nopeaan avun saamiseen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Kerro, mitä olit tekemässä, kun ongelma ilmeni",
+                "Mainitse Macisi malli ja macOS-versio"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Voit myös ehdottaa ominaisuutta tai ilmoittaa ongelmasta GitHubissa. Valitse Asetuksissa Tietoja ja napsauta sitten Pyydä tai Ilmoita."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Ota meihin yhteyttä",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "TIETOJA",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "Kuka teki tämän sovelluksen?",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Terve! Olen Daniel Storm, indie-kehittäjä Knoxvillessa, Tennesseessä, jossa asun vaimoni ja englanninkermanvärisen kultaisennoutajamme Maisyn kanssa."
+            },
+            {
+              "type": "paragraph",
+              "text": "Tein Fannyn, koska halusin yksinkertaisen tavan nähdä, kuinka kovalla teholla Macini työskentelee, suoraan valikkoriviltä."
+            },
+            {
+              "type": "paragraph",
+              "text": "Kiitos paljon, että käytät Fannya. Jos haluat tukea minua, tutustu toiseen sovellukseeni, Positiveen, päivittäiseen positiivisuuden annokseen. Se auttaa myös pitämään Fannyn ilmaisena kaikille!"
+            },
+            {
+              "type": "paragraph",
+              "text": "Luen jokaisen viestin, joten älä epäröi ottaa yhteyttä."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Hanki Positive",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "Ota meihin yhteyttä",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

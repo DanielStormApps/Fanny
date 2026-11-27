@@ -1,0 +1,13 @@
+/* App Shortcut Siri phrases (ko). Keys must stay byte-identical to the phrases in
+   AppShortcuts.swift; keep ${applicationName} verbatim in every value. */
+"What's my ${applicationName} fan speed" = "${applicationName} 팬 속도 알려 줘";
+"How fast are my fans in ${applicationName}" = "${applicationName}에서 팬이 얼마나 빠른지 알려 줘";
+"What's my CPU temperature in ${applicationName}" = "${applicationName} CPU 온도 알려 줘";
+"What's my GPU temperature in ${applicationName}" = "${applicationName} GPU 온도 알려 줘";
+"Open ${applicationName} settings" = "${applicationName} 설정 열어 줘";
+"What are my ${applicationName} readings" = "${applicationName} 측정값 알려 줘";
+"How hot is my Mac in ${applicationName}" = "${applicationName}에서 내 Mac이 얼마나 뜨거운지 알려 줘";
+"What's the speed of ${fan} in ${applicationName}" = "${applicationName}에서 ${fan} 속도 알려 줘";
+"Show ${applicationName} floating window" = "${applicationName} 플로팅 윈도우 보여 줘";
+"Hide ${applicationName} floating window" = "${applicationName} 플로팅 윈도우 가려 줘";
+"Check for ${applicationName} updates" = "${applicationName} 업데이트 확인해 줘";

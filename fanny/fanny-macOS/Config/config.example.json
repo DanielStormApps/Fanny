@@ -1,0 +1,30 @@
+{
+    "externalConfigPath": "",
+    "app": {
+        "identifier": "fanny",
+        "name": "Fanny",
+        "positivePath": "macappstore://apps.apple.com/app/id653287635?mt=12&pt=538122&ct=fanny-positive&at=1l3vm3h",
+        "contactEmailAddress": "",
+        "privacyPolicyPath": "https://danielstorm.app/privacy-policy",
+        "gitHubPath": "https://github.com/DanielStormApps/Fanny"
+    },
+    "analytics": {
+        "heartbeatTimeInterval": 600,
+        "services": {
+            "firebase": {
+                "enabled": true,
+                "trackingIDs": {
+                    "production": [""],
+                    "development": [""]
+                }
+            },
+            "telemetryDeck": {
+                "enabled": true,
+                "trackingIDs": {
+                    "production": [],
+                    "development": []
+                }
+            }
+        }
+    }
+}

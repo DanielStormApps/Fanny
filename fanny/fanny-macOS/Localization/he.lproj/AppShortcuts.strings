@@ -1,0 +1,13 @@
+/* App Shortcut Siri phrases (he). Keys must stay byte-identical to the phrases in
+   AppShortcuts.swift; keep ${applicationName} verbatim in every value. */
+"What's my ${applicationName} fan speed" = "מה מהירות המאוורר שלי ב-${applicationName}";
+"How fast are my fans in ${applicationName}" = "באיזו מהירות המאווררים שלי מסתובבים ב-${applicationName}";
+"What's my CPU temperature in ${applicationName}" = "מה טמפרטורת ה-CPU שלי ב-${applicationName}";
+"What's my GPU temperature in ${applicationName}" = "מה טמפרטורת ה-GPU שלי ב-${applicationName}";
+"Open ${applicationName} settings" = "פתח את הגדרות ${applicationName}";
+"What are my ${applicationName} readings" = "מה הקריאות שלי ב-${applicationName}";
+"How hot is my Mac in ${applicationName}" = "כמה חם ה-Mac שלי ב-${applicationName}";
+"What's the speed of ${fan} in ${applicationName}" = "מה המהירות של ${fan} ב-${applicationName}";
+"Show ${applicationName} floating window" = "הצג את החלון הצף של ${applicationName}";
+"Hide ${applicationName} floating window" = "הסתר את החלון הצף של ${applicationName}";
+"Check for ${applicationName} updates" = "בדוק אם יש עדכונים ל-${applicationName}";

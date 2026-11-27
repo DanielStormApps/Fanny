@@ -1,0 +1,13 @@
+/* App Shortcut Siri phrases (zh-Hans). Keys must stay byte-identical to the phrases in
+   AppShortcuts.swift; keep ${applicationName} verbatim in every value. */
+"What's my ${applicationName} fan speed" = "${applicationName} 的风扇转速是多少";
+"How fast are my fans in ${applicationName}" = "用 ${applicationName} 看看风扇转得多快";
+"What's my CPU temperature in ${applicationName}" = "${applicationName} 里我的 CPU 温度是多少";
+"What's my GPU temperature in ${applicationName}" = "${applicationName} 里我的 GPU 温度是多少";
+"Open ${applicationName} settings" = "打开 ${applicationName} 设置";
+"What are my ${applicationName} readings" = "${applicationName} 的读数是多少";
+"How hot is my Mac in ${applicationName}" = "${applicationName} 里我的 Mac 有多热";
+"What's the speed of ${fan} in ${applicationName}" = "${applicationName} 里${fan}的转速是多少";
+"Show ${applicationName} floating window" = "显示 ${applicationName} 悬浮窗口";
+"Hide ${applicationName} floating window" = "隐藏 ${applicationName} 悬浮窗口";
+"Check for ${applicationName} updates" = "检查 ${applicationName} 更新";

@@ -1,0 +1,14 @@
+//
+//  Signing.xcconfig
+//  fanny
+//
+//  The signing team stays out of git. To build, duplicate Local.example.xcconfig, rename the copy
+//  to Local.xcconfig (the gitignored name), and fill in `DEVELOPMENT_TEAM = <your team ID>`.
+//
+
+DEVELOPMENT_TEAM =
+
+// Shared by the app and the widget. A team ID prefixed group needs no registration on macOS.
+FANNY_APP_GROUP_IDENTIFIER = $(DEVELOPMENT_TEAM).com.fannywidget
+
+#include? "Local.xcconfig"

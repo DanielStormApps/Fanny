@@ -1,0 +1,35 @@
+name: Request a Feature
+description: An idea to make Fanny better.
+labels: ["feature request"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: What would you like Fanny to do?
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: How would it help you?
+  - type: input
+    id: fanny-version
+    attributes:
+      label: Fanny version
+      description: Shown in Settings > About.
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+  - type: input
+    id: mac-model
+    attributes:
+      label: Mac model
+  - type: input
+    id: chip
+    attributes:
+      label: Chip
+  - type: input
+    id: fan-count
+    attributes:
+      label: Number of fans

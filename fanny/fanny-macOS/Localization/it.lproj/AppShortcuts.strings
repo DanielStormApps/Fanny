@@ -1,0 +1,13 @@
+/* App Shortcut Siri phrases (it). Keys must stay byte-identical to the phrases in
+   AppShortcuts.swift; keep ${applicationName} verbatim in every value. */
+"What's my ${applicationName} fan speed" = "Qual è la velocità della ventola di ${applicationName}";
+"How fast are my fans in ${applicationName}" = "Quanto sono veloci le ventole in ${applicationName}";
+"What's my CPU temperature in ${applicationName}" = "Qual è la temperatura della CPU in ${applicationName}";
+"What's my GPU temperature in ${applicationName}" = "Qual è la temperatura della GPU in ${applicationName}";
+"Open ${applicationName} settings" = "Apri le impostazioni di ${applicationName}";
+"What are my ${applicationName} readings" = "Quali sono le mie letture di ${applicationName}";
+"How hot is my Mac in ${applicationName}" = "Quanto è caldo il mio Mac in ${applicationName}";
+"What's the speed of ${fan} in ${applicationName}" = "Qual è la velocità di ${fan} in ${applicationName}";
+"Show ${applicationName} floating window" = "Mostra la finestra fluttuante di ${applicationName}";
+"Hide ${applicationName} floating window" = "Nascondi la finestra fluttuante di ${applicationName}";
+"Check for ${applicationName} updates" = "Verifica aggiornamenti di ${applicationName}";

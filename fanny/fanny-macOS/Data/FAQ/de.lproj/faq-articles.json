@@ -1,0 +1,612 @@
+{
+  "schemaVersion": 1,
+  "sections": [
+    {
+      "id": "getting-started",
+      "title": "ERSTE SCHRITTE",
+      "articles": [
+        {
+          "id": "how-fanny-works",
+          "title": "Wie funktioniert Fanny?",
+          "symbol": "fan.fill",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny lebt in deiner Menüleiste und zeigt dir, wie schnell sich die Lüfter deines Mac drehen und wie warm CPU und GPU gerade sind."
+            },
+            {
+              "type": "bold",
+              "text": "Das siehst du:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Die aktuelle Drehzahl jedes Lüfters, darunter sein Minimum, Maximum und Zielwert",
+                "Die Temperaturen von CPU und GPU",
+                "Alle Messwerte auf einen Blick, wenn du den Mauszeiger über das Symbol in der Menüleiste bewegst"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Klicke auf das Fanny-Symbol in deiner Menüleiste, um deine Messwerte zu sehen, die Einstellungen zu öffnen oder Fanny zu beenden. Solange das Menü geöffnet ist, werden die Messwerte jede Sekunde aktualisiert."
+            },
+            {
+              "type": "bold",
+              "text": "Gut zu wissen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Fanny liest nur die Sensoren deines Mac aus. Es ändert nie, wie deine Lüfter laufen",
+                "Fanny muss in deiner Menüleiste geöffnet bleiben, damit Messwerte und Widgets aktuell bleiben"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "menu-bar-display",
+          "title": "Wie wähle ich, was die Menüleiste anzeigt?",
+          "symbol": "menubar.rectangle",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny kann sein Symbol, deine Lüfterdrehzahlen sowie deine CPU- und GPU-Temperaturen direkt in deiner Menüleiste anzeigen, in der Reihenfolge, die du möchtest."
+            },
+            {
+              "type": "bold",
+              "text": "So änderst du das:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke in deiner Menüleiste auf das Fanny-Symbol und wähle Einstellungen",
+                "Wähle in der Seitenleiste Menüleiste aus",
+                "Wähle unter In der Menüleiste anzeigen jeden Eintrag aus, den du sehen möchtest",
+                "Ziehe die Einträge in die gewünschte Reihenfolge"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Das Fanny-Symbol steht immer an erster Stelle und kehrt von selbst zurück, wenn nichts anderes ausgewählt ist. Eine Temperatur, die du in Sensoren ausschaltest, verschwindet ebenfalls aus der Menüleiste."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Menüleisten-Einstellungen öffnen",
+              "destination": "settingsMenuBar"
+            }
+          ]
+        },
+        {
+          "id": "floating-window",
+          "title": "Wie verwende ich das Schwebefenster?",
+          "symbol": "pip",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Das Schwebefenster hält deine Messwerte über deinen anderen Fenstern auf dem Bildschirm, sodass du sie beobachten kannst, während du arbeitest."
+            },
+            {
+              "type": "bold",
+              "text": "So schaltest du es ein:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke in deiner Menüleiste auf das Fanny-Symbol",
+                "Wähle Schwebefenster"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "So wählst du aus, was es zeigt:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Öffne die Einstellungen und wähle in der Seitenleiste Schwebefenster aus",
+                "Aktiviere die gewünschten Karten, etwa CPU, GPU oder einen deiner Lüfter",
+                "Aktiviere auf jeder Karte die gewünschten Messwerte",
+                "Ziehe Karten und Messwerte in die Reihenfolge, die dir gefällt",
+                "Wähle bei Anordnung Horizontal oder Vertikal, um zu ändern, wie die Karten angeordnet sind"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Gut zu wissen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Ziehe das Schwebefenster an eine beliebige Stelle auf deinem Bildschirm",
+                "Bewege den Mauszeiger darauf und klicke auf die Minus-Taste, um es zu schließen",
+                "Klicke mit der rechten Maustaste darauf für Schnelloptionen, etwa um es auszublenden oder die Einstellungen zu öffnen",
+                "Ändere die Färbung seines Glases in den Einstellungen für das Erscheinungsbild",
+                "Wenn du die CPU- oder GPU-Temperatur in den Sensoren-Einstellungen ausschaltest, zeigt ihre Karte Ausgeschaltet an. Klicke auf die Karte, um die Sensoren-Einstellungen zu öffnen"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Schwebefenster-Einstellungen öffnen",
+              "destination": "settingsFloatingWindow"
+            }
+          ]
+        },
+        {
+          "id": "fans-read-off",
+          "title": "Warum zeigen meine Lüfter Aus an?",
+          "symbol": "fan.slash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Aus bedeutet, dass der Lüfter steht, und das ist normal. Macs mit Apple Chip halten ihre Lüfter oft an, solange sie kühl und leise sind, und lassen sie nur bei Bedarf anlaufen."
+            },
+            {
+              "type": "bold",
+              "text": "Gut zu wissen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Lüfter starten meist, sobald dein Mac stark ausgelastet ist, etwa beim Exportieren von Videos oder beim Spielen",
+                "Der Zielwert zeigt, was dein Mac dem Lüfter als Nächstes vorgibt",
+                "Manche Macs, etwa das MacBook Air, haben gar keine Lüfter, deshalb zeigt Fanny Dieser Mac hat keine Lüfter an"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Wenn Fanny Messwerte nicht verfügbar anzeigt, beende Fanny und öffne es erneut. Wenn das nicht hilft, melde dich bitte bei mir."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Kontaktieren Sie uns",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "title": "SENSOREN",
+      "articles": [
+        {
+          "id": "automatic-sensors",
+          "title": "Welchen Sensor verwendet Fanny?",
+          "symbol": "cpu",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Dein Mac hat viele Temperatursensoren, und Apple nennt keine einzelne offizielle CPU-Temperatur. Fanny zeigt standardmäßig den Durchschnitt der CPU-Kerne an, wie die meisten Überwachungs-Apps für den Mac, und du kannst jederzeit einen anderen Messwert wählen."
+            },
+            {
+              "type": "bold",
+              "text": "CPU-Sensor:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Durchschnitt zeigt den Durchschnitt aller Kerne",
+                "Heißester zeigt den heißesten Kern",
+                "Chip zeigt den Chip-Sensor der CPU"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "GPU-Sensor:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Durchschnitt zeigt den Durchschnitt der GPU-Sensoren",
+                "Heißester zeigt den heißesten GPU-Sensor"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Durchschnitt ist für die meisten eine gute Wahl. Du kannst die CPU- oder GPU-Temperatur auch ausschalten, wenn du sie nicht brauchst, dann liest Fanny sie nicht mehr aus."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Sensoren-Einstellungen öffnen",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "readings-differ",
+          "title": "Warum weichen meine Messwerte von anderen Apps ab?",
+          "symbol": "thermometer.medium",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Apps können auf demselben Mac unterschiedliche Sensoren auslesen, und Temperaturen ändern sich von Sekunde zu Sekunde. Deshalb zeigen zwei Apps selten genau dieselbe Zahl."
+            },
+            {
+              "type": "bold",
+              "text": "Warum die Zahlen abweichen:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Eine App zeigt vielleicht den heißesten Kern, eine andere den Durchschnitt",
+                "Apps aktualisieren zu unterschiedlichen Zeitpunkten und erfassen deshalb unterschiedliche Momente",
+                "Die Menüleiste rundet auf ganze Grad, während das Menü eine Nachkommastelle zeigt"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Um mit einer App zu vergleichen, die den heißesten Teil des Chips zeigt, stelle CPU-Sensor auf Heißester."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Sensoren-Einstellungen öffnen",
+              "destination": "settingsSensors"
+            }
+          ]
+        },
+        {
+          "id": "unit-and-refresh",
+          "title": "Wie ändere ich die Einheit oder die Aktualisierungsrate?",
+          "symbol": "thermometer.variable.and.figure",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny zeigt Temperaturen je nach Region deines Mac in Celsius oder Fahrenheit an und aktualisiert deine Messwerte alle 4 Sekunden. Du kannst beides ändern."
+            },
+            {
+              "type": "bold",
+              "text": "So änderst du sie:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke in deiner Menüleiste auf das Fanny-Symbol und wähle Einstellungen",
+                "Wähle in der Seitenleiste Sensoren aus",
+                "Wähle bei Temperatureinheit Celsius, Fahrenheit oder Kelvin",
+                "Stelle bei Aktualisierungsintervall die Anzahl der Sekunden zwischen den Messungen ein"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Menüleiste, Menü, Widgets und Siri verwenden alle die Einheit, die du wählst."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Sensoren-Einstellungen öffnen",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "widgets-and-siri",
+      "title": "WIDGETS & SIRI",
+      "articles": [
+        {
+          "id": "add-widget",
+          "title": "Wie füge ich ein Widget hinzu?",
+          "symbol": "square.grid.2x2",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Das Widget von Fanny zeigt deine Lüfter und Temperaturen auf dem Schreibtisch oder in der Mitteilungszentrale an, in den Größen klein, mittel, groß und extragroß."
+            },
+            {
+              "type": "bold",
+              "text": "So fügst du es hinzu:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke mit der rechten Maustaste auf eine freie Stelle auf deinem Schreibtisch und wähle Widgets bearbeiten",
+                "Suche nach Fanny",
+                "Wähle eine Größe und ziehe das Widget an die gewünschte Stelle"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "Das zeigt es an:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Deine Lüfterdrehzahlen und Temperaturen, mit der Angabe, wie lange die letzte Aktualisierung her ist",
+                "Zum Aktualisieren klicken erscheint, wenn die Messwerte veraltet oder nicht verfügbar sind, zum Beispiel nachdem Fanny beendet wurde, wenn die letzte Messung über eine Stunde her ist oder wenn Fanny die Lüfter nicht lesen konnte. Klicke auf das Widget, um Fanny zu öffnen und die Messwerte zu aktualisieren"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "use-siri",
+          "title": "Wie verwende ich Siri und Kurzbefehle?",
+          "symbol": "mic",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Du kannst Siri nach deinen Messwerten fragen oder sie in eigenen Kurzbefehlen verwenden."
+            },
+            {
+              "type": "bold",
+              "text": "Sage zum Beispiel:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "„Wie lauten meine Messwerte in Fanny“",
+                "„Wie ist meine Lüfterdrehzahl in Fanny“",
+                "„Wie hoch ist meine CPU-Temperatur in Fanny“ oder „Wie hoch ist meine GPU-Temperatur in Fanny“",
+                "„Zeige das Schwebefenster von Fanny“ oder „Blende das Schwebefenster von Fanny aus“",
+                "„Suche nach Updates für Fanny“",
+                "„Öffne die Einstellungen von Fanny“"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "So verwendest du sie in Kurzbefehlen:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Öffne die App Kurzbefehle",
+                "Erstelle einen neuen Kurzbefehl und suche nach Fanny",
+                "Füge beliebige Aktionen von Fanny hinzu, etwa Messwerte abrufen oder Fanny-Temperatureinheit festlegen"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Temperaturen werden in der Einheit zurückgegeben, die du in Sensoren gewählt hast. Wenn eine Temperatur dort ausgeschaltet ist, sagt Siri dir Bescheid."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Sensoren-Einstellungen öffnen",
+              "destination": "settingsSensors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "title": "SUPPORT",
+      "articles": [
+        {
+          "id": "updates",
+          "title": "Wie aktualisiere ich Fanny?",
+          "symbol": "arrow.down.circle",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny sucht einmal am Tag nach einer neuen Version und gibt dir Bescheid, wenn eine bereitsteht."
+            },
+            {
+              "type": "bold",
+              "text": "Wenn ein Update bereitsteht:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Update verfügbar erscheint im Fanny-Menü",
+                "Klicke darauf, um die Download-Seite zu öffnen, und ersetze dann Fanny in deinem Ordner „Programme“ durch die neue Version"
+              ]
+            },
+            {
+              "type": "bold",
+              "text": "So suchst du sofort nach Updates:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke in deiner Menüleiste auf das Fanny-Symbol und wähle Einstellungen",
+                "Wähle in der Seitenleiste Allgemein aus",
+                "Klicke neben Nach Updates suchen auf Jetzt suchen"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Du kannst Automatisch nach Updates suchen in Allgemein ausschalten und selbst nachsehen, wann du möchtest."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Allgemeine Einstellungen öffnen",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "launch-at-login",
+          "title": "Wie öffne ich Fanny, wenn mein Mac startet?",
+          "symbol": "power",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Fanny kann sich öffnen, wenn du dich anmeldest, damit deine Messwerte immer in der Menüleiste stehen. Es ist ausgeschaltet, bis du es einschaltest, und du kannst es jederzeit ändern."
+            },
+            {
+              "type": "bold",
+              "text": "So schaltest du es ein oder aus:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke in deiner Menüleiste auf das Fanny-Symbol und wähle Einstellungen",
+                "Wähle in der Seitenleiste Allgemein aus",
+                "Schalte Beim Anmelden öffnen ein oder aus"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Wenn macOS zuerst deine Genehmigung für Fanny verlangt, erscheint eine Zeile Genehmigung erforderlich mit einer Taste, die die Systemeinstellungen öffnet. Erlaube Fanny dort unter Anmeldeobjekte."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Allgemeine Einstellungen öffnen",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "privacy",
+          "title": "Was erfasst Fanny?",
+          "symbol": "hand.raised",
+          "lastUpdated": "2026-11-26",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Deine Messwerte bleiben auf deinem Mac. Fanny sendet deine Lüfterdrehzahlen oder Temperaturen nirgendwohin."
+            },
+            {
+              "type": "bold",
+              "text": "Das sendet Fanny:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Anonyme Nutzungsdaten, etwa welche Einstellungen verwendet werden, um Fanny zu verbessern",
+                "Anonyme Absturzberichte, damit Probleme gefunden und behoben werden können",
+                "Eine tägliche Update-Prüfung bei GitHub, die nur die Version von Fanny enthält"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Nutzungsdaten und Absturzberichte sind anonym und enthalten nie deine Messwerte. Du kannst beides in den Einstellungen unter Datenschutz ausschalten und die vollständige Datenschutzerklärung in den Einstellungen unter Info lesen."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Datenschutz-Einstellungen öffnen",
+              "destination": "settingsPrivacy"
+            }
+          ]
+        },
+        {
+          "id": "uninstall",
+          "title": "Wie deinstalliere ich Fanny?",
+          "symbol": "trash",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Du kannst Fanny jederzeit entfernen, genau wie jede andere App."
+            },
+            {
+              "type": "bold",
+              "text": "So deinstallierst du Fanny:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Entferne alle Fanny-Widgets von deinem Schreibtisch und aus der Mitteilungszentrale",
+                "Schalte Beim Anmelden öffnen in den Einstellungen unter Allgemein aus",
+                "Klicke in deiner Menüleiste auf das Fanny-Symbol und wähle Fanny beenden",
+                "Öffne deinen Ordner „Programme“ und ziehe Fanny in den Papierkorb"
+              ]
+            },
+            {
+              "type": "navigationLink",
+              "text": "Allgemeine Einstellungen öffnen",
+              "destination": "settingsGeneral"
+            }
+          ]
+        },
+        {
+          "id": "contact-support",
+          "title": "Wie kontaktiere ich den Support?",
+          "symbol": "envelope",
+          "lastUpdated": "2026-11-24",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Hast du eine Frage, eine Idee oder ein Problem? Ich freue mich, von dir zu hören."
+            },
+            {
+              "type": "bold",
+              "text": "So nimmst du Kontakt auf:"
+            },
+            {
+              "type": "numberedList",
+              "items": [
+                "Klicke am Ende dieses Artikels auf Kontaktieren Sie uns",
+                "Schreibe deine Nachricht und sende sie ab"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Dadurch öffnet sich eine E-Mail mit eingetragener Support-Adresse. Wenn du Mail verwendest, wird eine Kopie der Protokolle von Fanny angehängt, damit ich Probleme schneller untersuchen kann."
+            },
+            {
+              "type": "bold",
+              "text": "Tipps für schnelle Hilfe:"
+            },
+            {
+              "type": "bulletList",
+              "items": [
+                "Beschreibe, was du gerade getan hast, als das Problem auftrat",
+                "Nenne dein Mac-Modell und deine macOS-Version"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Du kannst auch auf GitHub eine Funktion vorschlagen oder ein Problem melden. Wähle in den Einstellungen Info und klicke dann auf Vorschlagen oder Melden."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Kontaktieren Sie uns",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "INFO",
+      "articles": [
+        {
+          "id": "who-made-this-app",
+          "title": "Wer hat diese App entwickelt?",
+          "symbol": "person",
+          "lastUpdated": "2026-11-23",
+          "content": [
+            {
+              "type": "paragraph",
+              "text": "Hallo! Ich bin Daniel Storm, ein Indie-Entwickler aus Knoxville, Tennessee, wo ich mit meiner Frau und unserem English Cream Golden Retriever Maisy lebe."
+            },
+            {
+              "type": "paragraph",
+              "text": "Ich habe Fanny entwickelt, weil ich auf einfache Weise direkt in der Menüleiste sehen wollte, wie stark mein Mac gerade arbeitet."
+            },
+            {
+              "type": "paragraph",
+              "text": "Vielen Dank, dass du Fanny verwendest. Wenn du mich unterstützen möchtest, schau dir meine andere App Positive an, für eine tägliche Portion Positivität. Das hilft auch, Fanny für alle kostenlos zu halten!"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ich lese jede Nachricht, die ankommt, also zögere nicht, dich zu melden."
+            },
+            {
+              "type": "navigationLink",
+              "text": "Positive laden",
+              "destination": "positive"
+            },
+            {
+              "type": "navigationLink",
+              "text": "Kontaktieren Sie uns",
+              "destination": "contact"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
